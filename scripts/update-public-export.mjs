@@ -12,6 +12,39 @@ const COMPONENT_RECIPE_FAMILY_MATCHERS = [
   '/Types/Recipes/ArchwingRecipes/',
   '/Types/Recipes/DeimosRecipes/Mechs/',
 ]
+const WEAPON_COMPONENT_NAME_SUFFIXES = new Set([
+  'barrel',
+  'barrels',
+  'receiver',
+  'receivers',
+  'stock',
+  'blade',
+  'blades',
+  'handle',
+  'link',
+  'limb',
+  'gauntlet',
+  'string',
+  'hilt',
+  'grip',
+  'guard',
+  'chassis',
+  'head',
+  'ornament',
+  'disc',
+  'pouch',
+  'rivet',
+  'hook',
+  'engine',
+  'stars',
+  'boot',
+  'chain',
+  'subcortex',
+  'glove',
+  'heatsink',
+  'motor',
+  'core',
+])
 
 function parseArgs(argv) {
   const options = {
@@ -193,17 +226,43 @@ function isComponentBlueprintIngredient(itemType, recipesByResult) {
   return COMPONENT_RECIPE_FAMILY_MATCHERS.some((matcher) => recipe.uniqueName.includes(matcher))
 }
 
+function isLikelyWeaponComponentIngredient(itemType, requirementName) {
+  if (typeof itemType === 'string' && itemType.includes('/WeaponParts/')) {
+    return true
+  }
+
+  const suffix = String(requirementName ?? '')
+    .replace(/^<ARCHWING>\s*/i, '')
+    .trim()
+    .split(/\s+/)
+    .at(-1)
+    ?.toLowerCase()
+
+  if (!suffix) {
+    return false
+  }
+
+  return WEAPON_COMPONENT_NAME_SUFFIXES.has(suffix)
+}
+
 function buildComponentRequirements({ ingredientRows, recipesByResult, nameLookup }) {
   const componentRequirements = []
 
   for (const ingredient of ingredientRows) {
     const itemKey = ingredient?.ItemType
-    if (!itemKey || !isComponentBlueprintIngredient(itemKey, recipesByResult)) {
+    if (!itemKey) {
+      continue
+    }
+
+    const requirementName = nameLookup.get(itemKey) ?? titleCaseFromSlug(itemKey)
+    if (
+      !isComponentBlueprintIngredient(itemKey, recipesByResult) &&
+      !isLikelyWeaponComponentIngredient(itemKey, requirementName)
+    ) {
       continue
     }
 
     const count = Number(ingredient.ItemCount ?? 1)
-    const requirementName = nameLookup.get(itemKey) ?? titleCaseFromSlug(itemKey)
 
     for (let i = 0; i < count; i += 1) {
       componentRequirements.push({
@@ -229,9 +288,11 @@ function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup }) {
         recipesByResult,
         nameLookup,
       })
+      const componentKeys = new Set(componentRequirements.map((requirement) => requirement.itemKey))
 
       const requirements = ingredientRows
         .filter((ingredient) => ingredient?.ItemType)
+        .filter((ingredient) => !componentKeys.has(ingredient.ItemType))
         .map((ingredient) => ({
           itemKey: ingredient.ItemType,
           name: nameLookup.get(ingredient.ItemType) ?? titleCaseFromSlug(ingredient.ItemType),
@@ -268,9 +329,11 @@ function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllW
         recipesByResult,
         nameLookup,
       })
+      const componentKeys = new Set(componentRequirements.map((requirement) => requirement.itemKey))
 
       const requirements = ingredientRows
         .filter((ingredient) => ingredient?.ItemType)
+        .filter((ingredient) => !componentKeys.has(ingredient.ItemType))
         .map((ingredient) => ({
           itemKey: ingredient.ItemType,
           name: nameLookup.get(ingredient.ItemType) ?? titleCaseFromSlug(ingredient.ItemType),
