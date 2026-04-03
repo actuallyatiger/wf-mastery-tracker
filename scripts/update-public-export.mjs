@@ -349,6 +349,7 @@ function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup, majorIt
   return warframesRaw
     .filter((frame) => frame?.uniqueName && frame?.name)
     .filter((frame) => ['Suits', 'SpaceSuits', 'MechSuits'].includes(frame.productCategory))
+    .filter((frame) => frame.name !== 'Excalibur Prime')
     .map((frame) => {
       const recipe = recipesByResult.get(frame.uniqueName)
       const ingredientRows = recipe?.ingredients ?? []

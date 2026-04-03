@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-03T23:01:38.859Z",
+  "generatedAt": "2026-04-03T23:45:51.789Z",
   "language": "en",
   "filters": {
     "includeAllWeapons": false
@@ -15,7 +15,7 @@
     }
   },
   "counts": {
-    "warframes": 114,
+    "warframes": 113,
     "necramechs": 2,
     "archwings": 5,
     "primary": 191,
@@ -18125,19 +18125,6 @@
           "craftable": true
         }
       ]
-    },
-    {
-      "id": "/Lotus/Powersuits/Excalibur/ExcaliburPrime",
-      "uniqueName": "/Lotus/Powersuits/Excalibur/ExcaliburPrime",
-      "name": "Excalibur Prime",
-      "masteryReq": 0,
-      "tab": "warframes",
-      "variant": "prime",
-      "productCategory": "Suits",
-      "hasRecipe": false,
-      "mainBlueprintKey": null,
-      "componentRequirements": [],
-      "requirements": []
     },
     {
       "id": "/Lotus/Powersuits/Excalibur/ExcaliburUmbra",

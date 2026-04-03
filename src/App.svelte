@@ -234,6 +234,10 @@
     return item.variant === 'prime' || /\bprime\b/i.test(item.name)
   }
 
+  function isUmbra(item) {
+    return /\bumbra\b$/i.test(cleanDisplayName(item.name))
+  }
+
   function cleanDisplayName(name) {
     return String(name ?? '')
       .replace(/^<ARCHWING>\s*/i, '')
@@ -741,7 +745,7 @@
   }
 
   function isSubsumed(item) {
-    if (isPrime(item)) {
+    if (isPrime(item) || isUmbra(item)) {
       return false
     }
     return ensureItemState(item).subsumed
@@ -1260,7 +1264,7 @@
               Mastered
             </label>
 
-            {#if activeTab === 'warframes' && !isPrime(item)}
+            {#if activeTab === 'warframes' && !isPrime(item) && !isUmbra(item)}
               <label class="check-row">
                 <input
                   type="checkbox"
