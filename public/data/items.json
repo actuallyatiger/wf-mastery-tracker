@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-03T23:45:51.789Z",
+  "generatedAt": "2026-04-03T23:49:55.833Z",
   "language": "en",
   "filters": {
     "includeAllWeapons": false
@@ -22,7 +22,7 @@
     "secondary": 327,
     "melee": 220,
     "weapons": 738,
-    "components": 819
+    "components": 817
   },
   "blueprints": {
     "/Lotus/Types/Gameplay/EntratiLab/Quest/GargoyleRecipeItem": "Jahu Gargoyle Blueprint",
@@ -9206,6 +9206,12 @@
           "craftable": true
         },
         {
+          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
+          "name": "Intact Sentient Core",
+          "count": 15,
+          "craftable": false
+        },
+        {
           "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
           "name": "Polymer Bundle",
           "count": 6000,
@@ -9219,11 +9225,6 @@
         }
       ]
     },
-    "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag": {
-      "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-      "name": "Intact Sentient Core",
-      "requirements": []
-    },
     "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent": {
       "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent",
       "name": "Revenant Chassis",
@@ -9233,6 +9234,12 @@
           "name": "Morphics",
           "count": 3,
           "craftable": true
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
+          "name": "Intact Sentient Core",
+          "count": 10,
+          "craftable": false
         },
         {
           "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
@@ -16587,24 +16594,6 @@
       "name": "Velox Prime Receiver",
       "requirements": []
     },
-    "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag": {
-      "uniqueName": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
-      "name": "Exceptional Sentient Core",
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
-          "name": "Radian Sentirum",
-          "count": 1,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem",
-          "name": "Heart Nyth",
-          "count": 1,
-          "craftable": true
-        }
-      ]
-    },
     "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeBlade": {
       "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeBlade",
       "name": "Venato Prime Blade",
@@ -20483,210 +20472,10 @@
           "level": 0
         },
         {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::11",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::12",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::13",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::14",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::15",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent"
-        },
-        {
           "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
           "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent",
           "name": "Revenant Chassis",
           "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
-        },
-        {
-          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
-          "parentItemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent"
         },
         {
           "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantSystemsComponent::1",
@@ -38360,73 +38149,18 @@
       "slot": 1,
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/RevenantShotgunBlueprint",
-      "componentRequirements": [
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        }
-      ],
+      "componentRequirements": [],
       "requirements": [
         {
           "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
           "name": "Argon Crystal",
           "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
+          "name": "Intact Sentient Core",
+          "count": 10,
           "craftable": false
         },
         {
@@ -46157,438 +45891,7 @@
       "slot": 5,
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/NewWar/SentJointedScytheBlueprint",
-      "componentRequirements": [
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
-          "name": "Exceptional Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::1",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
-          "name": "Exceptional Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::2",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
-          "name": "Exceptional Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::3",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
-          "name": "Exceptional Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::4",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
-          "name": "Exceptional Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5::/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 1,
-          "parentId": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag::5",
-          "parentItemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
-        }
-      ],
+      "componentRequirements": [],
       "requirements": [
         {
           "itemKey": "/Lotus/Types/Items/MiscItems/NarmerBountyResource",
@@ -46601,6 +45904,12 @@
           "name": "Anomaly Shard",
           "count": 5,
           "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag",
+          "name": "Exceptional Sentient Core",
+          "count": 5,
+          "craftable": true
         },
         {
           "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
@@ -46740,68 +46049,7 @@
       "slot": 5,
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/NewWar/ArchonWhipBlueprint",
-      "componentRequirements": [
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::1",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::2",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::3",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::4",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::5",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::6",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::7",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::8",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::9",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        },
-        {
-          "id": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag::10",
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
-          "name": "Intact Sentient Core",
-          "level": 0
-        }
-      ],
+      "componentRequirements": [],
       "requirements": [
         {
           "itemKey": "/Lotus/Types/Items/MiscItems/NarmerBountyResource",
@@ -46813,6 +46061,12 @@
           "itemKey": "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishBPartItem",
           "name": "Mortus Horn",
           "count": 20,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag",
+          "name": "Intact Sentient Core",
+          "count": 10,
           "craftable": false
         },
         {

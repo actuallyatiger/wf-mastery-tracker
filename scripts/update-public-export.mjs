@@ -44,7 +44,6 @@ const WEAPON_COMPONENT_NAME_SUFFIXES = new Set([
   'glove',
   'heatsink',
   'motor',
-  'core',
 ])
 
 function parseArgs(argv) {
