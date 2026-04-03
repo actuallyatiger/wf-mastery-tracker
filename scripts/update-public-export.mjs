@@ -5,6 +5,7 @@ import { spawnSync } from 'node:child_process'
 
 const ORIGIN_BASE = 'https://origin.warframe.com/PublicExport'
 const CONTENT_BASE = 'https://content.warframe.com/PublicExport'
+const INDEX_BASES = [ORIGIN_BASE, CONTENT_BASE]
 const CORE_WEAPON_CATEGORIES = new Set(['LongGuns', 'Pistols', 'Melee'])
 const COMPONENT_RECIPE_FAMILY_MATCHERS = [
   '/Types/Recipes/Weapons/',
@@ -86,7 +87,12 @@ function titleCaseFromSlug(value) {
 }
 
 async function fetchBuffer(url) {
-  const response = await fetch(url)
+  const response = await fetch(url, {
+    headers: {
+      'User-Agent': 'wf-mastery-tracker-updater/1.0 (+https://github.com)',
+      Accept: '*/*',
+    },
+  })
   if (!response.ok) {
     throw new Error(`Request failed (${response.status}) for ${url}`)
   }
@@ -95,7 +101,12 @@ async function fetchBuffer(url) {
 }
 
 async function fetchJson(url) {
-  const response = await fetch(url)
+  const response = await fetch(url, {
+    headers: {
+      'User-Agent': 'wf-mastery-tracker-updater/1.0 (+https://github.com)',
+      Accept: 'application/json,*/*;q=0.9',
+    },
+  })
   if (!response.ok) {
     throw new Error(`Request failed (${response.status}) for ${url}`)
   }
@@ -384,8 +395,25 @@ function buildBlueprintNameLookup({ recipesRaw, nameLookup }) {
 async function main() {
   const options = parseArgs(process.argv.slice(2))
 
-  const indexUrl = `${ORIGIN_BASE}/index_${options.language}.txt.lzma`
-  const indexBuffer = await fetchBuffer(indexUrl)
+  let indexUrl = ''
+  let indexBuffer = null
+  let lastIndexError = null
+
+  for (const base of INDEX_BASES) {
+    const candidate = `${base}/index_${options.language}.txt.lzma`
+    try {
+      indexBuffer = await fetchBuffer(candidate)
+      indexUrl = candidate
+      break
+    } catch (error) {
+      lastIndexError = error
+    }
+  }
+
+  if (!indexBuffer || !indexUrl) {
+    throw lastIndexError ?? new Error('Could not fetch Public Export index from any source.')
+  }
+
   const indexText = decompressIndex(indexBuffer)
   const indexEntries = parseIndexEntries(indexText)
 
