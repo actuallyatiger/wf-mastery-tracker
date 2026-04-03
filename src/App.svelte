@@ -49,6 +49,7 @@
   let hideSubsumed = false
   let sortBy = 'name-asc'
   let showSettings = false
+  let settingsAnchorElement
 
   async function loadData() {
     loading = true
@@ -535,6 +536,33 @@
     persist()
   }
 
+  function closeOpenMenus() {
+    document.querySelectorAll('.filter-menu[open]').forEach((menu) => {
+      menu.removeAttribute('open')
+    })
+  }
+
+  function onGlobalPointerDown(event) {
+    const target = event.target
+    if (!(target instanceof Node)) {
+      return
+    }
+
+    if (showSettings && settingsAnchorElement && !settingsAnchorElement.contains(target)) {
+      showSettings = false
+    }
+
+    const openMenus = Array.from(document.querySelectorAll('.filter-menu[open]'))
+    if (openMenus.length === 0) {
+      return
+    }
+
+    const clickedInsideOpenMenu = openMenus.some((menu) => menu.contains(target))
+    if (!clickedInsideOpenMenu) {
+      closeOpenMenus()
+    }
+  }
+
   $: tabItems = getFilteredByTab(activeTab, data.warframes, data.weapons)
 
   $: variantFilterVisible = ['warframes', 'archwings', 'primary', 'secondary', 'melee'].includes(activeTab)
@@ -636,6 +664,8 @@
       media.addListener(onThemeChange)
     }
 
+    document.addEventListener('pointerdown', onGlobalPointerDown)
+
     loadData()
     applyTheme(progress.settings.theme)
 
@@ -645,6 +675,8 @@
       } else {
         media.removeListener(onThemeChange)
       }
+
+      document.removeEventListener('pointerdown', onGlobalPointerDown)
     }
   })
 </script>
@@ -656,7 +688,7 @@
         <h1>Warframe Mastery Tracker</h1>
         <p class="subtitle">Track blueprints, crafted status, and mastery.</p>
       </div>
-      <div class="settings-anchor header-actions">
+      <div class="settings-anchor header-actions" bind:this={settingsAnchorElement}>
         <a
           class="icon-button icon-link"
           href="https://github.com/actuallyatiger/wf-mastery-tracker"
