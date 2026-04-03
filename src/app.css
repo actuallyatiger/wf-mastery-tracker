@@ -13,6 +13,8 @@
   --accent-strong: #1f43a8;
   --danger: #ba3e38;
   --danger-bg: #fff2f2;
+  --divider-soft: rgba(24, 32, 42, 0.12);
+  --tree-line: #aeb9c8;
   --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
   --font-body: 'Manrope', 'Segoe UI', sans-serif;
 }
@@ -32,6 +34,8 @@
   --accent-strong: #7d98e8;
   --danger: #ff9a92;
   --danger-bg: #2a1717;
+  --divider-soft: rgba(241, 241, 244, 0.12);
+  --tree-line: #6a7280;
 }
 
 * {
@@ -416,18 +420,126 @@ button.active {
   -webkit-user-select: none;
 }
 
-.component-list {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.6rem;
-  background: var(--panel-soft);
+.blueprints-section {
+  margin-top: 0.15rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
 }
 
-.component-list p {
+.blueprints-heading {
   margin: 0 0 0.5rem;
   font-weight: 600;
   user-select: none;
   -webkit-user-select: none;
+}
+
+.component-row {
+  position: relative;
+}
+
+.component-row-text {
+  position: relative;
+  display: inline-block;
+}
+
+.tree-guides {
+  display: inline-flex;
+  align-items: stretch;
+  margin-right: 0;
+}
+
+.tree-guide {
+  position: relative;
+  flex: 0 0 0.98rem;
+  width: 0.98rem;
+  height: 1.15rem;
+}
+
+.tree-guide.pipe::before,
+.tree-guide.tee::before,
+.tree-guide.tee-root::before,
+.tree-guide.elbow::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  border-left: 1px solid var(--tree-line);
+}
+
+.tree-guide.pipe::before,
+.tree-guide.tee::before {
+  top: -0.25rem;
+  bottom: -0.25rem;
+}
+
+.tree-guide.tee-root::before {
+  top: 0.2rem;
+  bottom: -0.25rem;
+}
+
+.tree-guide.elbow::before {
+  top: -0.25rem;
+  bottom: 50%;
+}
+
+.tree-guide.tee::after,
+.tree-guide.tee-root::after,
+.tree-guide.elbow::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 0.12rem;
+  top: 50%;
+  border-top: 1px solid var(--tree-line);
+}
+
+.component-row {
+  gap: 0.35rem;
+}
+
+.component-row-text[data-tooltip]:hover::after,
+.component-row-text[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.component-row-text[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.3rem);
+  width: max-content;
+  max-width: min(40rem, calc(100vw - 3rem));
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  font-size: 0.84rem;
+  line-height: 1.35;
+  white-space: pre;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: opacity 120ms ease, transform 120ms ease;
+  pointer-events: none;
+  z-index: 12;
+}
+
+.component-row-nested {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.component-row-deep {
+  padding-left: 0;
+}
+
+.component-row-deep > input[type='checkbox'] {
+  margin-left: 0.28rem;
+}
+
+.component-row-deep .tree-guide:last-child {
+  transform: translateX(0.32rem);
 }
 
 ul {
@@ -446,6 +558,11 @@ ul {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: auto;
+}
+
+.toggle-grid.with-blueprint-divider {
+  border-top: 1px solid var(--divider-soft);
+  padding-top: 0.42rem;
 }
 
 .status {

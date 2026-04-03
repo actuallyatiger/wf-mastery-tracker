@@ -345,8 +345,133 @@
     return item.componentRequirements ?? []
   }
 
+  function getMainBlueprintName(item) {
+    if (!item.mainBlueprintKey) {
+      return `${cleanDisplayName(item.name)} Blueprint`
+    }
+
+    return data.blueprints?.[item.mainBlueprintKey] ?? `${cleanDisplayName(item.name)} Blueprint`
+  }
+
+  function getBlueprintRows(item) {
+    const rows = []
+
+    if (item.mainBlueprintKey) {
+      rows.push({
+        kind: 'main',
+        id: item.mainBlueprintKey,
+        itemKey: item.mainBlueprintKey,
+        name: getMainBlueprintName(item),
+        level: 0,
+      })
+    }
+
+    for (const requirement of getComponentRequirements(item)) {
+      rows.push({
+        kind: 'component',
+        ...requirement,
+        level: Number(requirement.level ?? 0) + (item.mainBlueprintKey ? 1 : 0),
+      })
+    }
+
+    return rows
+  }
+
+  function formatRequirementTooltip(requirements) {
+    const lines = Array.isArray(requirements)
+      ? requirements.map((requirement) => {
+        const count = Math.max(1, Number(requirement.count ?? 1))
+        const name = cleanDisplayName(requirement.name)
+        return count === 1 ? name : `${name} x${count}`
+      })
+      : []
+
+    if (lines.length === 0) {
+      return 'Resources Required:\nNone'
+    }
+
+    return `Resources Required:\n${lines.join('\n')}`
+  }
+
+  function getBlueprintTooltip(item, row) {
+    if (row.kind === 'main') {
+      return formatRequirementTooltip(item.requirements ?? [])
+    }
+
+    const requirements = data.components?.[row.itemKey]?.requirements ?? []
+    return formatRequirementTooltip(requirements)
+  }
+
+  function getBlueprintTreeGuides(rows, index) {
+    const row = rows[index]
+    const level = Number(row?.level ?? 0)
+    if (level <= 0) {
+      return []
+    }
+
+    function findAncestorIndex(targetDepth) {
+      for (let i = index - 1; i >= 0; i -= 1) {
+        const candidateLevel = Number(rows[i]?.level ?? 0)
+        if (candidateLevel < targetDepth) {
+          return -1
+        }
+        if (candidateLevel === targetDepth) {
+          return i
+        }
+      }
+      return -1
+    }
+
+    function hasNextSiblingAtDepth(fromIndex, targetDepth) {
+      for (let i = fromIndex + 1; i < rows.length; i += 1) {
+        const nextLevel = Number(rows[i]?.level ?? 0)
+        if (nextLevel < targetDepth) {
+          break
+        }
+        if (nextLevel === targetDepth) {
+          return true
+        }
+      }
+
+      return false
+    }
+
+    function hasPreviousSiblingAtDepth(fromIndex, targetDepth) {
+      for (let i = fromIndex - 1; i >= 0; i -= 1) {
+        const previousLevel = Number(rows[i]?.level ?? 0)
+        if (previousLevel < targetDepth) {
+          break
+        }
+        if (previousLevel === targetDepth) {
+          return true
+        }
+      }
+
+      return false
+    }
+
+    const guides = []
+
+    for (let depth = 1; depth < level; depth += 1) {
+      const ancestorIndex = findAncestorIndex(depth)
+      const ancestorHasNextSibling =
+        ancestorIndex >= 0 && hasNextSiblingAtDepth(ancestorIndex, depth)
+      guides.push(ancestorHasNextSibling ? 'pipe' : 'blank')
+    }
+
+    const hasNextSibling = hasNextSiblingAtDepth(index, level)
+    const hasPreviousSibling = hasPreviousSiblingAtDepth(index, level)
+
+    if (hasNextSibling) {
+      guides.push(hasPreviousSibling ? 'tee' : 'tee-root')
+    } else {
+      guides.push('elbow')
+    }
+    return guides
+  }
+
   function getComponentRequirementId(requirement, index) {
-    return `${requirement.itemKey}::${index + 1}`
+    return requirement.id ?? `${requirement.itemKey}::${index + 1}`
   }
 
   function getOwnedBlueprintCount(item) {
@@ -895,7 +1020,7 @@
     <section class="grid">
       {#each currentItems as item}
         {@const state = getItemState(item)}
-        {@const requirements = getComponentRequirements(item)}
+        {@const hasBlueprintRows = getBlueprintRows(item).length > 0}
         <article class="card item-card">
           <div class="title-row">
             <h3>{cleanDisplayName(item.name)}</h3>
@@ -904,50 +1029,52 @@
             {/if}
           </div>
 
-          {#if item.mainBlueprintKey}
-            <label class="check-row">
-              <input
-                type="checkbox"
-                checked={state.mainBlueprintOwned}
-                on:change={(event) => toggleMainBlueprint(item, event.currentTarget.checked)}
-              />
-              Main blueprint owned
-            </label>
-          {/if}
+          {#if hasBlueprintRows}
+            {@const blueprintRows = getBlueprintRows(item)}
+            <div class="blueprints-section">
+              <p class="blueprints-heading">Blueprints</p>
+              {#each blueprintRows as row, index}
+                <label
+                  class="check-row component-row"
+                  class:component-row-nested={Number(row.level ?? 0) > 0}
+                  class:component-row-deep={Number(row.level ?? 0) > 1}
+                  style={`--blueprint-level:${Math.max(0, Number(row.level ?? 0))}`}
+                >
+                  {#if Number(row.level ?? 0) > 0}
+                    <span class="tree-guides" aria-hidden="true">
+                      {#each getBlueprintTreeGuides(blueprintRows, index) as guide}
+                        <span class={`tree-guide ${guide}`}></span>
+                      {/each}
+                    </span>
+                  {/if}
 
-          {#if requirements.length > 0}
-            <div class="component-list">
-              <p>Component blueprints</p>
-              {#each requirements as requirement, index}
-                {@const reqId = getComponentRequirementId(requirement, index)}
-                <label class="check-row">
-                  <input
-                    type="checkbox"
-                    checked={Boolean(state.componentBlueprintsOwned?.[reqId])}
-                    on:change={(event) =>
-                      toggleComponentBlueprint(item, requirement, index, event.currentTarget.checked)}
-                  />
-                  {cleanDisplayName(requirement.name)}
+                  {#if row.kind === 'main'}
+                    <input
+                      type="checkbox"
+                      checked={state.mainBlueprintOwned}
+                      on:change={(event) => toggleMainBlueprint(item, event.currentTarget.checked)}
+                    />
+                    <span class="component-row-text" data-tooltip={getBlueprintTooltip(item, row)}>
+                      {cleanDisplayName(row.name)}
+                    </span>
+                  {:else}
+                    {@const reqId = getComponentRequirementId(row, index)}
+                    <input
+                      type="checkbox"
+                      checked={Boolean(state.componentBlueprintsOwned?.[reqId])}
+                      on:change={(event) =>
+                        toggleComponentBlueprint(item, row, index, event.currentTarget.checked)}
+                    />
+                    <span class="component-row-text" data-tooltip={getBlueprintTooltip(item, row)}>
+                      {cleanDisplayName(row.name)}
+                    </span>
+                  {/if}
                 </label>
               {/each}
             </div>
           {/if}
 
-          <details>
-            <summary>Recipe requirements ({item.requirements.length})</summary>
-            {#if item.requirements.length === 0}
-              <p class="tiny">No requirements found.</p>
-            {:else}
-              <ul>
-                {#each item.requirements as requirement}
-                  {@const count = Math.max(1, requirement.count ?? 1)}
-                  <li>{count === 1 ? cleanDisplayName(requirement.name) : `${cleanDisplayName(requirement.name)} x${count}`}</li>
-                {/each}
-              </ul>
-            {/if}
-          </details>
-
-          <div class="toggle-grid">
+          <div class="toggle-grid" class:with-blueprint-divider={hasBlueprintRows}>
             <label class="check-row">
               <input
                 type="checkbox"

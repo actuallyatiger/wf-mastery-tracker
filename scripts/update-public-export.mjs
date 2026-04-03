@@ -256,8 +256,9 @@ function isLikelyWeaponComponentIngredient(itemType, requirementName) {
   return WEAPON_COMPONENT_NAME_SUFFIXES.has(suffix)
 }
 
-function buildComponentRequirements({ ingredientRows, recipesByResult, nameLookup }) {
+function buildComponentRequirements({ ingredientRows, recipesByResult, nameLookup, majorItemKeys }) {
   const componentRequirements = []
+  const parentInstanceCounts = new Map()
 
   for (const ingredient of ingredientRows) {
     const itemKey = ingredient?.ItemType
@@ -266,28 +267,91 @@ function buildComponentRequirements({ ingredientRows, recipesByResult, nameLooku
     }
 
     const requirementName = nameLookup.get(itemKey) ?? titleCaseFromSlug(itemKey)
-    if (
-      !isComponentBlueprintIngredient(itemKey, recipesByResult) &&
-      !isLikelyWeaponComponentIngredient(itemKey, requirementName)
-    ) {
+    const isComponentBlueprint = isComponentBlueprintIngredient(itemKey, recipesByResult)
+    const isWeaponComponent = isLikelyWeaponComponentIngredient(itemKey, requirementName)
+    const isMajorItemIngredient = majorItemKeys.has(itemKey)
+
+    if (!isComponentBlueprint && !isWeaponComponent && !isMajorItemIngredient) {
       continue
     }
 
     const count = Number(ingredient.ItemCount ?? 1)
 
+    // If a major blueprint is required (for example Equinox Day/Night Aspects),
+    // also include its own component blueprint requirements one level down.
+    if (!isComponentBlueprint && !isMajorItemIngredient) {
+      continue
+    }
+
+    const nestedRecipe = recipesByResult.get(itemKey)
+    const nestedIngredientRows = nestedRecipe?.ingredients ?? []
+
     for (let i = 0; i < count; i += 1) {
+      const parentSequence = (parentInstanceCounts.get(itemKey) ?? 0) + 1
+      parentInstanceCounts.set(itemKey, parentSequence)
+      const parentId = `${itemKey}::${parentSequence}`
       componentRequirements.push({
-        id: `${itemKey}::${i + 1}`,
+        id: parentId,
         itemKey,
         name: requirementName,
+        level: 0,
       })
+
+      for (const nestedIngredient of nestedIngredientRows) {
+        const nestedItemKey = nestedIngredient?.ItemType
+        if (!nestedItemKey) {
+          continue
+        }
+
+        const nestedName = nameLookup.get(nestedItemKey) ?? titleCaseFromSlug(nestedItemKey)
+        if (
+          !isComponentBlueprintIngredient(nestedItemKey, recipesByResult) &&
+          !isLikelyWeaponComponentIngredient(nestedItemKey, nestedName) &&
+          !majorItemKeys.has(nestedItemKey)
+        ) {
+          continue
+        }
+
+        const nestedCount = Number(nestedIngredient.ItemCount ?? 1)
+        for (let nestedIndex = 0; nestedIndex < nestedCount; nestedIndex += 1) {
+          componentRequirements.push({
+            id: `${parentId}::${nestedItemKey}::${nestedIndex + 1}`,
+            itemKey: nestedItemKey,
+            name: nestedName,
+            level: 1,
+            parentId,
+            parentItemKey: itemKey,
+          })
+        }
+      }
     }
   }
 
   return componentRequirements
 }
 
-function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup }) {
+function buildNonComponentRequirements({ ingredientRows, recipesByResult, nameLookup, majorItemKeys }) {
+  return ingredientRows
+    .filter((ingredient) => ingredient?.ItemType)
+    .filter((ingredient) => {
+      const itemKey = ingredient.ItemType
+      const requirementName = nameLookup.get(itemKey) ?? titleCaseFromSlug(itemKey)
+
+      const isComponentBlueprint = isComponentBlueprintIngredient(itemKey, recipesByResult)
+      const isWeaponComponent = isLikelyWeaponComponentIngredient(itemKey, requirementName)
+      const isMajorItemIngredient = majorItemKeys.has(itemKey)
+
+      return !isComponentBlueprint && !isWeaponComponent && !isMajorItemIngredient
+    })
+    .map((ingredient) => ({
+      itemKey: ingredient.ItemType,
+      name: nameLookup.get(ingredient.ItemType) ?? titleCaseFromSlug(ingredient.ItemType),
+      count: Number(ingredient.ItemCount ?? 1),
+      craftable: recipesByResult.has(ingredient.ItemType),
+    }))
+}
+
+function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup, majorItemKeys }) {
   return warframesRaw
     .filter((frame) => frame?.uniqueName && frame?.name)
     .filter((frame) => ['Suits', 'SpaceSuits', 'MechSuits'].includes(frame.productCategory))
@@ -298,18 +362,14 @@ function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup }) {
         ingredientRows,
         recipesByResult,
         nameLookup,
+        majorItemKeys,
       })
-      const componentKeys = new Set(componentRequirements.map((requirement) => requirement.itemKey))
-
-      const requirements = ingredientRows
-        .filter((ingredient) => ingredient?.ItemType)
-        .filter((ingredient) => !componentKeys.has(ingredient.ItemType))
-        .map((ingredient) => ({
-          itemKey: ingredient.ItemType,
-          name: nameLookup.get(ingredient.ItemType) ?? titleCaseFromSlug(ingredient.ItemType),
-          count: Number(ingredient.ItemCount ?? 1),
-          craftable: recipesByResult.has(ingredient.ItemType),
-        }))
+      const requirements = buildNonComponentRequirements({
+        ingredientRows,
+        recipesByResult,
+        nameLookup,
+        majorItemKeys,
+      })
 
       return {
         id: frame.uniqueName,
@@ -328,7 +388,7 @@ function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup }) {
     .sort((a, b) => a.name.localeCompare(b.name))
 }
 
-function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllWeapons }) {
+function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllWeapons, majorItemKeys }) {
   return weaponsRaw
     .filter((weapon) => weapon?.uniqueName && weapon?.name)
     .filter((weapon) => includeAllWeapons || CORE_WEAPON_CATEGORIES.has(weapon.productCategory))
@@ -339,18 +399,14 @@ function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllW
         ingredientRows,
         recipesByResult,
         nameLookup,
+        majorItemKeys,
       })
-      const componentKeys = new Set(componentRequirements.map((requirement) => requirement.itemKey))
-
-      const requirements = ingredientRows
-        .filter((ingredient) => ingredient?.ItemType)
-        .filter((ingredient) => !componentKeys.has(ingredient.ItemType))
-        .map((ingredient) => ({
-          itemKey: ingredient.ItemType,
-          name: nameLookup.get(ingredient.ItemType) ?? titleCaseFromSlug(ingredient.ItemType),
-          count: Number(ingredient.ItemCount ?? 1),
-          craftable: recipesByResult.has(ingredient.ItemType),
-        }))
+      const requirements = buildNonComponentRequirements({
+        ingredientRows,
+        recipesByResult,
+        nameLookup,
+        majorItemKeys,
+      })
 
       return {
         id: weapon.uniqueName,
@@ -448,21 +504,41 @@ async function main() {
 
   const nameLookup = buildNameLookup({ warframesRaw, weaponsRaw, resourcesRaw })
 
-  const warframes = normalizeWarframes({ warframesRaw, recipesByResult, nameLookup })
+  const majorItemKeys = new Set([
+    ...warframesRaw
+      .filter((frame) => ['Suits', 'SpaceSuits', 'MechSuits'].includes(frame?.productCategory))
+      .map((frame) => frame?.uniqueName)
+      .filter(Boolean),
+    ...weaponsRaw
+      .filter((weapon) => CORE_WEAPON_CATEGORIES.has(weapon?.productCategory))
+      .map((weapon) => weapon?.uniqueName)
+      .filter(Boolean),
+  ])
+
+  const warframes = normalizeWarframes({ warframesRaw, recipesByResult, nameLookup, majorItemKeys })
   const weapons = normalizeWeapons({
     weaponsRaw,
     recipesByResult,
     nameLookup,
     includeAllWeapons: options.includeAllWeapons,
+    majorItemKeys,
   })
 
   const componentMap = {}
   for (const item of [...warframes, ...weapons]) {
     for (const requirement of item.componentRequirements) {
       const componentKey = requirement.itemKey
+      const componentRecipe = recipesByResult.get(componentKey)
+      const componentIngredientRows = componentRecipe?.ingredients ?? []
       componentMap[componentKey] = {
         uniqueName: componentKey,
         name: nameLookup.get(componentKey) ?? titleCaseFromSlug(componentKey),
+        requirements: buildNonComponentRequirements({
+          ingredientRows: componentIngredientRows,
+          recipesByResult,
+          nameLookup,
+          majorItemKeys,
+        }),
       }
     }
   }
