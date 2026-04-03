@@ -300,6 +300,10 @@ ul {
   padding-left: 1rem;
 }
 
+.item-card details > summary {
+  cursor: pointer;
+}
+
 .toggle-grid {
   display: flex;
   flex-wrap: wrap;
@@ -345,7 +349,38 @@ footer {
     flex-direction: column;
   }
 
+  .tab-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.2rem;
+  }
+
+  .tab-row button {
+    white-space: nowrap;
+  }
+
   .controls > input {
     min-width: unset;
+  }
+
+  .controls > select,
+  .filter-menu {
+    width: 100%;
+  }
+
+  .filter-menu > summary {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .filter-list {
+    left: 0;
+    right: 0;
+    min-width: unset;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }

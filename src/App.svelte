@@ -498,7 +498,7 @@
     <div class="header-row">
       <div>
         <h1>Warframe Mastery Tracker</h1>
-        <p class="subtitle">Track blueprints, crafted status, and mastery from Public Export data.</p>
+        <p class="subtitle">Track blueprints, crafted status, and mastery.</p>
       </div>
       <div class="settings-anchor">
         <button class="icon-button" on:click={() => (showSettings = !showSettings)} aria-label="Open settings">⚙</button>
@@ -599,11 +599,11 @@
   {:else if currentItems.length === 0}
     {#if tabItems.length > 0}
       <div class="status">
-        <p>No items match your current filters.</p>
+        <p>No items match your current filters since the last data update.</p>
         <button on:click={resetFilters}>Reset filters</button>
       </div>
     {:else}
-      <p class="status">No items available for this tab in the current dataset.</p>
+      <p class="status">No items available for this tab since the last data update.</p>
     {/if}
   {:else}
     <section class="grid">
@@ -648,7 +648,7 @@
           <details>
             <summary>Recipe requirements ({item.requirements.length})</summary>
             {#if item.requirements.length === 0}
-              <p class="tiny">No recipe requirements found in current export.</p>
+              <p class="tiny">No requirements found.</p>
             {:else}
               <ul>
                 {#each item.requirements as requirement}
