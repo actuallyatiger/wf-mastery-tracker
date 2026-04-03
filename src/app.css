@@ -272,7 +272,6 @@ button.active {
   display: block;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .filter-menu > summary::before {
