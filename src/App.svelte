@@ -54,7 +54,6 @@
   async function loadData() {
     loading = true
     error = ''
-
     try {
       const response = await fetch(`${import.meta.env.BASE_URL}data/items.json`)
       if (!response.ok) {
@@ -71,12 +70,70 @@
       }
 
       hydrateStoredProgress()
+      migrateLegacyProgressFormat()
       applyTheme(progress.settings.theme)
     } catch (loadError) {
       error = loadError.message
     } finally {
       loading = false
     }
+  }
+
+  function migrateLegacyProgressFormat() {
+    const allItems = [...(data.warframes ?? []), ...(data.weapons ?? [])]
+    if (allItems.length === 0) {
+      return false
+    }
+
+    const itemsById = new Map(allItems.map((item) => [item.id, item]))
+    const nextItems = { ...(progress.items ?? {}) }
+    let migratedAny = false
+
+    for (const [itemId, itemState] of Object.entries(progress.items ?? {})) {
+      const item = itemsById.get(itemId)
+      if (!item || !itemState || typeof itemState !== 'object') {
+        continue
+      }
+
+      const requirements = getComponentRequirements(item)
+      if (requirements.length === 0) {
+        continue
+      }
+
+      const migratedOwned = {}
+      for (let i = 0; i < requirements.length; i += 1) {
+        const requirement = requirements[i]
+        if (isComponentRequirementOwned(itemState, requirement, i, requirements)) {
+          migratedOwned[getComponentRequirementId(requirement, i)] = true
+        }
+      }
+
+      const currentOwned = itemState.componentBlueprintsOwned ?? {}
+      const currentTrueKeys = Object.keys(currentOwned).filter((key) => currentOwned[key])
+      const migratedKeys = Object.keys(migratedOwned)
+
+      const keysMatch =
+        currentTrueKeys.length === migratedKeys.length &&
+        currentTrueKeys.every((key) => migratedOwned[key])
+
+      if (!keysMatch) {
+        nextItems[itemId] = {
+          ...itemState,
+          componentBlueprintsOwned: migratedOwned,
+        }
+        migratedAny = true
+      }
+    }
+
+    if (migratedAny) {
+      progress = {
+        ...progress,
+        items: nextItems,
+      }
+      persist()
+    }
+
+    return migratedAny
   }
 
   function resolveTheme(setting) {
@@ -366,10 +423,11 @@
       })
     }
 
-    for (const requirement of getComponentRequirements(item)) {
+    for (const [componentIndex, requirement] of getComponentRequirements(item).entries()) {
       rows.push({
         kind: 'component',
         ...requirement,
+        componentIndex,
         level: Number(requirement.level ?? 0) + (item.mainBlueprintKey ? 1 : 0),
       })
     }
@@ -474,14 +532,52 @@
     return requirement.id ?? `${requirement.itemKey}::${index + 1}`
   }
 
+  function getLegacyComponentRequirementId(requirement, index) {
+    if (!requirement?.itemKey) {
+      return null
+    }
+    return `${String(requirement.itemKey)}::${index + 1}`
+  }
+
+  function getComponentRequirementAliases(requirement, index) {
+    const aliases = new Set([getComponentRequirementId(requirement, index)])
+    const legacyId = getLegacyComponentRequirementId(requirement, index)
+    if (legacyId) {
+      aliases.add(legacyId)
+    }
+    return aliases
+  }
+
+  function isComponentRequirementOwned(state, requirement, index, requirements = null) {
+    const owned = state.componentBlueprintsOwned ?? {}
+    const aliases = getComponentRequirementAliases(requirement, index)
+
+    for (const alias of aliases) {
+      if (owned[alias]) {
+        return true
+      }
+    }
+
+    if (!requirement?.itemKey || !owned[String(requirement.itemKey)]) {
+      return false
+    }
+
+    // Legacy fallback for very old saves that stored raw item keys with no instance suffix.
+    if (Array.isArray(requirements)) {
+      const sameKeyCount = requirements.filter((row) => row.itemKey === requirement.itemKey).length
+      return sameKeyCount === 1
+    }
+
+    return false
+  }
+
   function getOwnedBlueprintCount(item) {
     const state = ensureItemState(item)
     const requirements = getComponentRequirements(item)
     let owned = state.mainBlueprintOwned && item.mainBlueprintKey ? 1 : 0
 
     for (let i = 0; i < requirements.length; i += 1) {
-      const requirementId = getComponentRequirementId(requirements[i], i)
-      if (state.componentBlueprintsOwned?.[requirementId]) {
+      if (isComponentRequirementOwned(state, requirements[i], i, requirements)) {
         owned += 1
       }
     }
@@ -497,8 +593,8 @@
     const state = ensureItemState(item)
     const requirements = getComponentRequirements(item)
     const hasMain = item.mainBlueprintKey ? state.mainBlueprintOwned : true
-    const hasComponents = requirements.every(
-      (requirement, index) => state.componentBlueprintsOwned?.[getComponentRequirementId(requirement, index)]
+    const hasComponents = requirements.every((requirement, index) =>
+      isComponentRequirementOwned(state, requirement, index, requirements)
     )
     return hasMain && hasComponents
   }
@@ -574,12 +670,19 @@
 
   function toggleComponentBlueprint(item, requirement, index, value) {
     const state = ensureItemState(item)
-    const requirementId = getComponentRequirementId(requirement, index)
+    const currentOwned = { ...(state.componentBlueprintsOwned ?? {}) }
+    const aliases = getComponentRequirementAliases(requirement, index)
 
-    state.componentBlueprintsOwned = {
-      ...(state.componentBlueprintsOwned ?? {}),
-      [requirementId]: value,
+    if (value) {
+      const canonicalId = getComponentRequirementId(requirement, index)
+      currentOwned[canonicalId] = true
+    } else {
+      for (const key of aliases) {
+        delete currentOwned[key]
+      }
     }
+
+    state.componentBlueprintsOwned = currentOwned
     persist()
   }
 
@@ -660,9 +763,12 @@
   }
 
   function clearProgress() {
-    if (!confirm('Clear all tracked progress?')) return
+    if (!confirm('Clear all tracked progress? This cannot be undone.')) return
     progress = {
-      settings: { ...DEFAULT_SETTINGS },
+      settings: {
+        ...DEFAULT_SETTINGS,
+        theme: progress.settings.theme,
+      },
       items: {},
     }
     persist()
@@ -1058,12 +1164,22 @@
                       {cleanDisplayName(row.name)}
                     </span>
                   {:else}
-                    {@const reqId = getComponentRequirementId(row, index)}
+                    {@const componentIndex = Number(row.componentIndex ?? index)}
                     <input
                       type="checkbox"
-                      checked={Boolean(state.componentBlueprintsOwned?.[reqId])}
+                      checked={isComponentRequirementOwned(
+                        state,
+                        row,
+                        componentIndex,
+                        getComponentRequirements(item)
+                      )}
                       on:change={(event) =>
-                        toggleComponentBlueprint(item, row, index, event.currentTarget.checked)}
+                        toggleComponentBlueprint(
+                          item,
+                          row,
+                          componentIndex,
+                          event.currentTarget.checked
+                        )}
                     />
                     <span class="component-row-text" data-tooltip={getBlueprintTooltip(item, row)}>
                       {cleanDisplayName(row.name)}
