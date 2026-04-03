@@ -209,17 +209,17 @@
     const options = ['normal', 'prime', ...(variantFilterHasLichOption ? ['lich'] : [])]
 
     if (selected.length === options.length) {
-      return `Variant filter: ${options
+      return options
         .map((key) => (key === 'lich' ? 'Kuva/Tenet/Coda' : key === 'prime' ? 'Prime' : 'Normal'))
-        .join(' + ')}`
+        .join(' + ')
     }
 
-    if (selected.length === 0) return 'Variant filter: None'
+    if (selected.length === 0) return 'None'
 
     const labels = selected.map((key) =>
       key === 'lich' ? 'Kuva/Tenet/Coda' : key === 'prime' ? 'Prime' : 'Normal'
     )
-    return `Variant filter: ${labels.join(' + ')}`
+    return labels.join(' + ')
   }
 
   function matchesVariantSelectionForCurrentTab(item) {
