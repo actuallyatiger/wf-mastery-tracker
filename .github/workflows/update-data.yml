@@ -6,6 +6,7 @@ on:
     - cron: '0 7 * * 1'
 
 permissions:
+  actions: write
   contents: write
 
 jobs:
@@ -29,6 +30,7 @@ jobs:
         run: npm run update:data
 
       - name: Commit data changes
+        id: commit_changes
         run: |
           if [[ -n "$(git status --porcelain public/data/items.json)" ]]; then
             git config user.name "${GITHUB_ACTOR}"
@@ -36,6 +38,18 @@ jobs:
             git add public/data/items.json
             git commit -m "chore: update Public Export dataset"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "No dataset changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Trigger Pages deploy
+        if: steps.commit_changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api \
+            --method POST \
+            "repos/${{ github.repository }}/actions/workflows/pages.yml/dispatches" \
+            -f ref=main
