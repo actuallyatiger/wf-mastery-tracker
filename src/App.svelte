@@ -120,6 +120,12 @@
       .trim()
   }
 
+  function getNameSortKey(name) {
+    return cleanDisplayName(name)
+      .replace(/^(?:kuva|tenet|coda)\s+/i, '')
+      .trim()
+  }
+
   function isLichVariant(item) {
     if (item.variant === 'lich') {
       return true
@@ -304,11 +310,19 @@
   function sortItems(items, sortState) {
     const next = [...items]
     if (sortState.mode === 'name-asc') {
-      next.sort((a, b) => cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name)))
+      next.sort(
+        (a, b) =>
+          getNameSortKey(a.name).localeCompare(getNameSortKey(b.name)) ||
+          cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
+      )
       return next
     }
     if (sortState.mode === 'name-desc') {
-      next.sort((a, b) => cleanDisplayName(b.name).localeCompare(cleanDisplayName(a.name)))
+      next.sort(
+        (a, b) =>
+          getNameSortKey(b.name).localeCompare(getNameSortKey(a.name)) ||
+          cleanDisplayName(b.name).localeCompare(cleanDisplayName(a.name))
+      )
       return next
     }
     if (sortState.mode === 'mr-asc') {
