@@ -2,6 +2,10 @@
   --bg: #ffffff;
   --bg-strong: #f5f7fb;
   --panel: #ffffff;
+  --panel-soft: #fbfcff;
+  --input-bg: #ffffff;
+  --button-bg: #f1f6ff;
+  --bg-top: #f7faff;
   --text: #18202a;
   --text-dim: #546174;
   --border: #d5deea;
@@ -12,13 +16,29 @@
   --font-body: 'Manrope', 'Segoe UI', sans-serif;
 }
 
+:root[data-theme='dark'] {
+  --bg: #0f141c;
+  --bg-strong: #1a2230;
+  --panel: #111925;
+  --panel-soft: #172334;
+  --input-bg: #121b28;
+  --button-bg: #1a2b46;
+  --bg-top: #111b2a;
+  --text: #e7edf7;
+  --text-dim: #9cb0ca;
+  --border: #2a3a52;
+  --accent: #7aa2ff;
+  --accent-strong: #5f88ea;
+  --danger: #ff8f88;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #f7faff 0%, #ffffff 38%, #ffffff 100%);
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 38%, var(--bg) 100%);
   color: var(--text);
   font-family: var(--font-body);
 }
@@ -114,7 +134,8 @@ input:not([type='checkbox']) {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.5rem 0.65rem;
-  background: white;
+  background: var(--input-bg);
+  color: var(--text);
 }
 
 input[type='checkbox'] {
@@ -138,7 +159,7 @@ button,
 .file-upload {
   border: 1px solid var(--accent);
   color: var(--accent);
-  background: #f1f6ff;
+  background: var(--button-bg);
   border-radius: 10px;
   padding: 0.45rem 0.7rem;
   cursor: pointer;
@@ -217,7 +238,7 @@ button.active {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.5rem 0.65rem;
-  background: white;
+  background: var(--input-bg);
   cursor: pointer;
   min-width: 220px;
   display: flex;
@@ -254,7 +275,7 @@ button.active {
   padding: 0.55rem;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: white;
+  background: var(--input-bg);
   box-shadow: 0 10px 24px rgba(24, 32, 42, 0.12);
 }
 
@@ -337,7 +358,7 @@ button.active {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.6rem;
-  background: #fbfcff;
+  background: var(--panel-soft);
 }
 
 .component-list p {

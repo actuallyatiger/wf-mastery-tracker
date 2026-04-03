@@ -4,6 +4,7 @@
   const STORAGE_KEY = 'wf-mastery-tracker-v2'
   const DEFAULT_SETTINGS = {
     craftedMode: 'manual',
+    theme: 'system',
   }
 
   const TABS = [
@@ -66,11 +67,25 @@
       }
 
       hydrateStoredProgress()
+      applyTheme(progress.settings.theme)
     } catch (loadError) {
       error = loadError.message
     } finally {
       loading = false
     }
+  }
+
+  function resolveTheme(setting) {
+    if (setting === 'light' || setting === 'dark') {
+      return setting
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  function applyTheme(setting) {
+    const theme = resolveTheme(setting)
+    document.documentElement.dataset.theme = theme
   }
 
   function hydrateStoredProgress() {
@@ -409,6 +424,15 @@
     persist()
   }
 
+  function setTheme(value) {
+    progress.settings = {
+      ...progress.settings,
+      theme: value,
+    }
+    persist()
+    applyTheme(value)
+  }
+
   function exportProgress() {
     const serialized = JSON.stringify(progress, null, 2)
     const blob = new Blob([serialized], { type: 'application/json' })
@@ -502,7 +526,31 @@
     { blueprintOwned: 0, blueprintTotal: 0, ready: 0, crafted: 0, mastered: 0, subsumed: 0 }
   )
 
-  onMount(loadData)
+  onMount(() => {
+    const media = window.matchMedia('(prefers-color-scheme: dark)')
+    const onThemeChange = () => {
+      if (progress.settings.theme === 'system') {
+        applyTheme('system')
+      }
+    }
+
+    if (media.addEventListener) {
+      media.addEventListener('change', onThemeChange)
+    } else {
+      media.addListener(onThemeChange)
+    }
+
+    loadData()
+    applyTheme(progress.settings.theme)
+
+    return () => {
+      if (media.removeEventListener) {
+        media.removeEventListener('change', onThemeChange)
+      } else {
+        media.removeListener(onThemeChange)
+      }
+    }
+  })
 </script>
 
 <main>
@@ -526,6 +574,18 @@
               >
                 <option value="manual">Manual crafted toggle (default)</option>
                 <option value="auto">Auto crafted from required blueprints</option>
+              </select>
+            </label>
+
+            <label>
+              Theme
+              <select
+                value={progress.settings.theme}
+                on:change={(event) => setTheme(event.currentTarget.value)}
+              >
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="system">System</option>
               </select>
             </label>
 
