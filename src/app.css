@@ -236,16 +236,11 @@ button.active {
   border-right: 2px solid var(--text-dim);
   border-bottom: 2px solid var(--text-dim);
   transform: rotate(45deg) translateY(-1px);
-  transition: transform 150ms ease;
   transform-origin: center;
 }
 
 .filter-menu[open] > summary {
   border-color: var(--accent);
-}
-
-.filter-menu[open] > summary::after {
-  transform: rotate(-135deg) translateY(-1px);
 }
 
 .filter-list {
@@ -267,6 +262,30 @@ button.active {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.sort-menu .filter-list {
+  padding: 0.35rem;
+}
+
+.sort-menu .filter-list button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+}
+
+.sort-menu .filter-list button:hover,
+.sort-menu .filter-list button:focus-visible {
+  background: var(--bg-strong);
+}
+
+.sort-menu .filter-list button.active {
+  background: var(--accent);
+  color: #fff;
 }
 
 .stats {
@@ -396,7 +415,8 @@ footer {
   }
 
   .controls > select,
-  .filter-menu {
+  .filter-menu,
+  .sort-menu {
     width: 100%;
   }
 

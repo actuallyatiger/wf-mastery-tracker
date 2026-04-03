@@ -15,6 +15,14 @@
     { id: 'melee', label: 'Melee' },
   ]
 
+  const SORT_OPTIONS = [
+    { value: 'name-asc', label: 'A to Z' },
+    { value: 'name-desc', label: 'Z to A' },
+    { value: 'mr-asc', label: 'MR (Ascending)' },
+    { value: 'mr-desc', label: 'MR (Descending)' },
+    { value: 'progress-desc', label: 'Blueprint Progress' },
+  ]
+
   let data = {
     warframes: [],
     weapons: [],
@@ -226,6 +234,10 @@
       key === 'lich' ? 'Kuva/Tenet/Coda' : key === 'prime' ? 'Prime' : 'Normal'
     )
     return labels.join(' + ')
+  }
+
+  function getSortLabel() {
+    return SORT_OPTIONS.find((option) => option.value === sortBy)?.label ?? 'A to Z'
   }
 
   function matchesVariantSelectionForCurrentTab(item, filterState) {
@@ -586,13 +598,26 @@
         </details>
       {/if}
 
-      <select bind:value={sortBy}>
-        <option value="name-asc">A to Z</option>
-        <option value="name-desc">Z to A</option>
-        <option value="mr-asc">MR (Ascending)</option>
-        <option value="mr-desc">MR (Descending)</option>
-        <option value="progress-desc">Blueprint Progress</option>
-      </select>
+      <details class="filter-menu sort-menu">
+        <summary>{getSortLabel()}</summary>
+        <div class="filter-list">
+          {#each SORT_OPTIONS as option}
+            <button
+              type="button"
+              class:active={sortBy === option.value}
+              on:click={(event) => {
+                sortBy = option.value
+                const parent = event.currentTarget.closest('details')
+                if (parent) {
+                  parent.removeAttribute('open')
+                }
+              }}
+            >
+              {option.label}
+            </button>
+          {/each}
+        </div>
+      </details>
     </div>
 
     <div class="stats">
