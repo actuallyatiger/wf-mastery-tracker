@@ -265,7 +265,8 @@ button.active {
 }
 
 .sort-menu .filter-list {
-  padding: 0.35rem;
+  gap: 0.2rem;
+  padding: 0.3rem;
 }
 
 .sort-menu .filter-list button {
@@ -274,7 +275,7 @@ button.active {
   border: none;
   background: transparent;
   color: var(--text);
-  padding: 0.45rem 0.55rem;
+  padding: 0.3rem 0.45rem;
   border-radius: 8px;
 }
 
