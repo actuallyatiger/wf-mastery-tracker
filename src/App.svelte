@@ -175,48 +175,11 @@
     return weapons.filter((item) => inferWeaponTab(item) === tabId)
   }
 
-  function showPrimeFilterForTab() {
-    return ['warframes', 'archwings', 'primary', 'secondary', 'melee'].includes(activeTab)
-  }
-
-  function showVariantFilterForTab() {
-    return ['primary', 'secondary', 'melee'].includes(activeTab)
-  }
-
   function matchesSearch(item, text) {
     if (!text) {
       return true
     }
     return item.name.toLowerCase().includes(text.toLowerCase())
-  }
-
-  function matchesPrimeFilter(item) {
-    if (!primeSelections.normal && !primeSelections.prime) {
-      return true
-    }
-
-    const prime = isPrime(item)
-    if (prime && !primeSelections.prime) return false
-    if (!prime && !primeSelections.normal) return false
-    return true
-  }
-
-  function matchesVariantFilter(item) {
-    const isWeaponTab = ['primary', 'secondary', 'melee'].includes(activeTab)
-    if (!isWeaponTab) {
-      return true
-    }
-
-    if (!variantSelections.normal && !variantSelections.lich) {
-      return true
-    }
-
-    const bucket = isLichVariant(item) ? 'lich' : 'normal'
-    if (!variantSelections[bucket]) {
-      return false
-    }
-
-    return true
   }
 
   function togglePrimeSelection(key) {
@@ -440,11 +403,38 @@
 
   $: tabItems = getFilteredByTab(activeTab, data.warframes, data.weapons)
 
+  $: primeFilterVisible = ['warframes', 'archwings', 'primary', 'secondary', 'melee'].includes(activeTab)
+  $: variantFilterVisible = ['primary', 'secondary', 'melee'].includes(activeTab)
+  $: noPrimeSelection = !primeSelections.normal && !primeSelections.prime
+  $: noVariantSelection = !variantSelections.normal && !variantSelections.lich
+
   $: filteredItems = sortItems(
     tabItems
       .filter((item) => matchesSearch(item, search))
-      .filter((item) => (showPrimeFilterForTab() ? matchesPrimeFilter(item) : true))
-      .filter((item) => (showVariantFilterForTab() ? matchesVariantFilter(item) : true))
+      .filter((item) => {
+        if (!primeFilterVisible) {
+          return true
+        }
+
+        if (noPrimeSelection) {
+          return true
+        }
+
+        const prime = isPrime(item)
+        return (prime && primeSelections.prime) || (!prime && primeSelections.normal)
+      })
+      .filter((item) => {
+        if (!variantFilterVisible) {
+          return true
+        }
+
+        if (noVariantSelection) {
+          return true
+        }
+
+        const lich = isLichVariant(item)
+        return (lich && variantSelections.lich) || (!lich && variantSelections.normal)
+      })
   )
 
   $: currentItems =
@@ -519,7 +509,7 @@
     <div class="controls">
       <input placeholder="Search by name" bind:value={search} />
 
-      {#if showPrimeFilterForTab()}
+      {#if primeFilterVisible}
         <details class="filter-menu">
           <summary>{getPrimeFilterLabel()}</summary>
           <div class="filter-list">
@@ -543,7 +533,7 @@
         </details>
       {/if}
 
-      {#if showVariantFilterForTab()}
+      {#if variantFilterVisible}
         <details class="filter-menu">
           <summary>{getVariantFilterLabel()}</summary>
           <div class="filter-list">
@@ -646,9 +636,7 @@
             {:else}
               <ul>
                 {#each item.requirements as requirement}
-                  {#each Array.from({ length: Math.max(1, requirement.count ?? 1) }) as _}
-                    <li>{requirement.name}</li>
-                  {/each}
+                  <li>{requirement.name} x{Math.max(1, requirement.count ?? 1)}</li>
                 {/each}
               </ul>
             {/if}
