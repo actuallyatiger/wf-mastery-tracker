@@ -256,13 +256,13 @@ button.active {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 0.8rem;
-  align-items: start;
 }
 
 .item-card {
   display: grid;
   gap: 0.55rem;
   align-content: start;
+  height: 100%;
 }
 
 .title-row {
