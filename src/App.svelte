@@ -655,6 +655,18 @@
       <div>
         <h1>Warframe Mastery Tracker</h1>
         <p class="subtitle">Track blueprints, crafted status, and mastery.</p>
+        <a
+          class="repo-badge"
+          href="https://github.com/actuallyatiger/wf-mastery-tracker"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open GitHub repository"
+        >
+          <img
+            src="https://img.shields.io/badge/GitHub-actuallyatiger%2Fwf--mastery--tracker-181717?logo=github&logoColor=white"
+            alt="GitHub repository: actuallyatiger/wf-mastery-tracker"
+          />
+        </a>
       </div>
       <div class="settings-anchor">
         <button class="icon-button" on:click={() => (showSettings = !showSettings)} aria-label="Open settings">⚙</button>

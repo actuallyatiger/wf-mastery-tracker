@@ -86,6 +86,17 @@ h1 {
   max-width: 75ch;
 }
 
+.repo-badge {
+  display: inline-flex;
+  margin-top: 0.55rem;
+  line-height: 0;
+}
+
+.repo-badge img {
+  height: 20px;
+  border-radius: 5px;
+}
+
 .settings-anchor {
   position: relative;
 }
