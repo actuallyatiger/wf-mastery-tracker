@@ -301,17 +301,33 @@
     return getOwnedBlueprintCount(item) / total
   }
 
-  function sortItems(items) {
+  function sortItems(items, sortState) {
     const next = [...items]
-    if (sortBy === 'name-asc') {
+    if (sortState.mode === 'name-asc') {
       next.sort((a, b) => cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name)))
       return next
     }
-    if (sortBy === 'name-desc') {
+    if (sortState.mode === 'name-desc') {
       next.sort((a, b) => cleanDisplayName(b.name).localeCompare(cleanDisplayName(a.name)))
       return next
     }
-    if (sortBy === 'progress-desc') {
+    if (sortState.mode === 'mr-asc') {
+      next.sort(
+        (a, b) =>
+          Number(a.masteryReq ?? 0) - Number(b.masteryReq ?? 0) ||
+          cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
+      )
+      return next
+    }
+    if (sortState.mode === 'mr-desc') {
+      next.sort(
+        (a, b) =>
+          Number(b.masteryReq ?? 0) - Number(a.masteryReq ?? 0) ||
+          cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
+      )
+      return next
+    }
+    if (sortState.mode === 'progress-desc') {
       next.sort(
         (a, b) =>
           getProgressScore(b) - getProgressScore(a) ||
@@ -320,11 +336,7 @@
       return next
     }
 
-    next.sort(
-      (a, b) =>
-        getProgressScore(a) - getProgressScore(b) ||
-        cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
-    )
+    next.sort((a, b) => cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name)))
     return next
   }
 
@@ -431,15 +443,21 @@
     lich: variantLich,
   }
 
+  $: sortState = {
+    mode: sortBy,
+    progressItems: progress.items,
+  }
+
   $: filteredItems = sortItems(
     tabItems
       .filter((item) => matchesSearch(item, search))
-      .filter((item) => matchesVariantSelectionForCurrentTab(item, variantFilterState))
+      .filter((item) => matchesVariantSelectionForCurrentTab(item, variantFilterState)),
+    sortState
   )
 
   $: currentItems =
     filteredItems.length === 0 && tabItems.length > 0 && isDefaultFilterState()
-      ? sortItems(tabItems)
+      ? sortItems(tabItems, sortState)
       : filteredItems
 
   $: summary = currentItems.reduce(
@@ -541,10 +559,11 @@
       {/if}
 
       <select bind:value={sortBy}>
-        <option value="name-asc">Sort: A to Z</option>
-        <option value="name-desc">Sort: Z to A</option>
-        <option value="progress-desc">Sort: Most blueprint progress</option>
-        <option value="progress-asc">Sort: Least blueprint progress</option>
+        <option value="name-asc">A to Z</option>
+        <option value="name-desc">Z to A</option>
+        <option value="mr-asc">MR asc</option>
+        <option value="mr-desc">MR desc</option>
+        <option value="progress-desc">Blueprint progress</option>
       </select>
     </div>
 
