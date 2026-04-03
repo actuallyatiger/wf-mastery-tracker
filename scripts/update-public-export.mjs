@@ -277,12 +277,6 @@ function buildComponentRequirements({ ingredientRows, recipesByResult, nameLooku
 
     const count = Number(ingredient.ItemCount ?? 1)
 
-    // If a major blueprint is required (for example Equinox Day/Night Aspects),
-    // also include its own component blueprint requirements one level down.
-    if (!isComponentBlueprint && !isMajorItemIngredient) {
-      continue
-    }
-
     const nestedRecipe = recipesByResult.get(itemKey)
     const nestedIngredientRows = nestedRecipe?.ingredients ?? []
 
