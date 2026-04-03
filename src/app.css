@@ -119,14 +119,14 @@ h1 {
   margin-bottom: 0.15rem;
 }
 
-.settings-popover label {
+.settings-popover > label {
   display: grid;
   gap: 0.35rem;
   font-weight: 600;
   color: var(--text);
 }
 
-.settings-popover label select {
+.settings-popover > label select {
   font-weight: 400;
 }
 
