@@ -649,9 +649,18 @@
             <label class="check-row">
               <input
                 type="checkbox"
-                disabled={progress.settings.craftedMode === 'auto'}
                 checked={isCrafted(item)}
-                on:change={(event) => toggleCrafted(item, event.currentTarget.checked)}
+                aria-readonly={progress.settings.craftedMode === 'auto'}
+                on:click={(event) => {
+                  if (progress.settings.craftedMode === 'auto') {
+                    event.preventDefault()
+                  }
+                }}
+                on:change={(event) => {
+                  if (progress.settings.craftedMode !== 'auto') {
+                    toggleCrafted(item, event.currentTarget.checked)
+                  }
+                }}
               />
               Crafted
             </label>
