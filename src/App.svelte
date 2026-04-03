@@ -19,8 +19,8 @@
   const SORT_OPTIONS = [
     { value: 'name-asc', label: 'A to Z' },
     { value: 'name-desc', label: 'Z to A' },
-    { value: 'mr-asc', label: 'MR (Ascending)' },
-    { value: 'mr-desc', label: 'MR (Descending)' },
+    { value: 'mr-asc', label: 'MR (Ascending)', weaponsOnly: true },
+    { value: 'mr-desc', label: 'MR (Descending)', weaponsOnly: true },
     { value: 'progress-desc', label: 'Blueprint Progress' },
   ]
 
@@ -252,7 +252,7 @@
   }
 
   function getSortLabel() {
-    return SORT_OPTIONS.find((option) => option.value === sortBy)?.label ?? 'A to Z'
+    return availableSortOptions.find((option) => option.value === sortBy)?.label ?? 'A to Z'
   }
 
   function matchesVariantSelectionForCurrentTab(item, filterState) {
@@ -498,6 +498,16 @@
     progressItems: progress.items,
   }
 
+  $: isWeaponTab = ['primary', 'secondary', 'melee'].includes(activeTab)
+  $: availableSortOptions = SORT_OPTIONS.filter((option) => !option.weaponsOnly || isWeaponTab)
+
+  $: if (
+    !isWeaponTab &&
+    (sortBy === 'mr-asc' || sortBy === 'mr-desc')
+  ) {
+    sortBy = 'name-asc'
+  }
+
   $: filteredItems = sortItems(
     tabItems
       .filter((item) => matchesSearch(item, search))
@@ -661,7 +671,7 @@
       <details class="filter-menu sort-menu">
         <summary>{getSortLabel()}</summary>
         <div class="filter-list">
-          {#each SORT_OPTIONS as option}
+          {#each availableSortOptions as option}
             <button
               type="button"
               class:active={sortBy === option.value}
@@ -712,7 +722,9 @@
         <article class="card item-card">
           <div class="title-row">
             <h3>{cleanDisplayName(item.name)}</h3>
-            <small>MR {item.masteryReq}</small>
+            {#if ['primary', 'secondary', 'melee'].includes(activeTab)}
+              <small>MR {item.masteryReq}</small>
+            {/if}
           </div>
 
           {#if item.mainBlueprintKey}
