@@ -500,6 +500,7 @@ button.active {
 .component-row-text[data-tooltip]:focus-visible::after {
   opacity: 1;
   transform: translateY(0);
+  transition-delay: 350ms;
 }
 
 .component-row-text[data-tooltip]::after {
@@ -521,6 +522,7 @@ button.active {
   opacity: 0;
   transform: translateY(-2px);
   transition: opacity 120ms ease, transform 120ms ease;
+  transition-delay: 0s;
   pointer-events: none;
   z-index: 12;
 }
