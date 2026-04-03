@@ -1,43 +1,82 @@
-# Svelte + Vite
+# Warframe Mastery Tracker
 
-This template should help get you started developing with Svelte in Vite.
+Static Svelte app for tracking Warframe and Weapon progression, hosted on GitHub Pages.
 
-## Recommended IDE Setup
+The tracker stores your progress in browser localStorage and supports JSON import/export.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## What It Tracks
 
-## Need an official Svelte framework?
+- Main blueprint ownership per item
+- Component blueprint ownership per item (for example, Warframe Neuroptics/Chassis/Systems)
+- Variable recipe requirements per item (from Public Export recipes)
+- Crafted status
+- Mastered status
+- Subsumed status (Warframes)
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## Crafted Mode Setting
 
-## Technical considerations
+In the app settings, `craftedMode` controls crafted behavior:
 
-**Why use this over SvelteKit?**
+- `manual` (default): `crafted` is a user toggle
+- `auto`: `crafted` is derived from owning the main blueprint and all component blueprints
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+## Data Source
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+Uses Digital Extremes Public Export manifests:
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+- `ExportWarframes_en.json`
+- `ExportWeapons_en.json`
+- `ExportRecipes_en.json`
+- `ExportResources_en.json`
 
-**Why include `.vscode/extensions.json`?**
+Updater script resolves hashed manifest URLs from `index_en.txt.lzma` and writes `public/data/items.json`.
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+## Local Development
 
-**Why enable `checkJs` in the JS template?**
+Install dependencies:
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+```bash
+npm install
 ```
+
+Run app:
+
+```bash
+npm run dev
+```
+
+Refresh game dataset:
+
+```bash
+npm run update:data
+```
+
+Optional flags:
+
+```bash
+node scripts/update-public-export.mjs --language en --include-all-weapons --output public/data/items.json
+```
+
+## GitHub Pages Deployment
+
+Build for repo page path:
+
+```bash
+npm run build:pages
+```
+
+The workflow in `.github/workflows/pages.yml` uses:
+
+`VITE_BASE_PATH=/${{ github.event.repository.name }}/`
+
+If you deploy as a user page (`username.github.io`), set base path to `/`.
+
+## Automation
+
+- `.github/workflows/pages.yml`: build + deploy on `main`
+- `.github/workflows/update-data.yml`: weekly data refresh and auto-commit if `public/data/items.json` changed
+
+## Notes
+
+- Updater currently relies on `xz` for LZMA decompression. On Linux, install `xz-utils` if missing.
+- Recipe/component mappings come from Public Export and may change as DE updates schemas.
