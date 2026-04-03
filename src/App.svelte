@@ -559,11 +559,11 @@
       {/if}
 
       <select bind:value={sortBy}>
-        <option value="name-asc">A to Z</option>
-        <option value="name-desc">Z to A</option>
-        <option value="mr-asc">MR asc</option>
-        <option value="mr-desc">MR desc</option>
-        <option value="progress-desc">Blueprint progress</option>
+        <option value="name-asc">Name (Ascending)</option>
+        <option value="name-desc">Name (Descending)</option>
+        <option value="mr-asc">MR (Ascending)</option>
+        <option value="mr-desc">MR (Descending)</option>
+        <option value="progress-desc">Blueprint Progress (Descending)</option>
       </select>
     </div>
 
