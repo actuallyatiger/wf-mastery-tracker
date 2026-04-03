@@ -119,6 +119,12 @@
     return item.variant === 'prime' || /\bprime\b/i.test(item.name)
   }
 
+  function cleanDisplayName(name) {
+    return String(name ?? '')
+      .replace(/^<ARCHWING>\s*/i, '')
+      .trim()
+  }
+
   function isLichVariant(item) {
     if (item.variant === 'lich') {
       return true
@@ -179,7 +185,7 @@
     if (!text) {
       return true
     }
-    return item.name.toLowerCase().includes(text.toLowerCase())
+    return cleanDisplayName(item.name).toLowerCase().includes(text.toLowerCase())
   }
 
   function togglePrimeSelection(key) {
@@ -299,19 +305,27 @@
   function sortItems(items) {
     const next = [...items]
     if (sortBy === 'name-asc') {
-      next.sort((a, b) => a.name.localeCompare(b.name))
+      next.sort((a, b) => cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name)))
       return next
     }
     if (sortBy === 'name-desc') {
-      next.sort((a, b) => b.name.localeCompare(a.name))
+      next.sort((a, b) => cleanDisplayName(b.name).localeCompare(cleanDisplayName(a.name)))
       return next
     }
     if (sortBy === 'progress-desc') {
-      next.sort((a, b) => getProgressScore(b) - getProgressScore(a) || a.name.localeCompare(b.name))
+      next.sort(
+        (a, b) =>
+          getProgressScore(b) - getProgressScore(a) ||
+          cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
+      )
       return next
     }
 
-    next.sort((a, b) => getProgressScore(a) - getProgressScore(b) || a.name.localeCompare(b.name))
+    next.sort(
+      (a, b) =>
+        getProgressScore(a) - getProgressScore(b) ||
+        cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
+    )
     return next
   }
 
@@ -596,7 +610,7 @@
         {@const requirements = getComponentRequirements(item)}
         <article class="card item-card">
           <div class="title-row">
-            <h3>{item.name}</h3>
+            <h3>{cleanDisplayName(item.name)}</h3>
             <small>MR {item.masteryReq}</small>
           </div>
 
@@ -623,7 +637,7 @@
                     on:change={(event) =>
                       toggleComponentBlueprint(item, requirement, index, event.currentTarget.checked)}
                   />
-                  {requirement.name}
+                  {cleanDisplayName(requirement.name)}
                 </label>
               {/each}
             </div>
@@ -636,7 +650,8 @@
             {:else}
               <ul>
                 {#each item.requirements as requirement}
-                  <li>{requirement.name} x{Math.max(1, requirement.count ?? 1)}</li>
+                  {@const count = Math.max(1, requirement.count ?? 1)}
+                  <li>{count === 1 ? cleanDisplayName(requirement.name) : `${cleanDisplayName(requirement.name)} x${count}`}</li>
                 {/each}
               </ul>
             {/if}
