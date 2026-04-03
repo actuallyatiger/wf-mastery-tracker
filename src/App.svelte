@@ -126,6 +126,14 @@
     return data.weapons.filter((item) => item.tab === activeTab)
   }
 
+  function showPrimeFilterForTab() {
+    return ['warframes', 'archwings', 'primary', 'secondary', 'melee'].includes(activeTab)
+  }
+
+  function showVariantFilterForTab() {
+    return ['primary', 'secondary', 'melee'].includes(activeTab)
+  }
+
   function matchesSearch(item, text) {
     if (!text) {
       return true
@@ -174,6 +182,19 @@
       ...variantSelections,
       [key]: !variantSelections[key],
     }
+  }
+
+  function resetFilters() {
+    search = ''
+    primeSelections = {
+      normal: true,
+      prime: true,
+    }
+    variantSelections = {
+      normal: true,
+      lich: true,
+    }
+    sortBy = 'name-asc'
   }
 
   function getPrimeFilterLabel() {
@@ -358,11 +379,13 @@
     persist()
   }
 
+  $: tabItems = getFilteredByTab()
+
   $: currentItems = sortItems(
-    getFilteredByTab()
+    tabItems
       .filter((item) => matchesSearch(item, search))
-      .filter((item) => matchesPrimeFilter(item))
-      .filter((item) => matchesVariantFilter(item))
+      .filter((item) => (showPrimeFilterForTab() ? matchesPrimeFilter(item) : true))
+      .filter((item) => (showVariantFilterForTab() ? matchesVariantFilter(item) : true))
   )
 
   $: summary = currentItems.reduce(
@@ -432,49 +455,53 @@
     <div class="controls">
       <input placeholder="Search by name" bind:value={search} />
 
-      <details class="filter-menu">
-        <summary>{getPrimeFilterLabel()}</summary>
-        <div class="filter-list">
-          <label>
-            <input
-              type="checkbox"
-              checked={primeSelections.normal}
-              on:change={() => togglePrimeSelection('normal')}
-            />
-            Normal
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              checked={primeSelections.prime}
-              on:change={() => togglePrimeSelection('prime')}
-            />
-            Prime
-          </label>
-        </div>
-      </details>
+      {#if showPrimeFilterForTab()}
+        <details class="filter-menu">
+          <summary>{getPrimeFilterLabel()}</summary>
+          <div class="filter-list">
+            <label>
+              <input
+                type="checkbox"
+                checked={primeSelections.normal}
+                on:change={() => togglePrimeSelection('normal')}
+              />
+              Normal
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={primeSelections.prime}
+                on:change={() => togglePrimeSelection('prime')}
+              />
+              Prime
+            </label>
+          </div>
+        </details>
+      {/if}
 
-      <details class="filter-menu">
-        <summary>{getVariantFilterLabel()}</summary>
-        <div class="filter-list">
-          <label>
-            <input
-              type="checkbox"
-              checked={variantSelections.normal}
-              on:change={() => toggleVariantSelection('normal')}
-            />
-            Normal
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              checked={variantSelections.lich}
-              on:change={() => toggleVariantSelection('lich')}
-            />
-            Kuva / Tenet / Coda
-          </label>
-        </div>
-      </details>
+      {#if showVariantFilterForTab()}
+        <details class="filter-menu">
+          <summary>{getVariantFilterLabel()}</summary>
+          <div class="filter-list">
+            <label>
+              <input
+                type="checkbox"
+                checked={variantSelections.normal}
+                on:change={() => toggleVariantSelection('normal')}
+              />
+              Normal
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={variantSelections.lich}
+                on:change={() => toggleVariantSelection('lich')}
+              />
+              Kuva / Tenet / Coda
+            </label>
+          </div>
+        </details>
+      {/if}
 
       <select bind:value={sortBy}>
         <option value="name-asc">Sort: A to Z</option>
@@ -500,7 +527,14 @@
   {:else if error}
     <p class="status error">{error}</p>
   {:else if currentItems.length === 0}
-    <p class="status">No items match your current filters.</p>
+    {#if tabItems.length > 0}
+      <div class="status">
+        <p>No items match your current filters.</p>
+        <button on:click={resetFilters}>Reset filters</button>
+      </div>
+    {:else}
+      <p class="status">No items available for this tab in the current dataset.</p>
+    {/if}
   {:else}
     <section class="grid">
       {#each currentItems as item}
