@@ -229,13 +229,13 @@
     )
   }
 
-  function getVariantFilterLabel() {
+  function buildVariantFilterLabel({ normal, prime, lich, hasLichOption }) {
     const selected = []
-    if (variantNormal) selected.push('normal')
-    if (variantPrime) selected.push('prime')
-    if (variantFilterHasLichOption && variantLich) selected.push('lich')
+    if (normal) selected.push('normal')
+    if (prime) selected.push('prime')
+    if (hasLichOption && lich) selected.push('lich')
 
-    const options = ['normal', 'prime', ...(variantFilterHasLichOption ? ['lich'] : [])]
+    const options = ['normal', 'prime', ...(hasLichOption ? ['lich'] : [])]
 
     if (selected.length === options.length) {
       return options
@@ -249,10 +249,6 @@
       key === 'lich' ? 'Kuva/Tenet/Coda' : key === 'prime' ? 'Prime' : 'Normal'
     )
     return labels.join(' + ')
-  }
-
-  function getSortLabel() {
-    return availableSortOptions.find((option) => option.value === sortBy)?.label ?? 'A to Z'
   }
 
   function matchesVariantSelectionForCurrentTab(item, filterState) {
@@ -493,6 +489,13 @@
     lich: variantLich,
   }
 
+  $: variantFilterLabel = buildVariantFilterLabel({
+    normal: variantNormal,
+    prime: variantPrime,
+    lich: variantLich,
+    hasLichOption: variantFilterHasLichOption,
+  })
+
   $: sortState = {
     mode: sortBy,
     progressItems: progress.items,
@@ -500,6 +503,7 @@
 
   $: isWeaponTab = ['primary', 'secondary', 'melee'].includes(activeTab)
   $: availableSortOptions = SORT_OPTIONS.filter((option) => !option.weaponsOnly || isWeaponTab)
+  $: sortLabel = availableSortOptions.find((option) => option.value === sortBy)?.label ?? 'A to Z'
 
   $: if (
     !isWeaponTab &&
@@ -639,7 +643,7 @@
 
       {#if variantFilterVisible}
         <details class="filter-menu">
-          <summary>{getVariantFilterLabel()}</summary>
+          <summary>{variantFilterLabel}</summary>
           <div class="filter-list">
             <label>
               <input
@@ -669,7 +673,7 @@
       {/if}
 
       <details class="filter-menu sort-menu">
-        <summary>{getSortLabel()}</summary>
+        <summary>{sortLabel}</summary>
         <div class="filter-list">
           {#each availableSortOptions as option}
             <button
