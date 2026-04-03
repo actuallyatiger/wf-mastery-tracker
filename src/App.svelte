@@ -539,7 +539,21 @@
     </div>
 
     <div class="controls">
-      <input placeholder="Search by name" bind:value={search} />
+      <div class="search-input-wrap">
+        <input placeholder="Search by name" bind:value={search} />
+        {#if search}
+          <button
+            type="button"
+            class="search-clear"
+            aria-label="Clear search"
+            on:click={() => {
+              search = ''
+            }}
+          >
+            ×
+          </button>
+        {/if}
+      </div>
 
       {#if variantFilterVisible}
         <details class="filter-menu">

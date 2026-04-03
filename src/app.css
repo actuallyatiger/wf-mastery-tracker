@@ -177,6 +177,37 @@ button.active {
   flex-wrap: wrap;
 }
 
+.search-input-wrap {
+  position: relative;
+  min-width: 220px;
+  flex: 1;
+}
+
+.search-input-wrap input {
+  width: 100%;
+  padding-right: 2rem;
+}
+
+.search-clear {
+  position: absolute;
+  right: 0.45rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.15rem;
+  border-radius: 6px;
+}
+
+.search-clear:hover,
+.search-clear:focus-visible {
+  color: var(--text);
+  background: var(--bg-strong);
+}
+
 .filter-menu {
   position: relative;
 }
@@ -199,8 +230,12 @@ button.active {
 }
 
 .filter-menu > summary::after {
-  content: '▾';
-  color: var(--text-dim);
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--text-dim);
+  border-bottom: 2px solid var(--text-dim);
+  transform: rotate(45deg) translateY(-1px);
   transition: transform 150ms ease;
   transform-origin: center;
 }
@@ -210,7 +245,7 @@ button.active {
 }
 
 .filter-menu[open] > summary::after {
-  transform: rotate(180deg);
+  transform: rotate(-135deg) translateY(-1px);
 }
 
 .filter-list {
@@ -232,11 +267,6 @@ button.active {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.controls > input {
-  min-width: 220px;
-  flex: 1;
 }
 
 .stats {
@@ -360,8 +390,9 @@ footer {
     white-space: nowrap;
   }
 
-  .controls > input {
+  .search-input-wrap {
     min-width: unset;
+    width: 100%;
   }
 
   .controls > select,
