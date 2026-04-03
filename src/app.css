@@ -1,14 +1,13 @@
 :root {
-  --bg: #f4f2eb;
-  --bg-strong: #e8e1d2;
-  --panel: #fffaf0;
-  --text: #2a2924;
-  --text-dim: #666055;
-  --border: #d8cfba;
-  --accent: #79622b;
-  --accent-strong: #4d3f1a;
-  --ok: #2f7d51;
-  --danger: #8d3a2f;
+  --bg: #ffffff;
+  --bg-strong: #f5f7fb;
+  --panel: #ffffff;
+  --text: #18202a;
+  --text-dim: #546174;
+  --border: #d5deea;
+  --accent: #2f5fd6;
+  --accent-strong: #1f43a8;
+  --danger: #ba3e38;
   --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
   --font-body: 'Manrope', 'Segoe UI', sans-serif;
 }
@@ -19,10 +18,7 @@
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at 10% 20%, rgba(121, 98, 43, 0.14), transparent 45%),
-    radial-gradient(circle at 85% 0%, rgba(141, 58, 47, 0.08), transparent 45%),
-    linear-gradient(180deg, #f9f5ec 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #f7faff 0%, #ffffff 38%, #ffffff 100%);
   color: var(--text);
   font-family: var(--font-body);
 }
@@ -51,6 +47,13 @@ header {
   padding: 1rem;
 }
 
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
 h1 {
   font-size: clamp(1.9rem, 3.2vw, 2.7rem);
 }
@@ -61,16 +64,42 @@ h1 {
   max-width: 75ch;
 }
 
+.settings-anchor {
+  position: relative;
+}
+
+.icon-button {
+  border: 1px solid var(--border);
+  background: var(--bg-strong);
+  border-radius: 999px;
+  width: 2.3rem;
+  height: 2.3rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-popover {
+  position: absolute;
+  right: 0;
+  top: 2.7rem;
+  width: min(22rem, calc(100vw - 2rem));
+  z-index: 20;
+  box-shadow: 0 14px 34px rgba(30, 65, 160, 0.16);
+}
+
+.settings-popover h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
 .card {
   border: 1px solid var(--border);
   background: var(--panel);
   border-radius: 14px;
   padding: 1rem;
-}
-
-.settings {
-  display: grid;
-  gap: 0.8rem;
 }
 
 label,
@@ -81,24 +110,35 @@ button {
 }
 
 select,
-input {
+input:not([type='checkbox']) {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.5rem 0.65rem;
   background: white;
 }
 
+input[type='checkbox'] {
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  accent-color: var(--accent);
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 0.7rem;
 }
 
 button,
 .file-upload {
   border: 1px solid var(--accent);
-  color: var(--accent-strong);
-  background: #f7f0de;
+  color: var(--accent);
+  background: #f1f6ff;
   border-radius: 10px;
   padding: 0.45rem 0.7rem;
   cursor: pointer;
@@ -113,6 +153,7 @@ button.active {
 .danger {
   border-color: var(--danger);
   color: var(--danger);
+  background: #fff2f2;
 }
 
 .file-upload input {
@@ -127,6 +168,7 @@ button.active {
 .tab-row {
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .controls {
@@ -135,8 +177,51 @@ button.active {
   flex-wrap: wrap;
 }
 
-.controls input {
-  min-width: 240px;
+.filter-menu {
+  position: relative;
+}
+
+.filter-menu > summary {
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.5rem 0.65rem;
+  background: white;
+  cursor: pointer;
+  min-width: 220px;
+}
+
+.filter-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter-menu[open] > summary {
+  border-color: var(--accent);
+}
+
+.filter-list {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  z-index: 15;
+  min-width: 220px;
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.55rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: white;
+  box-shadow: 0 10px 24px rgba(24, 32, 42, 0.12);
+}
+
+.filter-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls > input {
+  min-width: 220px;
   flex: 1;
 }
 
@@ -155,7 +240,7 @@ button.active {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 0.8rem;
 }
 
@@ -171,7 +256,6 @@ button.active {
   gap: 0.7rem;
 }
 
-.meta,
 .tiny {
   color: var(--text-dim);
   font-size: 0.93rem;
@@ -187,7 +271,7 @@ button.active {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.6rem;
-  background: #fff;
+  background: #fbfcff;
 }
 
 .component-list p {
@@ -232,11 +316,19 @@ footer {
     width: min(1200px, 100% - 1rem);
   }
 
+  .header-row {
+    flex-direction: column;
+  }
+
+  .settings-anchor {
+    align-self: flex-end;
+  }
+
   .controls {
     flex-direction: column;
   }
 
-  .controls input {
+  .controls > input {
     min-width: unset;
   }
 }

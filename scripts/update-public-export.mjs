@@ -6,6 +6,12 @@ import { spawnSync } from 'node:child_process'
 const ORIGIN_BASE = 'https://origin.warframe.com/PublicExport'
 const CONTENT_BASE = 'https://content.warframe.com/PublicExport'
 const CORE_WEAPON_CATEGORIES = new Set(['LongGuns', 'Pistols', 'Melee'])
+const COMPONENT_RECIPE_FAMILY_MATCHERS = [
+  '/Types/Recipes/Weapons/',
+  '/Types/Recipes/WarframeRecipes/',
+  '/Types/Recipes/ArchwingRecipes/',
+  '/Types/Recipes/DeimosRecipes/Mechs/',
+]
 
 function parseArgs(argv) {
   const options = {
@@ -131,18 +137,98 @@ function buildNameLookup({ warframesRaw, weaponsRaw, resourcesRaw }) {
   return lookup
 }
 
+function buildRecipeLookup(recipesRaw) {
+  const recipesByResult = new Map()
+  const recipesByUniqueName = new Map()
+
+  for (const recipe of recipesRaw) {
+    if (recipe?.resultType) {
+      recipesByResult.set(recipe.resultType, recipe)
+    }
+    if (recipe?.uniqueName) {
+      recipesByUniqueName.set(recipe.uniqueName, recipe)
+    }
+  }
+
+  return { recipesByResult, recipesByUniqueName }
+}
+
+function isLikelyPrime(name) {
+  return /\bprime\b/i.test(name)
+}
+
+function isLichStyleWeapon(name) {
+  return /\b(kuva|tenet|coda)\b/i.test(name)
+}
+
+function classifyWarframeType(frame) {
+  if (frame.productCategory === 'SpaceSuits') {
+    return 'archwings'
+  }
+  if (frame.productCategory === 'MechSuits') {
+    return 'necramechs'
+  }
+  return 'warframes'
+}
+
+function classifyWeaponTab(weapon) {
+  if (weapon.productCategory === 'LongGuns') {
+    return 'primary'
+  }
+  if (weapon.productCategory === 'Pistols') {
+    return 'secondary'
+  }
+  if (weapon.productCategory === 'Melee') {
+    return 'melee'
+  }
+  return 'other'
+}
+
+function isComponentBlueprintIngredient(itemType, recipesByResult) {
+  const recipe = recipesByResult.get(itemType)
+  if (!recipe?.uniqueName) {
+    return false
+  }
+
+  return COMPONENT_RECIPE_FAMILY_MATCHERS.some((matcher) => recipe.uniqueName.includes(matcher))
+}
+
+function buildComponentRequirements({ ingredientRows, recipesByResult, nameLookup }) {
+  const componentRequirements = []
+
+  for (const ingredient of ingredientRows) {
+    const itemKey = ingredient?.ItemType
+    if (!itemKey || !isComponentBlueprintIngredient(itemKey, recipesByResult)) {
+      continue
+    }
+
+    const count = Number(ingredient.ItemCount ?? 1)
+    const requirementName = nameLookup.get(itemKey) ?? titleCaseFromSlug(itemKey)
+
+    for (let i = 0; i < count; i += 1) {
+      componentRequirements.push({
+        id: `${itemKey}::${i + 1}`,
+        itemKey,
+        name: requirementName,
+      })
+    }
+  }
+
+  return componentRequirements
+}
+
 function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup }) {
   return warframesRaw
     .filter((frame) => frame?.uniqueName && frame?.name)
-    .filter((frame) => frame.productCategory === 'Suits')
+    .filter((frame) => ['Suits', 'SpaceSuits', 'MechSuits'].includes(frame.productCategory))
     .map((frame) => {
       const recipe = recipesByResult.get(frame.uniqueName)
       const ingredientRows = recipe?.ingredients ?? []
-      const componentBlueprintKeys = dedupe(
-        ingredientRows
-          .map((ingredient) => ingredient?.ItemType)
-          .filter((key) => key && recipesByResult.has(key))
-      )
+      const componentRequirements = buildComponentRequirements({
+        ingredientRows,
+        recipesByResult,
+        nameLookup,
+      })
 
       const requirements = ingredientRows
         .filter((ingredient) => ingredient?.ItemType)
@@ -158,10 +244,12 @@ function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup }) {
         uniqueName: frame.uniqueName,
         name: frame.name,
         masteryReq: Number(frame.masteryReq ?? 0),
+        tab: classifyWarframeType(frame),
+        variant: isLikelyPrime(frame.name) ? 'prime' : 'normal',
         productCategory: frame.productCategory,
         hasRecipe: Boolean(recipe),
         mainBlueprintKey: recipe?.uniqueName ?? null,
-        componentBlueprintKeys,
+        componentRequirements,
         requirements,
       }
     })
@@ -175,11 +263,11 @@ function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllW
     .map((weapon) => {
       const recipe = recipesByResult.get(weapon.uniqueName)
       const ingredientRows = recipe?.ingredients ?? []
-      const componentBlueprintKeys = dedupe(
-        ingredientRows
-          .map((ingredient) => ingredient?.ItemType)
-          .filter((key) => key && recipesByResult.has(key))
-      )
+      const componentRequirements = buildComponentRequirements({
+        ingredientRows,
+        recipesByResult,
+        nameLookup,
+      })
 
       const requirements = ingredientRows
         .filter((ingredient) => ingredient?.ItemType)
@@ -195,14 +283,21 @@ function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllW
         uniqueName: weapon.uniqueName,
         name: weapon.name,
         masteryReq: Number(weapon.masteryReq ?? 0),
+        tab: classifyWeaponTab(weapon),
+        variant: isLichStyleWeapon(weapon.name)
+          ? 'lich'
+          : isLikelyPrime(weapon.name)
+            ? 'prime'
+            : 'normal',
         productCategory: weapon.productCategory ?? 'Unknown',
         slot: Number(weapon.slot ?? -1),
         hasRecipe: Boolean(recipe),
         mainBlueprintKey: recipe?.uniqueName ?? null,
-        componentBlueprintKeys,
+        componentRequirements,
         requirements,
       }
     })
+    .filter((weapon) => weapon.tab !== 'other')
     .sort((a, b) => a.name.localeCompare(b.name))
 }
 
@@ -258,11 +353,7 @@ async function main() {
   const recipesRaw = extractArrayLike(recipesManifest, ['ExportRecipes'])
   const resourcesRaw = extractArrayLike(resourcesManifest, ['ExportResources'])
 
-  const recipesByResult = new Map(
-    recipesRaw
-      .filter((recipe) => recipe?.resultType)
-      .map((recipe) => [recipe.resultType, recipe])
-  )
+  const { recipesByResult } = buildRecipeLookup(recipesRaw)
 
   const nameLookup = buildNameLookup({ warframesRaw, weaponsRaw, resourcesRaw })
 
@@ -276,7 +367,8 @@ async function main() {
 
   const componentMap = {}
   for (const item of [...warframes, ...weapons]) {
-    for (const componentKey of item.componentBlueprintKeys) {
+    for (const requirement of item.componentRequirements) {
+      const componentKey = requirement.itemKey
       componentMap[componentKey] = {
         uniqueName: componentKey,
         name: nameLookup.get(componentKey) ?? titleCaseFromSlug(componentKey),
@@ -296,7 +388,12 @@ async function main() {
       manifests: manifestEntries,
     },
     counts: {
-      warframes: warframes.length,
+      warframes: warframes.filter((item) => item.tab === 'warframes').length,
+      necramechs: warframes.filter((item) => item.tab === 'necramechs').length,
+      archwings: warframes.filter((item) => item.tab === 'archwings').length,
+      primary: weapons.filter((item) => item.tab === 'primary').length,
+      secondary: weapons.filter((item) => item.tab === 'secondary').length,
+      melee: weapons.filter((item) => item.tab === 'melee').length,
       weapons: weapons.length,
       components: Object.keys(componentMap).length,
     },

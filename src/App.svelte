@@ -1,18 +1,26 @@
 <script>
   import { onMount } from 'svelte'
 
-  const STORAGE_KEY = 'wf-mastery-tracker-v1'
+  const STORAGE_KEY = 'wf-mastery-tracker-v2'
   const DEFAULT_SETTINGS = {
     craftedMode: 'manual',
   }
+
+  const TABS = [
+    { id: 'warframes', label: 'Warframes' },
+    { id: 'necramechs', label: 'Necramechs' },
+    { id: 'archwings', label: 'Archwings' },
+    { id: 'primary', label: 'Primary' },
+    { id: 'secondary', label: 'Secondary' },
+    { id: 'melee', label: 'Melee' },
+  ]
 
   let data = {
     warframes: [],
     weapons: [],
     components: {},
-    blueprints: {},
     generatedAt: null,
-    counts: { warframes: 0, weapons: 0, components: 0 },
+    counts: {},
   }
 
   let progress = {
@@ -24,7 +32,16 @@
   let error = ''
   let activeTab = 'warframes'
   let search = ''
-  let category = 'all'
+  let primeSelections = {
+    normal: true,
+    prime: true,
+  }
+  let variantSelections = {
+    normal: true,
+    lich: true,
+  }
+  let sortBy = 'name-asc'
+  let showSettings = false
 
   async function loadData() {
     loading = true
@@ -42,12 +59,7 @@
         warframes: payload.warframes ?? [],
         weapons: payload.weapons ?? [],
         components: payload.components ?? {},
-        blueprints: payload.blueprints ?? {},
-        counts: payload.counts ?? {
-          warframes: payload.warframes?.length ?? 0,
-          weapons: payload.weapons?.length ?? 0,
-          components: Object.keys(payload.components ?? {}).length,
-        },
+        counts: payload.counts ?? {},
       }
 
       hydrateStoredProgress()
@@ -95,33 +107,6 @@
     return progress.items[item.id]
   }
 
-  function getItemState(item) {
-    return ensureItemState(item)
-  }
-
-  function isCrafted(item) {
-    const state = ensureItemState(item)
-    if (progress.settings.craftedMode === 'manual') {
-      return state.crafted
-    }
-
-    const hasMain = item.mainBlueprintKey ? state.mainBlueprintOwned : true
-    const hasAllComponents = (item.componentBlueprintKeys ?? []).every(
-      (componentKey) => state.componentBlueprintsOwned?.[componentKey]
-    )
-    return hasMain && hasAllComponents
-  }
-
-  function isCraftReady(item) {
-    const state = ensureItemState(item)
-    const hasMain = item.mainBlueprintKey ? state.mainBlueprintOwned : true
-    const hasAllComponents = (item.componentBlueprintKeys ?? []).every(
-      (componentKey) => state.componentBlueprintsOwned?.[componentKey]
-    )
-
-    return hasMain && hasAllComponents
-  }
-
   function persist() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(progress))
     progress = {
@@ -130,17 +115,176 @@
     }
   }
 
+  function isPrime(item) {
+    return item.variant === 'prime' || /\bprime\b/i.test(item.name)
+  }
+
+  function getFilteredByTab() {
+    if (['warframes', 'necramechs', 'archwings'].includes(activeTab)) {
+      return data.warframes.filter((item) => item.tab === activeTab)
+    }
+    return data.weapons.filter((item) => item.tab === activeTab)
+  }
+
+  function matchesSearch(item, text) {
+    if (!text) {
+      return true
+    }
+    return item.name.toLowerCase().includes(text.toLowerCase())
+  }
+
+  function matchesPrimeFilter(item) {
+    if (!primeSelections.normal && !primeSelections.prime) {
+      return true
+    }
+
+    const prime = isPrime(item)
+    if (prime && !primeSelections.prime) return false
+    if (!prime && !primeSelections.normal) return false
+    return true
+  }
+
+  function matchesVariantFilter(item) {
+    const isWeaponTab = ['primary', 'secondary', 'melee'].includes(activeTab)
+    if (!isWeaponTab) {
+      return true
+    }
+
+    if (!variantSelections.normal && !variantSelections.lich) {
+      return true
+    }
+
+    const bucket = item.variant === 'lich' ? 'lich' : 'normal'
+    if (!variantSelections[bucket]) {
+      return false
+    }
+
+    return true
+  }
+
+  function togglePrimeSelection(key) {
+    primeSelections = {
+      ...primeSelections,
+      [key]: !primeSelections[key],
+    }
+  }
+
+  function toggleVariantSelection(key) {
+    variantSelections = {
+      ...variantSelections,
+      [key]: !variantSelections[key],
+    }
+  }
+
+  function getPrimeFilterLabel() {
+    const selected = Object.entries(primeSelections)
+      .filter(([, on]) => on)
+      .map(([key]) => key)
+
+    if (selected.length === 2) return 'Prime filter: Normal + Prime'
+    if (selected.length === 0) return 'Prime filter: None'
+    return `Prime filter: ${selected[0] === 'prime' ? 'Prime' : 'Normal'}`
+  }
+
+  function getVariantFilterLabel() {
+    const selected = Object.entries(variantSelections)
+      .filter(([, on]) => on)
+      .map(([key]) => key)
+
+    if (selected.length === 2) return 'Variant filter: Normal + Kuva/Tenet/Coda'
+    if (selected.length === 0) return 'Variant filter: None'
+    return `Variant filter: ${selected[0] === 'lich' ? 'Kuva/Tenet/Coda' : 'Normal'}`
+  }
+
+  function getItemState(item) {
+    return ensureItemState(item)
+  }
+
+  function getComponentRequirements(item) {
+    return item.componentRequirements ?? []
+  }
+
+  function getComponentRequirementId(requirement, index) {
+    return `${requirement.itemKey}::${index + 1}`
+  }
+
+  function getOwnedBlueprintCount(item) {
+    const state = ensureItemState(item)
+    const requirements = getComponentRequirements(item)
+    let owned = state.mainBlueprintOwned && item.mainBlueprintKey ? 1 : 0
+
+    for (let i = 0; i < requirements.length; i += 1) {
+      const requirementId = getComponentRequirementId(requirements[i], i)
+      if (state.componentBlueprintsOwned?.[requirementId]) {
+        owned += 1
+      }
+    }
+
+    return owned
+  }
+
+  function getTotalBlueprintCount(item) {
+    return (item.mainBlueprintKey ? 1 : 0) + getComponentRequirements(item).length
+  }
+
+  function isCraftReady(item) {
+    const state = ensureItemState(item)
+    const requirements = getComponentRequirements(item)
+    const hasMain = item.mainBlueprintKey ? state.mainBlueprintOwned : true
+    const hasComponents = requirements.every(
+      (requirement, index) => state.componentBlueprintsOwned?.[getComponentRequirementId(requirement, index)]
+    )
+    return hasMain && hasComponents
+  }
+
+  function isCrafted(item) {
+    const state = ensureItemState(item)
+    if (progress.settings.craftedMode === 'manual') {
+      return state.crafted
+    }
+    return isCraftReady(item)
+  }
+
+  function getProgressScore(item) {
+    const total = getTotalBlueprintCount(item)
+    if (total === 0) {
+      return 0
+    }
+    return getOwnedBlueprintCount(item) / total
+  }
+
+  function sortItems(items) {
+    const next = [...items]
+    if (sortBy === 'name-asc') {
+      next.sort((a, b) => a.name.localeCompare(b.name))
+      return next
+    }
+    if (sortBy === 'name-desc') {
+      next.sort((a, b) => b.name.localeCompare(a.name))
+      return next
+    }
+    if (sortBy === 'progress-desc') {
+      next.sort((a, b) => getProgressScore(b) - getProgressScore(a) || a.name.localeCompare(b.name))
+      return next
+    }
+
+    next.sort((a, b) => getProgressScore(a) - getProgressScore(b) || a.name.localeCompare(b.name))
+    return next
+  }
+
   function toggleMainBlueprint(item, value) {
     const state = ensureItemState(item)
     state.mainBlueprintOwned = value
     persist()
   }
 
-  function toggleComponentBlueprint(item, componentKey, value) {
+  function toggleComponentBlueprint(item, requirement, index, value) {
     const state = ensureItemState(item)
+    const requirementId = getComponentRequirementId(requirement, index)
+
     state.componentBlueprintsOwned = {
       ...(state.componentBlueprintsOwned ?? {}),
-      [componentKey]: value,
+      [requirementId]: value,
     }
     persist()
   }
@@ -184,9 +328,7 @@
 
   function importProgress(event) {
     const file = event.target.files?.[0]
-    if (!file) {
-      return
-    }
+    if (!file) return
 
     const reader = new FileReader()
     reader.onload = () => {
@@ -208,10 +350,7 @@
   }
 
   function clearProgress() {
-    if (!confirm('Clear all tracked progress?')) {
-      return
-    }
-
+    if (!confirm('Clear all tracked progress?')) return
     progress = {
       settings: { ...DEFAULT_SETTINGS },
       items: {},
@@ -219,35 +358,27 @@
     persist()
   }
 
-  function matchesSearch(item, text) {
-    if (!text) {
-      return true
-    }
-
-    const needle = text.toLowerCase()
-    return item.name.toLowerCase().includes(needle)
-  }
-
-  $: currentItems = activeTab === 'warframes' ? data.warframes : data.weapons
-  $: categories = ['all', ...new Set(currentItems.map((item) => item.productCategory).filter(Boolean))]
-  $: filteredItems = currentItems
-    .filter((item) => matchesSearch(item, search))
-    .filter((item) => category === 'all' || item.productCategory === category)
+  $: currentItems = sortItems(
+    getFilteredByTab()
+      .filter((item) => matchesSearch(item, search))
+      .filter((item) => matchesPrimeFilter(item))
+      .filter((item) => matchesVariantFilter(item))
+  )
 
   $: summary = currentItems.reduce(
     (acc, item) => {
       const state = ensureItemState(item)
-      const crafted = isCrafted(item)
-      const ready = isCraftReady(item)
-
-      if (state.mainBlueprintOwned) acc.mainBlueprintOwned += 1
-      if (ready) acc.ready += 1
-      if (crafted) acc.crafted += 1
+      const ownedBlueprints = getOwnedBlueprintCount(item)
+      const totalBlueprints = getTotalBlueprintCount(item)
+      acc.blueprintOwned += ownedBlueprints
+      acc.blueprintTotal += totalBlueprints
+      if (isCraftReady(item)) acc.ready += 1
+      if (isCrafted(item)) acc.crafted += 1
       if (state.mastered) acc.mastered += 1
       if (activeTab === 'warframes' && state.subsumed) acc.subsumed += 1
       return acc
     },
-    { mainBlueprintOwned: 0, ready: 0, crafted: 0, mastered: 0, subsumed: 0 }
+    { blueprintOwned: 0, blueprintTotal: 0, ready: 0, crafted: 0, mastered: 0, subsumed: 0 }
   )
 
   onMount(loadData)
@@ -255,52 +386,106 @@
 
 <main>
   <header>
-    <h1>Warframe Mastery Tracker</h1>
-    <p class="subtitle">
-      Track per-item blueprints and progression for Warframes and Weapons. Data source: Digital Extremes Public Export.
-    </p>
-  </header>
+    <div class="header-row">
+      <div>
+        <h1>Warframe Mastery Tracker</h1>
+        <p class="subtitle">Track blueprints, crafted status, and mastery from Public Export data.</p>
+      </div>
+      <div class="settings-anchor">
+        <button class="icon-button" on:click={() => (showSettings = !showSettings)} aria-label="Open settings">⚙</button>
 
-  <section class="settings card">
-    <h2>Settings</h2>
-    <label>
-      Crafted behavior
-      <select
-        value={progress.settings.craftedMode}
-        on:change={(event) => setCraftedMode(event.currentTarget.value)}
-      >
-        <option value="manual">Manual crafted toggle (default)</option>
-        <option value="auto">Auto crafted from blueprints/components</option>
-      </select>
-    </label>
+        {#if showSettings}
+          <section class="settings-popover card">
+            <h2>Settings</h2>
+            <label>
+              Crafted behavior
+              <select
+                value={progress.settings.craftedMode}
+                on:change={(event) => setCraftedMode(event.currentTarget.value)}
+              >
+                <option value="manual">Manual crafted toggle (default)</option>
+                <option value="auto">Auto crafted from required blueprints</option>
+              </select>
+            </label>
 
-    <div class="actions">
-      <button on:click={exportProgress}>Export progress</button>
-      <label class="file-upload">
-        Import progress
-        <input type="file" accept="application/json" on:change={importProgress} />
-      </label>
-      <button class="danger" on:click={clearProgress}>Clear progress</button>
+            <div class="actions">
+              <button on:click={exportProgress}>Export progress</button>
+              <label class="file-upload">
+                Import progress
+                <input type="file" accept="application/json" on:change={importProgress} />
+              </label>
+              <button class="danger" on:click={clearProgress}>Clear progress</button>
+            </div>
+          </section>
+        {/if}
+      </div>
     </div>
-  </section>
+  </header>
 
   <section class="toolbar card">
     <div class="tab-row">
-      <button class:active={activeTab === 'warframes'} on:click={() => (activeTab = 'warframes')}>Warframes</button>
-      <button class:active={activeTab === 'weapons'} on:click={() => (activeTab = 'weapons')}>Weapons</button>
+      {#each TABS as tab}
+        <button class:active={activeTab === tab.id} on:click={() => (activeTab = tab.id)}>{tab.label}</button>
+      {/each}
     </div>
 
     <div class="controls">
       <input placeholder="Search by name" bind:value={search} />
-      <select bind:value={category}>
-        {#each categories as option}
-          <option value={option}>{option === 'all' ? 'All categories' : option}</option>
-        {/each}
+
+      <details class="filter-menu">
+        <summary>{getPrimeFilterLabel()}</summary>
+        <div class="filter-list">
+          <label>
+            <input
+              type="checkbox"
+              checked={primeSelections.normal}
+              on:change={() => togglePrimeSelection('normal')}
+            />
+            Normal
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={primeSelections.prime}
+              on:change={() => togglePrimeSelection('prime')}
+            />
+            Prime
+          </label>
+        </div>
+      </details>
+
+      <details class="filter-menu">
+        <summary>{getVariantFilterLabel()}</summary>
+        <div class="filter-list">
+          <label>
+            <input
+              type="checkbox"
+              checked={variantSelections.normal}
+              on:change={() => toggleVariantSelection('normal')}
+            />
+            Normal
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={variantSelections.lich}
+              on:change={() => toggleVariantSelection('lich')}
+            />
+            Kuva / Tenet / Coda
+          </label>
+        </div>
+      </details>
+
+      <select bind:value={sortBy}>
+        <option value="name-asc">Sort: A to Z</option>
+        <option value="name-desc">Sort: Z to A</option>
+        <option value="progress-desc">Sort: Most blueprint progress</option>
+        <option value="progress-asc">Sort: Least blueprint progress</option>
       </select>
     </div>
 
     <div class="stats">
-      <span>Main blueprints: {summary.mainBlueprintOwned}/{currentItems.length}</span>
+      <span>Blueprints: {summary.blueprintOwned}/{summary.blueprintTotal}</span>
       <span>Craft-ready: {summary.ready}/{currentItems.length}</span>
       <span>Crafted: {summary.crafted}/{currentItems.length}</span>
       <span>Mastered: {summary.mastered}/{currentItems.length}</span>
@@ -314,18 +499,18 @@
     <p class="status">Loading data...</p>
   {:else if error}
     <p class="status error">{error}</p>
-  {:else if filteredItems.length === 0}
+  {:else if currentItems.length === 0}
     <p class="status">No items match your current filters.</p>
   {:else}
     <section class="grid">
-      {#each filteredItems as item}
+      {#each currentItems as item}
         {@const state = getItemState(item)}
+        {@const requirements = getComponentRequirements(item)}
         <article class="card item-card">
           <div class="title-row">
             <h3>{item.name}</h3>
             <small>MR {item.masteryReq}</small>
           </div>
-          <p class="meta">{item.productCategory}</p>
 
           {#if item.mainBlueprintKey}
             <label class="check-row">
@@ -338,18 +523,19 @@
             </label>
           {/if}
 
-          {#if item.componentBlueprintKeys.length > 0}
+          {#if requirements.length > 0}
             <div class="component-list">
               <p>Component blueprints</p>
-              {#each item.componentBlueprintKeys as componentKey}
+              {#each requirements as requirement, index}
+                {@const reqId = getComponentRequirementId(requirement, index)}
                 <label class="check-row">
                   <input
                     type="checkbox"
-                    checked={Boolean(state.componentBlueprintsOwned?.[componentKey])}
+                    checked={Boolean(state.componentBlueprintsOwned?.[reqId])}
                     on:change={(event) =>
-                      toggleComponentBlueprint(item, componentKey, event.currentTarget.checked)}
+                      toggleComponentBlueprint(item, requirement, index, event.currentTarget.checked)}
                   />
-                  {data.components?.[componentKey]?.name ?? componentKey}
+                  {requirement.name}
                 </label>
               {/each}
             </div>
@@ -362,7 +548,9 @@
             {:else}
               <ul>
                 {#each item.requirements as requirement}
-                  <li>{requirement.count}x {requirement.name}</li>
+                  {#each Array.from({ length: Math.max(1, requirement.count ?? 1) }) as _}
+                    <li>{requirement.name}</li>
+                  {/each}
                 {/each}
               </ul>
             {/if}
@@ -405,11 +593,11 @@
   {/if}
 
   <footer>
+    <p>Last data update: {data.generatedAt ? new Date(data.generatedAt).toLocaleString() : 'unknown'}</p>
     <p>
-      Last data update: {data.generatedAt ? new Date(data.generatedAt).toLocaleString() : 'unknown'}
-    </p>
-    <p>
-      Counts: {data.counts.warframes} Warframes, {data.counts.weapons} Weapons, {data.counts.components} craftable components
+      Counts: {data.counts.warframes ?? 0} Warframes, {data.counts.necramechs ?? 0} Necramechs,
+      {data.counts.archwings ?? 0} Archwings, {data.counts.primary ?? 0} Primary,
+      {data.counts.secondary ?? 0} Secondary, {data.counts.melee ?? 0} Melee
     </p>
   </footer>
 </main>
