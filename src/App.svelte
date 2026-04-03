@@ -725,7 +725,7 @@
 
       {#if variantFilterVisible}
         <details class="filter-menu">
-          <summary>{variantFilterLabel}</summary>
+          <summary><span class="summary-label">{variantFilterLabel}</span></summary>
           <div class="filter-list">
             <label>
               <input
@@ -773,7 +773,7 @@
       {/if}
 
       <details class="filter-menu status-menu">
-        <summary>{statusFilterLabel}</summary>
+        <summary><span class="summary-label">{statusFilterLabel}</span></summary>
         <div class="filter-list">
           <label>
             <input type="checkbox" bind:checked={hideCrafted} />
@@ -793,7 +793,7 @@
       </details>
 
       <details class="filter-menu sort-menu">
-        <summary>{sortLabel}</summary>
+        <summary><span class="summary-label">{sortLabel}</span></summary>
         <div class="filter-list">
           {#each availableSortOptions as option}
             <button
