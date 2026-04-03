@@ -227,6 +227,37 @@
     sortBy = 'name-asc'
   }
 
+  function getVariantSelectedCount(hasLichOption = variantFilterHasLichOption) {
+    return (
+      (variantNormal ? 1 : 0) +
+      (variantPrime ? 1 : 0) +
+      (hasLichOption && variantLich ? 1 : 0)
+    )
+  }
+
+  function setVariantChecked(key, nextChecked) {
+    const currentChecked =
+      key === 'normal' ? variantNormal : key === 'prime' ? variantPrime : variantLich
+
+    if (!nextChecked && currentChecked) {
+      const selectedCount = getVariantSelectedCount()
+      if (selectedCount <= 1) {
+        return
+      }
+    }
+
+    if (key === 'normal') variantNormal = nextChecked
+    if (key === 'prime') variantPrime = nextChecked
+    if (key === 'lich') variantLich = nextChecked
+  }
+
+  function shouldBlockVariantUncheck(key) {
+    const currentChecked =
+      key === 'normal' ? variantNormal : key === 'prime' ? variantPrime : variantLich
+
+    return currentChecked && getVariantSelectedCount() <= 1
+  }
+
   function isDefaultFilterState() {
     return (
       !search &&
@@ -508,6 +539,15 @@
 
   $: variantFilterVisible = ['warframes', 'archwings', 'primary', 'secondary', 'melee'].includes(activeTab)
   $: variantFilterHasLichOption = ['primary', 'secondary', 'melee'].includes(activeTab)
+
+  $: if (variantFilterHasLichOption && getVariantSelectedCount(true) === 0) {
+    variantNormal = true
+  }
+
+  $: if (!variantFilterHasLichOption && getVariantSelectedCount(false) === 0) {
+    variantNormal = true
+  }
+
   $: noVariantSelection = variantFilterHasLichOption
     ? !variantNormal && !variantPrime && !variantLich
     : !variantNormal && !variantPrime
@@ -690,14 +730,26 @@
             <label>
               <input
                 type="checkbox"
-                bind:checked={variantNormal}
+                checked={variantNormal}
+                on:click={(event) => {
+                  if (shouldBlockVariantUncheck('normal')) {
+                    event.preventDefault()
+                  }
+                }}
+                on:change={(event) => setVariantChecked('normal', event.currentTarget.checked)}
               />
               Normal
             </label>
             <label>
               <input
                 type="checkbox"
-                bind:checked={variantPrime}
+                checked={variantPrime}
+                on:click={(event) => {
+                  if (shouldBlockVariantUncheck('prime')) {
+                    event.preventDefault()
+                  }
+                }}
+                on:change={(event) => setVariantChecked('prime', event.currentTarget.checked)}
               />
               Prime
             </label>
@@ -705,7 +757,13 @@
               <label>
                 <input
                   type="checkbox"
-                  bind:checked={variantLich}
+                  checked={variantLich}
+                  on:click={(event) => {
+                    if (shouldBlockVariantUncheck('lich')) {
+                      event.preventDefault()
+                    }
+                  }}
+                  on:change={(event) => setVariantChecked('lich', event.currentTarget.checked)}
                 />
                 Kuva / Tenet / Coda
               </label>
