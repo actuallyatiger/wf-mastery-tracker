@@ -655,20 +655,22 @@
       <div>
         <h1>Warframe Mastery Tracker</h1>
         <p class="subtitle">Track blueprints, crafted status, and mastery.</p>
+      </div>
+      <div class="settings-anchor header-actions">
         <a
-          class="repo-badge"
+          class="icon-button icon-link"
           href="https://github.com/actuallyatiger/wf-mastery-tracker"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Open GitHub repository"
         >
-          <img
-            src="https://img.shields.io/badge/GitHub-actuallyatiger%2Fwf--mastery--tracker-181717?logo=github&logoColor=white"
-            alt="GitHub repository: actuallyatiger/wf-mastery-tracker"
-          />
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.34c-2.23.49-2.69-.95-2.69-.95-.36-.92-.88-1.16-.88-1.16-.72-.49.05-.48.05-.48.79.06 1.21.82 1.21.82.71 1.2 1.86.86 2.31.66.07-.5.28-.86.5-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.01.08-2.11 0 0 .67-.22 2.2.82A7.7 7.7 0 0 1 8 3.87c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.14.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            />
+          </svg>
         </a>
-      </div>
-      <div class="settings-anchor">
         <button class="icon-button" on:click={() => (showSettings = !showSettings)} aria-label="Open settings">⚙</button>
 
         {#if showSettings}
