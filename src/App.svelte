@@ -119,11 +119,60 @@
     return item.variant === 'prime' || /\bprime\b/i.test(item.name)
   }
 
-  function getFilteredByTab() {
-    if (['warframes', 'necramechs', 'archwings'].includes(activeTab)) {
-      return data.warframes.filter((item) => item.tab === activeTab)
+  function isLichVariant(item) {
+    if (item.variant === 'lich') {
+      return true
     }
-    return data.weapons.filter((item) => item.tab === activeTab)
+    return /\b(kuva|tenet|coda)\b/i.test(item.name)
+  }
+
+  function inferWarframeTab(item) {
+    if (item.tab) {
+      return item.tab
+    }
+
+    if (item.productCategory === 'SpaceSuits') {
+      return 'archwings'
+    }
+    if (item.productCategory === 'MechSuits') {
+      return 'necramechs'
+    }
+    return 'warframes'
+  }
+
+  function inferWeaponTab(item) {
+    if (item.tab) {
+      return item.tab
+    }
+
+    if (item.productCategory === 'LongGuns' || item.slot === 1) {
+      return 'primary'
+    }
+    if (item.productCategory === 'Pistols' || item.slot === 0) {
+      return 'secondary'
+    }
+    if (item.productCategory === 'Melee' || item.slot === 5) {
+      return 'melee'
+    }
+    return 'other'
+  }
+
+  function getFilteredByTab(tabId, warframes, weapons) {
+    if (['warframes', 'necramechs', 'archwings'].includes(tabId)) {
+      const direct = warframes.filter((item) => item.tab === tabId)
+      if (direct.length > 0) {
+        return direct
+      }
+
+      return warframes.filter((item) => inferWarframeTab(item) === tabId)
+    }
+
+    const direct = weapons.filter((item) => item.tab === tabId)
+    if (direct.length > 0) {
+      return direct
+    }
+
+    return weapons.filter((item) => inferWeaponTab(item) === tabId)
   }
 
   function showPrimeFilterForTab() {
@@ -162,7 +211,7 @@
       return true
     }
 
-    const bucket = item.variant === 'lich' ? 'lich' : 'normal'
+    const bucket = isLichVariant(item) ? 'lich' : 'normal'
     if (!variantSelections[bucket]) {
       return false
     }
@@ -195,6 +244,16 @@
       lich: true,
     }
     sortBy = 'name-asc'
+  }
+
+  function isDefaultFilterState() {
+    return (
+      !search &&
+      primeSelections.normal &&
+      primeSelections.prime &&
+      variantSelections.normal &&
+      variantSelections.lich
+    )
   }
 
   function getPrimeFilterLabel() {
@@ -379,14 +438,19 @@
     persist()
   }
 
-  $: tabItems = getFilteredByTab()
+  $: tabItems = getFilteredByTab(activeTab, data.warframes, data.weapons)
 
-  $: currentItems = sortItems(
+  $: filteredItems = sortItems(
     tabItems
       .filter((item) => matchesSearch(item, search))
       .filter((item) => (showPrimeFilterForTab() ? matchesPrimeFilter(item) : true))
       .filter((item) => (showVariantFilterForTab() ? matchesVariantFilter(item) : true))
   )
+
+  $: currentItems =
+    filteredItems.length === 0 && tabItems.length > 0 && isDefaultFilterState()
+      ? sortItems(tabItems)
+      : filteredItems
 
   $: summary = currentItems.reduce(
     (acc, item) => {
