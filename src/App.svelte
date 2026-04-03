@@ -44,6 +44,9 @@
   let variantNormal = true
   let variantPrime = true
   let variantLich = true
+  let hideCrafted = false
+  let hideMastered = false
+  let hideSubsumed = false
   let sortBy = 'name-asc'
   let showSettings = false
 
@@ -146,6 +149,7 @@
   function getNameSortKey(name) {
     return cleanDisplayName(name)
       .replace(/^(?:kuva|tenet|coda)\s+/i, '')
+      .replace(/^mk1[-\s]+/i, '')
       .trim()
   }
 
@@ -217,6 +221,9 @@
     variantNormal = true
     variantPrime = true
     variantLich = true
+    hideCrafted = false
+    hideMastered = false
+    hideSubsumed = false
     sortBy = 'name-asc'
   }
 
@@ -225,7 +232,10 @@
       !search &&
       variantNormal &&
       variantPrime &&
-      variantLich
+      variantLich &&
+      !hideCrafted &&
+      !hideMastered &&
+      !hideSubsumed
     )
   }
 
@@ -271,6 +281,28 @@
       return filterState.prime
     }
     return filterState.normal
+  }
+
+  function buildStatusFilterLabel({ hideCrafted, hideMastered, hideSubsumed, isWarframeTab }) {
+    const labels = []
+    if (hideCrafted) labels.push('Hide crafted')
+    if (hideMastered) labels.push('Hide mastered')
+    if (isWarframeTab && hideSubsumed) labels.push('Hide subsumed')
+    return labels.length === 0 ? 'Status filters' : labels.join(' + ')
+  }
+
+  function matchesStatusVisibility(item, statusState) {
+    const state = ensureItemState(item)
+    if (statusState.hideCrafted && isCrafted(item)) {
+      return false
+    }
+    if (statusState.hideMastered && state.mastered) {
+      return false
+    }
+    if (statusState.hideSubsumed && statusState.isWarframeTab && state.subsumed) {
+      return false
+    }
+    return true
   }
 
   function getItemState(item) {
@@ -496,6 +528,15 @@
     hasLichOption: variantFilterHasLichOption,
   })
 
+  $: statusFilterState = {
+    hideCrafted,
+    hideMastered,
+    hideSubsumed,
+    isWarframeTab: activeTab === 'warframes',
+  }
+
+  $: statusFilterLabel = buildStatusFilterLabel(statusFilterState)
+
   $: sortState = {
     mode: sortBy,
     progressItems: progress.items,
@@ -515,7 +556,8 @@
   $: filteredItems = sortItems(
     tabItems
       .filter((item) => matchesSearch(item, search))
-      .filter((item) => matchesVariantSelectionForCurrentTab(item, variantFilterState)),
+      .filter((item) => matchesVariantSelectionForCurrentTab(item, variantFilterState))
+      .filter((item) => matchesStatusVisibility(item, statusFilterState)),
     sortState
   )
 
@@ -671,6 +713,26 @@
           </div>
         </details>
       {/if}
+
+      <details class="filter-menu status-menu">
+        <summary>{statusFilterLabel}</summary>
+        <div class="filter-list">
+          <label>
+            <input type="checkbox" bind:checked={hideCrafted} />
+            Hide crafted
+          </label>
+          <label>
+            <input type="checkbox" bind:checked={hideMastered} />
+            Hide mastered
+          </label>
+          {#if activeTab === 'warframes'}
+            <label>
+              <input type="checkbox" bind:checked={hideSubsumed} />
+              Hide subsumed
+            </label>
+          {/if}
+        </div>
+      </details>
 
       <details class="filter-menu sort-menu">
         <summary>{sortLabel}</summary>
