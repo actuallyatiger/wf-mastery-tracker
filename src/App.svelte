@@ -187,10 +187,46 @@
   }
 
   function persist() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress))
-    progress = {
+    let nextItems = progress.items ?? {}
+
+    if (progress.settings.craftedMode === 'auto') {
+      const allItems = [...(data.warframes ?? []), ...(data.weapons ?? [])]
+      const itemsById = new Map(allItems.map((item) => [item.id, item]))
+      const syncedItems = { ...nextItems }
+
+      for (const [itemId, itemState] of Object.entries(nextItems)) {
+        const item = itemsById.get(itemId)
+        if (!item || !itemState || typeof itemState !== 'object') {
+          continue
+        }
+
+        const requirements = getComponentRequirements(item)
+        const hasMain = item.mainBlueprintKey ? Boolean(itemState.mainBlueprintOwned) : true
+        const hasComponents = requirements.every((requirement, index) =>
+          isComponentRequirementOwned(itemState, requirement, index, requirements)
+        )
+        const crafted = hasMain && hasComponents
+
+        if (itemState.crafted !== crafted) {
+          syncedItems[itemId] = {
+            ...itemState,
+            crafted,
+          }
+        }
+      }
+
+      nextItems = syncedItems
+    }
+
+    const nextProgress = {
       ...progress,
-      items: { ...progress.items },
+      items: nextItems,
+    }
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(nextProgress))
+    progress = {
+      ...nextProgress,
+      items: { ...nextProgress.items },
     }
   }
 
@@ -729,7 +765,11 @@
   }
 
   function exportProgress() {
-    const serialized = JSON.stringify(progress, null, 2)
+    const exportPayload = {
+      items: progress.items ?? {},
+    }
+
+    const serialized = JSON.stringify(exportPayload, null, 2)
     const blob = new Blob([serialized], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
@@ -747,10 +787,11 @@
     reader.onload = () => {
       try {
         const parsed = JSON.parse(String(reader.result))
+
         progress = {
           settings: {
-            ...DEFAULT_SETTINGS,
-            ...(parsed.settings ?? {}),
+            ...progress.settings,
+            craftedMode: DEFAULT_SETTINGS.craftedMode,
           },
           items: parsed.items ?? {},
         }
