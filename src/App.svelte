@@ -222,26 +222,26 @@
     return labels.join(' + ')
   }
 
-  function matchesVariantSelectionForCurrentTab(item) {
-    if (!variantFilterVisible) {
+  function matchesVariantSelectionForCurrentTab(item, filterState) {
+    if (!filterState.visible) {
       return true
     }
 
-    if (noVariantSelection) {
+    if (filterState.noneSelected) {
       return true
     }
 
-    const isWeaponTab = variantFilterHasLichOption
+    const isWeaponTab = filterState.hasLichOption
     const lich = isLichVariant(item)
     const prime = isPrime(item)
 
     if (isWeaponTab && lich) {
-      return variantLich
+      return filterState.lich
     }
     if (prime) {
-      return variantPrime
+      return filterState.prime
     }
-    return variantNormal
+    return filterState.normal
   }
 
   function getItemState(item) {
@@ -422,10 +422,19 @@
     ? !variantNormal && !variantPrime && !variantLich
     : !variantNormal && !variantPrime
 
+  $: variantFilterState = {
+    visible: variantFilterVisible,
+    hasLichOption: variantFilterHasLichOption,
+    noneSelected: noVariantSelection,
+    normal: variantNormal,
+    prime: variantPrime,
+    lich: variantLich,
+  }
+
   $: filteredItems = sortItems(
     tabItems
       .filter((item) => matchesSearch(item, search))
-      .filter((item) => matchesVariantSelectionForCurrentTab(item))
+      .filter((item) => matchesVariantSelectionForCurrentTab(item, variantFilterState))
   )
 
   $: currentItems =
