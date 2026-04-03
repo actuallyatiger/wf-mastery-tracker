@@ -32,14 +32,9 @@
   let error = ''
   let activeTab = 'warframes'
   let search = ''
-  let primeSelections = {
-    normal: true,
-    prime: true,
-  }
-  let variantSelections = {
-    normal: true,
-    lich: true,
-  }
+  let variantNormal = true
+  let variantPrime = true
+  let variantLich = true
   let sortBy = 'name-asc'
   let showSettings = false
 
@@ -188,61 +183,65 @@
     return cleanDisplayName(item.name).toLowerCase().includes(text.toLowerCase())
   }
 
-  function togglePrimeSelection(key) {
-    primeSelections = {
-      ...primeSelections,
-      [key]: !primeSelections[key],
-    }
-  }
-
-  function toggleVariantSelection(key) {
-    variantSelections = {
-      ...variantSelections,
-      [key]: !variantSelections[key],
-    }
-  }
-
   function resetFilters() {
     search = ''
-    primeSelections = {
-      normal: true,
-      prime: true,
-    }
-    variantSelections = {
-      normal: true,
-      lich: true,
-    }
+    variantNormal = true
+    variantPrime = true
+    variantLich = true
     sortBy = 'name-asc'
   }
 
   function isDefaultFilterState() {
     return (
       !search &&
-      primeSelections.normal &&
-      primeSelections.prime &&
-      variantSelections.normal &&
-      variantSelections.lich
+      variantNormal &&
+      variantPrime &&
+      variantLich
     )
   }
 
-  function getPrimeFilterLabel() {
-    const selected = Object.entries(primeSelections)
-      .filter(([, on]) => on)
-      .map(([key]) => key)
+  function getVariantFilterLabel() {
+    const selected = []
+    if (variantNormal) selected.push('normal')
+    if (variantPrime) selected.push('prime')
+    if (variantFilterHasLichOption && variantLich) selected.push('lich')
 
-    if (selected.length === 2) return 'Prime filter: Normal + Prime'
-    if (selected.length === 0) return 'Prime filter: None'
-    return `Prime filter: ${selected[0] === 'prime' ? 'Prime' : 'Normal'}`
+    const options = ['normal', 'prime', ...(variantFilterHasLichOption ? ['lich'] : [])]
+
+    if (selected.length === options.length) {
+      return `Variant filter: ${options
+        .map((key) => (key === 'lich' ? 'Kuva/Tenet/Coda' : key === 'prime' ? 'Prime' : 'Normal'))
+        .join(' + ')}`
+    }
+
+    if (selected.length === 0) return 'Variant filter: None'
+
+    const labels = selected.map((key) =>
+      key === 'lich' ? 'Kuva/Tenet/Coda' : key === 'prime' ? 'Prime' : 'Normal'
+    )
+    return `Variant filter: ${labels.join(' + ')}`
   }
 
-  function getVariantFilterLabel() {
-    const selected = Object.entries(variantSelections)
-      .filter(([, on]) => on)
-      .map(([key]) => key)
+  function matchesVariantSelectionForCurrentTab(item) {
+    if (!variantFilterVisible) {
+      return true
+    }
 
-    if (selected.length === 2) return 'Variant filter: Normal + Kuva/Tenet/Coda'
-    if (selected.length === 0) return 'Variant filter: None'
-    return `Variant filter: ${selected[0] === 'lich' ? 'Kuva/Tenet/Coda' : 'Normal'}`
+    if (noVariantSelection) {
+      return true
+    }
+
+    const isWeaponTab = variantFilterHasLichOption
+    const lich = isLichVariant(item)
+    const prime = isPrime(item)
+
+    if (isWeaponTab && lich) {
+      return variantLich
+    }
+    if (prime) {
+      return variantPrime
+    }
+    return variantNormal
   }
 
   function getItemState(item) {
@@ -417,38 +416,16 @@
 
   $: tabItems = getFilteredByTab(activeTab, data.warframes, data.weapons)
 
-  $: primeFilterVisible = ['warframes', 'archwings', 'primary', 'secondary', 'melee'].includes(activeTab)
-  $: variantFilterVisible = ['primary', 'secondary', 'melee'].includes(activeTab)
-  $: noPrimeSelection = !primeSelections.normal && !primeSelections.prime
-  $: noVariantSelection = !variantSelections.normal && !variantSelections.lich
+  $: variantFilterVisible = ['warframes', 'archwings', 'primary', 'secondary', 'melee'].includes(activeTab)
+  $: variantFilterHasLichOption = ['primary', 'secondary', 'melee'].includes(activeTab)
+  $: noVariantSelection = variantFilterHasLichOption
+    ? !variantNormal && !variantPrime && !variantLich
+    : !variantNormal && !variantPrime
 
   $: filteredItems = sortItems(
     tabItems
       .filter((item) => matchesSearch(item, search))
-      .filter((item) => {
-        if (!primeFilterVisible) {
-          return true
-        }
-
-        if (noPrimeSelection) {
-          return true
-        }
-
-        const prime = isPrime(item)
-        return (prime && primeSelections.prime) || (!prime && primeSelections.normal)
-      })
-      .filter((item) => {
-        if (!variantFilterVisible) {
-          return true
-        }
-
-        if (noVariantSelection) {
-          return true
-        }
-
-        const lich = isLichVariant(item)
-        return (lich && variantSelections.lich) || (!lich && variantSelections.normal)
-      })
+      .filter((item) => matchesVariantSelectionForCurrentTab(item))
   )
 
   $: currentItems =
@@ -523,30 +500,6 @@
     <div class="controls">
       <input placeholder="Search by name" bind:value={search} />
 
-      {#if primeFilterVisible}
-        <details class="filter-menu">
-          <summary>{getPrimeFilterLabel()}</summary>
-          <div class="filter-list">
-            <label>
-              <input
-                type="checkbox"
-                checked={primeSelections.normal}
-                on:change={() => togglePrimeSelection('normal')}
-              />
-              Normal
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={primeSelections.prime}
-                on:change={() => togglePrimeSelection('prime')}
-              />
-              Prime
-            </label>
-          </div>
-        </details>
-      {/if}
-
       {#if variantFilterVisible}
         <details class="filter-menu">
           <summary>{getVariantFilterLabel()}</summary>
@@ -554,19 +507,26 @@
             <label>
               <input
                 type="checkbox"
-                checked={variantSelections.normal}
-                on:change={() => toggleVariantSelection('normal')}
+                bind:checked={variantNormal}
               />
               Normal
             </label>
             <label>
               <input
                 type="checkbox"
-                checked={variantSelections.lich}
-                on:change={() => toggleVariantSelection('lich')}
+                bind:checked={variantPrime}
               />
-              Kuva / Tenet / Coda
+              Prime
             </label>
+            {#if variantFilterHasLichOption}
+              <label>
+                <input
+                  type="checkbox"
+                  bind:checked={variantLich}
+                />
+                Kuva / Tenet / Coda
+              </label>
+            {/if}
           </div>
         </details>
       {/if}
