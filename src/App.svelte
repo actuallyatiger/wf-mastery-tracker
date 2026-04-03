@@ -331,7 +331,7 @@
     if (statusState.hideMastered && state.mastered) {
       return false
     }
-    if (statusState.hideSubsumed && statusState.isWarframeTab && state.subsumed) {
+    if (statusState.hideSubsumed && statusState.isWarframeTab && isSubsumed(item)) {
       return false
     }
     return true
@@ -474,6 +474,13 @@
     const state = ensureItemState(item)
     state.subsumed = value
     persist()
+  }
+
+  function isSubsumed(item) {
+    if (isPrime(item)) {
+      return false
+    }
+    return ensureItemState(item).subsumed
   }
 
   function setCraftedMode(value) {
@@ -644,7 +651,7 @@
       if (isCraftReady(item)) acc.ready += 1
       if (isCrafted(item)) acc.crafted += 1
       if (state.mastered) acc.mastered += 1
-      if (activeTab === 'warframes' && state.subsumed) acc.subsumed += 1
+      if (activeTab === 'warframes' && isSubsumed(item)) acc.subsumed += 1
       return acc
     },
     { blueprintOwned: 0, blueprintTotal: 0, ready: 0, crafted: 0, mastered: 0, subsumed: 0 }
@@ -969,11 +976,11 @@
               Mastered
             </label>
 
-            {#if activeTab === 'warframes'}
+            {#if activeTab === 'warframes' && !isPrime(item)}
               <label class="check-row">
                 <input
                   type="checkbox"
-                  checked={state.subsumed}
+                  checked={isSubsumed(item)}
                   on:change={(event) => toggleSubsumed(item, event.currentTarget.checked)}
                 />
                 Subsumed
