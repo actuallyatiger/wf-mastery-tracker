@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-03T23:49:55.833Z",
+  "generatedAt": "2026-04-06T08:15:38.920Z",
   "language": "en",
   "filters": {
     "includeAllWeapons": false
   },
   "source": {
-    "indexUrl": "https://origin.warframe.com/PublicExport/index_en.txt.lzma",
+    "indexUrl": "https://content.warframe.com/PublicExport/index_en.txt.lzma",
     "manifests": {
       "warframes": "ExportWarframes_en.json!00_4z2ijKyWeQitwtrlbz88nA",
       "weapons": "ExportWeapons_en.json!00_m4jPUWBwuv+hSYoS5lVOrA",
