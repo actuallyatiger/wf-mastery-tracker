@@ -201,6 +201,10 @@
         }
 
         const requirements = getComponentRequirements(item)
+        if (requirements.length === 0) {
+          continue
+        }
+
         const hasMain = item.mainBlueprintKey ? Boolean(itemState.mainBlueprintOwned) : true
         const hasComponents = requirements.every((requirement, index) =>
           isComponentRequirementOwned(itemState, requirement, index, requirements)
@@ -639,12 +643,16 @@
     return hasMain && hasComponents
   }
 
+  function isAutoCrafted(item) {
+    return progress.settings.craftedMode === 'auto' && getComponentRequirements(item).length > 0
+  }
+
   function isCrafted(item) {
     const state = ensureItemState(item)
-    if (progress.settings.craftedMode === 'manual') {
-      return state.crafted
+    if (isAutoCrafted(item)) {
+      return isCraftReady(item)
     }
-    return isCraftReady(item)
+    return state.crafted
   }
 
   function getProgressScore(item) {
@@ -1240,14 +1248,14 @@
               <input
                 type="checkbox"
                 checked={isCrafted(item)}
-                aria-readonly={progress.settings.craftedMode === 'auto'}
+                aria-readonly={isAutoCrafted(item)}
                 on:click={(event) => {
-                  if (progress.settings.craftedMode === 'auto') {
+                  if (isAutoCrafted(item)) {
                     event.preventDefault()
                   }
                 }}
                 on:change={(event) => {
-                  if (progress.settings.craftedMode !== 'auto') {
+                  if (!isAutoCrafted(item)) {
                     toggleCrafted(item, event.currentTarget.checked)
                   }
                 }}

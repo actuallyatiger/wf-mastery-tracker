@@ -227,6 +227,10 @@ function classifyWeaponTab(weapon) {
   return 'other'
 }
 
+function isExcludedWeaponEntry(weapon) {
+  return /\bmutagen\s*$/i.test(String(weapon?.name ?? "").trim());
+}
+
 function isComponentBlueprintIngredient(itemType, recipesByResult) {
   const recipe = recipesByResult.get(itemType)
   if (!recipe?.uniqueName) {
@@ -386,21 +390,22 @@ function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllW
   return weaponsRaw
     .filter((weapon) => weapon?.uniqueName && weapon?.name)
     .filter((weapon) => includeAllWeapons || CORE_WEAPON_CATEGORIES.has(weapon.productCategory))
+    .filter((weapon) => !isExcludedWeaponEntry(weapon))
     .map((weapon) => {
-      const recipe = recipesByResult.get(weapon.uniqueName)
-      const ingredientRows = recipe?.ingredients ?? []
+      const recipe = recipesByResult.get(weapon.uniqueName);
+      const ingredientRows = recipe?.ingredients ?? [];
       const componentRequirements = buildComponentRequirements({
         ingredientRows,
         recipesByResult,
         nameLookup,
         majorItemKeys,
-      })
+      });
       const requirements = buildNonComponentRequirements({
         ingredientRows,
         recipesByResult,
         nameLookup,
         majorItemKeys,
-      })
+      });
 
       return {
         id: weapon.uniqueName,
@@ -408,21 +413,17 @@ function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllW
         name: weapon.name,
         masteryReq: Number(weapon.masteryReq ?? 0),
         tab: classifyWeaponTab(weapon),
-        variant: isLichStyleWeapon(weapon.name)
-          ? 'lich'
-          : isLikelyPrime(weapon.name)
-            ? 'prime'
-            : 'normal',
-        productCategory: weapon.productCategory ?? 'Unknown',
+        variant: isLichStyleWeapon(weapon.name) ? "lich" : isLikelyPrime(weapon.name) ? "prime" : "normal",
+        productCategory: weapon.productCategory ?? "Unknown",
         slot: Number(weapon.slot ?? -1),
         hasRecipe: Boolean(recipe),
         mainBlueprintKey: recipe?.uniqueName ?? null,
         componentRequirements,
         requirements,
-      }
+      };
     })
-    .filter((weapon) => weapon.tab !== 'other')
-    .sort((a, b) => a.name.localeCompare(b.name))
+    .filter((weapon) => weapon.tab !== "other")
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function buildBlueprintNameLookup({ recipesRaw, nameLookup }) {

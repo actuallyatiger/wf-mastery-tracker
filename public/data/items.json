@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-06T08:15:38.920Z",
+  "generatedAt": "2026-04-06T19:39:53.341Z",
   "language": "en",
   "filters": {
     "includeAllWeapons": false
   },
   "source": {
-    "indexUrl": "https://content.warframe.com/PublicExport/index_en.txt.lzma",
+    "indexUrl": "https://origin.warframe.com/PublicExport/index_en.txt.lzma",
     "manifests": {
       "warframes": "ExportWarframes_en.json!00_4z2ijKyWeQitwtrlbz88nA",
       "weapons": "ExportWeapons_en.json!00_m4jPUWBwuv+hSYoS5lVOrA",
@@ -19,9 +19,9 @@
     "necramechs": 2,
     "archwings": 5,
     "primary": 191,
-    "secondary": 327,
+    "secondary": 319,
     "melee": 220,
-    "weapons": 738,
+    "weapons": 730,
     "components": 817
   },
   "blueprints": {
@@ -21947,45 +21947,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenA",
-      "name": "ADRA MUTAGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterMutagenABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
-          "name": "Orokin Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
-          "name": "Ferment Bladder",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem",
-          "name": "Sporulate Sac",
-          "count": 12,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb",
       "uniqueName": "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb",
       "name": "Aegrit",
@@ -23855,45 +23816,6 @@
           "name": "Forma",
           "count": 1,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenC",
-      "name": "ARIOLI MUTAGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorMutagenCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
-          "name": "Orokin Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
-          "name": "Tubercular Gill System",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
-          "name": "Spinal Core Section",
-          "count": 8,
-          "craftable": false
         }
       ]
     },
@@ -26338,45 +26260,6 @@
           "name": "Morphics",
           "count": 15,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenB",
-      "name": "CHITEN MUTAGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorMutagenBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
-          "name": "Orokin Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
-          "name": "Ferment Bladder",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
-          "name": "Biotic Filter",
-          "count": 12,
-          "craftable": false
         }
       ]
     },
@@ -29144,45 +29027,6 @@
           "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
           "name": "Pustulent Cognitive Nodule",
           "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenB",
-      "name": "ELSA MUTAGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterMutagenBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
-          "name": "Orokin Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
-          "name": "Ferment Bladder",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem",
-          "name": "Biotic Filter",
-          "count": 12,
           "craftable": false
         }
       ]
@@ -35133,45 +34977,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenA",
-      "name": "LEPTOSAM MUTAGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorMutagenABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
-          "name": "Orokin Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
-          "name": "Ferment Bladder",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem",
-          "name": "Sporulate Sac",
-          "count": 12,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Infested/Melee/TipedoStaff/InfTipedoStaff",
       "uniqueName": "/Lotus/Weapons/Infested/Melee/TipedoStaff/InfTipedoStaff",
       "name": "Lesion",
@@ -36003,45 +35808,6 @@
       "mainBlueprintKey": null,
       "componentRequirements": [],
       "requirements": []
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenD",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorMutagenD",
-      "name": "MONACHOD MUTAGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorMutagenDBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
-          "name": "Orokin Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
-          "name": "Tubercular Gill System",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem",
-          "name": "Cranial Foremount",
-          "count": 4,
-          "craftable": false
-        }
-      ]
     },
     {
       "id": "/Lotus/Weapons/Sentients/OperatorAmplifiers/SentTrainingAmplifier/SentAmpTrainingGrip",
@@ -38305,45 +38071,6 @@
           "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemB",
           "name": "Entrati Lanthorn",
           "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenD",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenD",
-      "name": "PHIJAR MUTAGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterMutagenDBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
-          "name": "Orokin Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
-          "name": "Tubercular Gill System",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem",
-          "name": "Cranial Foremount",
-          "count": 4,
           "craftable": false
         }
       ]
@@ -46758,45 +46485,6 @@
           "name": "Orokin Cell",
           "count": 10,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterMutagenC",
-      "name": "ZARIM MUTAGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterMutagenCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/OrokinFishBaitA",
-          "name": "Orokin Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericOrokinFishPartItem",
-          "name": "Tubercular Gill System",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
-          "name": "Spinal Core Section",
-          "count": 8,
-          "craftable": false
         }
       ]
     },
