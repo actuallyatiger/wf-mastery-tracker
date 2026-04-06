@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-06T19:39:53.341Z",
+  "generatedAt": "2026-04-06T19:47:31.874Z",
   "language": "en",
   "filters": {
     "includeAllWeapons": false
@@ -19,9 +19,9 @@
     "necramechs": 2,
     "archwings": 5,
     "primary": 191,
-    "secondary": 319,
-    "melee": 220,
-    "weapons": 730,
+    "secondary": 252,
+    "melee": 219,
+    "weapons": 662,
     "components": 817
   },
   "blueprints": {
@@ -21908,45 +21908,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyA",
-      "name": "Adlet Core",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-          "name": "Spectral Debris",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
-          "name": "Coprite Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
-          "name": "Rubedo",
-          "count": 1500,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb",
       "uniqueName": "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb",
       "name": "Aegrit",
@@ -21982,45 +21943,6 @@
           "name": "Morphics",
           "count": 2,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadAegron",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadAegron",
-      "name": "Aegron Gyro",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadAegronBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
-          "name": "Heart Noctrul",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 10,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
-          "name": "Plastids",
-          "count": 1000,
-          "craftable": false
         }
       ]
     },
@@ -23076,45 +22998,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineArcotek",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineArcotek",
-      "name": "Alcrom Core",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetEngineArcotekBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
-          "name": "Smooth Phasmin",
-          "count": 15,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/LongGuns/GyreRifle/GyreRifleWeapon",
       "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/GyreRifle/GyreRifleWeapon",
       "name": "Alternox",
@@ -23547,45 +23430,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAEngine",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAEngine",
-      "name": "Arc Twelve",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAEngineBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-          "name": "Tepa Nodule",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-          "name": "Scrap",
-          "count": 45,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
-          "name": "Tink Dissipator Coil",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Corpus/LongGuns/CrpShotgun/CrpShotgun",
       "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpShotgun/CrpShotgun",
       "name": "Arca Plasmor",
@@ -23945,45 +23789,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadThermocor",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadThermocor",
-      "name": "Atheca Gyro",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadThermocorBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-          "name": "Tepa Nodule",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
-          "name": "Star Amarast",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem",
-          "name": "Tromyzon Entroplasma",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
-          "name": "Control Module",
-          "count": 2,
-          "craftable": true
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon",
       "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon",
       "name": "Athodai",
@@ -24247,45 +24052,6 @@
           "itemKey": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriProcessedItem",
           "name": "Saggen Pearl",
           "count": 100,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisADeck",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisADeck",
-      "name": "Bad Baby",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisADeckBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-          "name": "Scrap",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
-          "name": "Mirewinder Parallel Biode",
-          "count": 10,
           "craftable": false
         }
       ]
@@ -24618,45 +24384,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAFront",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAFront",
-      "name": "Beaky",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAFrontBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
-          "name": "Gorgaricus Spore",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
-          "name": "Kriller Thermal Laser",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
-          "name": "Star Amarast",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
-          "name": "Scrubber Exa Brain",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCapIIClipPart",
       "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularCapIIClipPart",
       "name": "Bellows",
@@ -24691,45 +24418,6 @@
           "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
           "name": "Echowinder Anoscopic Sensor",
           "count": 5,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadB",
-      "name": "Bhaira Hound",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-          "name": "Spectral Debris",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
-          "name": "Gallium",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
-          "name": "Marquise Thyst",
-          "count": 2,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
-          "name": "Eye-Eye Rotoblade",
-          "count": 10,
           "craftable": false
         }
       ]
@@ -25952,45 +25640,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsA",
-      "name": "Cela Bracket",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem",
-          "name": "Sola Toroid",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem",
-          "name": "Iradite",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 35,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Melee/Dagger/CeramicDagger",
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Dagger/CeramicDagger",
       "name": "Ceramic Dagger",
@@ -26603,45 +26252,6 @@
       "requirements": []
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAEngine",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAEngine",
-      "name": "Coldfusor",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAEngineBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-          "name": "Tepa Nodule",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-          "name": "Scrap",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
-          "name": "Sapcaddy Venedo Case",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Corpus/LongGuns/CrpSplitLaser/CrpSplitLaser",
       "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CrpSplitLaser/CrpSplitLaser",
       "name": "Convectrix",
@@ -26798,20 +26408,6 @@
           "craftable": true
         }
       ]
-    },
-    {
-      "id": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterUncommonRewardItem",
-      "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterUncommonRewardItem",
-      "name": "Crescent Vulpaphyla",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": false,
-      "mainBlueprintKey": null,
-      "componentRequirements": [],
-      "requirements": []
     },
     {
       "id": "/Lotus/Weapons/Tenno/Melee/CronusSword/CronusLongSword",
@@ -27484,45 +27080,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenB",
-      "name": "DESUS ANTIGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterAntigenBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
-          "name": "Infested Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem",
-          "name": "Dendrite Blastoma",
-          "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Corpus/Pistols/CorpusHandShotgun/CorpusHandCannon",
       "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusHandShotgun/CorpusHandCannon",
       "name": "Detron",
@@ -27613,45 +27170,6 @@
       "requirements": []
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBFront",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBFront",
-      "name": "Dink-A-Donk",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBFrontBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
-          "name": "Gorgaricus Spore",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
-          "name": "Kriller Thermal Laser",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
-          "name": "Star Amarast",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
-          "name": "Scrubber Exa Brain",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Chassis/CorpAmpSet1ChassisPartB",
       "uniqueName": "/Lotus/Weapons/Corpus/OperatorAmplifiers/Set1/Chassis/CorpAmpSet1ChassisPartB",
       "name": "Dissic Scaffold",
@@ -27726,45 +27244,6 @@
           "name": "Pyrotic Alloy",
           "count": 60,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadA",
-      "name": "Dorma Hound",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-          "name": "Spectral Debris",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
-          "name": "Gallium",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
-          "name": "Radian Sentirum",
-          "count": 2,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
-          "name": "Mirewinder Parallel Biode",
-          "count": 10,
-          "craftable": false
         }
       ]
     },
@@ -27921,84 +27400,6 @@
           "name": "Plastids",
           "count": 900,
           "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineThricore",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineThricore",
-      "name": "Drex Core",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetEngineThricoreBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
-          "name": "Smooth Phasmin",
-          "count": 15,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegA",
-      "name": "Drimper Bracket",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 25,
-          "craftable": true
         }
       ]
     },
@@ -28993,45 +28394,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenA",
-      "name": "ELASMUN ANTIGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorAntigenABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
-          "name": "Infested Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
-          "name": "Pustulent Cognitive Nodule",
-          "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Infested/Pistols/InfestedPistol",
       "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfestedPistol",
       "name": "Embolist",
@@ -29596,45 +28958,6 @@
       "requirements": []
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBJet",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBJet",
-      "name": "Fatboys",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBJetBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 15,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
-          "name": "Echowinder Anoscopic Sensor",
-          "count": 20,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Zariman/LongGuns/PumpShotgun/ZarimanPumpShotgun",
       "uniqueName": "/Lotus/Weapons/Tenno/Zariman/LongGuns/PumpShotgun/ZarimanPumpShotgun",
       "name": "Felarx",
@@ -29709,84 +29032,6 @@
           "name": "Forma",
           "count": 1,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBDeck",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBDeck",
-      "name": "Feverspine",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBDeckBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
-          "name": "Adramal Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 50,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem",
-          "name": "Parasitic Tethermaw",
-          "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusADeck",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusADeck",
-      "name": "Flatbelly",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusADeckBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-          "name": "Scrap",
-          "count": 50,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishNeuralRelayItem",
-          "name": "Recaster Neural Relay",
-          "count": 10,
-          "craftable": false
         }
       ]
     },
@@ -29938,45 +29183,6 @@
           "name": "Orokin Cell",
           "count": 10,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailC",
-      "name": "Frak Stabilizer",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
-          "name": "Ferrite",
-          "count": 2500,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
-          "name": "Circuits",
-          "count": 600,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
-          "name": "Hespazym Alloy",
-          "count": 20,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
-          "name": "Nitain Extract",
-          "count": 3,
-          "craftable": false
         }
       ]
     },
@@ -30384,84 +29590,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
           "name": "Argon Crystal",
           "count": 2,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyB",
-      "name": "Garmr Core",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-          "name": "Spectral Debris",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem",
-          "name": "Devolved Namalon",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
-          "name": "Rubedo",
-          "count": 1500,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegD",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegD",
-      "name": "Gauth Bracket",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegDBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-          "name": "Tepa Nodule",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 20,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
-          "name": "Tink Dissipator Coil",
-          "count": 15,
           "craftable": false
         }
       ]
@@ -31084,45 +30212,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBEngine",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBEngine",
-      "name": "Gristlebuck",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBEngineBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
-          "name": "Ocular Stem-Root",
-          "count": 10,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem",
-          "name": "Tempered Bapholite",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
-          "name": "Pustulent Cognitive Nodule",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Melee/Polearms/TnGuandaoPolearm/TnGuandaoPolearmWeapon",
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/TnGuandaoPolearm/TnGuandaoPolearmWeapon",
       "name": "Guandao",
@@ -31411,45 +30500,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadDarta",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadDarta",
-      "name": "Harpen Gyro",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadDartaBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
-          "name": "Smooth Phasmin",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem",
-          "name": "Tink Dissipator Coil",
-          "count": 10,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
-          "name": "Circuits",
-          "count": 1000,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Melee/Scythe/StalkerScytheWeapon",
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Scythe/StalkerScytheWeapon",
       "name": "Hate",
@@ -31601,45 +30651,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
           "name": "Polymer Bundle",
           "count": 300,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadC",
-      "name": "Hec Hound",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-          "name": "Spectral Debris",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
-          "name": "Gallium",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem",
-          "name": "Trapezium Xenorhast",
-          "count": 2,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
-          "name": "Sapcaddy Venedo Case",
-          "count": 10,
           "craftable": false
         }
       ]
@@ -31797,45 +30808,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadHextra",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadHextra",
-      "name": "Hextra Gyro",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadHextraBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
-          "name": "Gorgaricus Spore",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
-          "name": "Eye-Eye Rotoblade",
-          "count": 10,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
-          "name": "Rubedo",
-          "count": 1000,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/LongGuns/Gunbrella/ShrineMaidenGunbrellaWeapon",
       "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/Gunbrella/ShrineMaidenGunbrellaWeapon",
       "name": "Higasa",
@@ -31871,45 +30843,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/ShrineFragment",
           "name": "Fate Pearl",
           "count": 5,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCEngine",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCEngine",
-      "name": "Highbrow",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCEngineBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-          "name": "Tepa Nodule",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-          "name": "Scrap",
-          "count": 35,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
-          "name": "Hespazym Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
-          "name": "Scrubber Exa Brain",
-          "count": 10,
           "craftable": false
         }
       ]
@@ -32039,45 +30972,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailB",
-      "name": "Hinta Stabilizer",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
-          "name": "Alloy Plate",
-          "count": 2500,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
-          "name": "Circuits",
-          "count": 600,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/RareOreAAlloyAItem",
-          "name": "Auroxium Alloy",
-          "count": 20,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
-          "name": "Nitain Extract",
-          "count": 3,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Infested/Melee/InfWFAccompanyingSparring/InfestedKogake",
       "uniqueName": "/Lotus/Weapons/Infested/Melee/InfWFAccompanyingSparring/InfestedKogake",
       "name": "Hirudo",
@@ -32113,84 +31007,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
           "name": "Nano Spores",
           "count": 4600,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegMelee",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegMelee",
-      "name": "Hona Bracket",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegMeleeBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 20,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBEngine",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBEngine",
-      "name": "Hothead",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBEngineBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-          "name": "Tepa Nodule",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-          "name": "Scrap",
-          "count": 35,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
-          "name": "Hespazym Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 10,
           "craftable": false
         }
       ]
@@ -32274,45 +31090,6 @@
           "name": "Orokin Cell",
           "count": 10,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenC",
-      "name": "IBEXAN ANTIGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorAntigenCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
-          "name": "Infested Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem",
-          "name": "Saturated Muscle Mass",
-          "count": 15,
-          "craftable": false
         }
       ]
     },
@@ -32429,45 +31206,6 @@
           "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/VoidWraithItem",
           "name": "Thrax Plasm",
           "count": 20,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenB",
-      "name": "IRANON ANTIGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorAntigenBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
-          "name": "Infested Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem",
-          "name": "Dendrite Blastoma",
-          "count": 15,
           "craftable": false
         }
       ]
@@ -32741,45 +31479,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
           "name": "Rubedo",
           "count": 600,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegC",
-      "name": "Jonsin Bracket",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-          "name": "Tepa Nodule",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
-          "name": "Heart Noctrul",
-          "count": 20,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 15,
           "craftable": false
         }
       ]
@@ -33820,45 +32519,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineKrisys",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetEngineKrisys",
-      "name": "Krisys Core",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetEngineKrisysBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
-          "name": "Heart Noctrul",
-          "count": 15,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/GrnEgyptSwdWeapon",
       "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/GrnEgyptSwdWeapon",
       "name": "Krohkur",
@@ -34576,45 +33236,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadLambeo",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadLambeo",
-      "name": "Lambeo Moa",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadLambeoBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
-          "name": "Gorgaricus Spore",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
-          "name": "Heart Noctrul",
-          "count": 10,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 30,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
-          "name": "Morphics",
-          "count": 2,
-          "craftable": true
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/ClanTech/Energy/Railgun",
       "uniqueName": "/Lotus/Weapons/ClanTech/Energy/Railgun",
       "name": "Lanka",
@@ -34894,45 +33515,6 @@
           "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
           "name": "Charamote Sagan Module",
           "count": 6,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MeleeMoaPetEngine",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MeleeMoaPetEngine",
-      "name": "Lehan Core",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetEngineMeleeBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
-          "name": "Star Amarast",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
-          "name": "Hespazym Alloy",
-          "count": 10,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
-          "name": "Eye-Eye Rotoblade",
-          "count": 10,
           "craftable": false
         }
       ]
@@ -35528,20 +34110,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorRareRewardItem",
-      "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorRareRewardItem",
-      "name": "Medjay Predasite",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": false,
-      "mainBlueprintKey": null,
-      "componentRequirements": [],
-      "requirements": []
-    },
-    {
       "id": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipThree",
       "uniqueName": "/Lotus/Weapons/Ostron/Melee/ModularMelee01/Tip/PvPVariantTipThree",
       "name": "Mewan",
@@ -35852,45 +34420,6 @@
       "requirements": []
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadMunitron",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadMunitron",
-      "name": "Munit Gyro",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadMunitronBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
-          "name": "Heart Noctrul",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
-          "name": "Scrubber Exa Brain",
-          "count": 10,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
-          "name": "Circuits",
-          "count": 1000,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Infested/Bow/InfCernosBow/InfCernos",
       "uniqueName": "/Lotus/Weapons/Infested/Bow/InfCernosBow/InfCernos",
       "name": "Mutalist Cernos",
@@ -36187,45 +34716,6 @@
       "requirements": []
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBDeck",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBDeck",
-      "name": "Needlenose",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusB/HoverboardCorpusBDeckBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
-          "name": "Hespazym Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-          "name": "Scrap",
-          "count": 40,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
-          "name": "Eye-Eye Rotoblade",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Archon/Melee/DualDaggers/ArchonDualDaggersPlayerWep",
       "uniqueName": "/Lotus/Weapons/Archon/Melee/DualDaggers/ArchonDualDaggersPlayerWep",
       "name": "Nepheri",
@@ -36417,45 +34907,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBFront",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBFront",
-      "name": "Nodulite",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBFrontBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemACutItem",
-          "name": "Stellated Necrathene",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
-          "name": "Ocular Stem-Root",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem",
-          "name": "Sporulate Sac",
-          "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Grineer/Pistols/GrineerMicrowavegun/GrnMicrowavePistol",
       "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerMicrowavegun/GrnMicrowavePistol",
       "name": "Nukor",
@@ -36490,45 +34941,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
           "name": "Forma",
           "count": 1,
-          "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadMelee",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadMelee",
-      "name": "Nychus Moa",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadMeleeBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
-          "name": "Gorgaricus Spore",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 10,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 20,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
-          "name": "Morphics",
-          "count": 2,
           "craftable": true
         }
       ]
@@ -36770,45 +35182,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
           "name": "Orokin Cell",
           "count": 15,
-          "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadOloro",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadOloro",
-      "name": "Oloro Moa",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadOloroBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 10,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 30,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
-          "name": "Morphics",
-          "count": 2,
           "craftable": true
         }
       ]
@@ -37381,59 +35754,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterRareRewardItem",
-      "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterRareRewardItem",
-      "name": "Panzer Vulpaphyla",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": false,
-      "mainBlueprintKey": null,
-      "componentRequirements": [],
-      "requirements": []
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadPara",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadPara",
-      "name": "Para Moa",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadParaBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
-          "name": "Smooth Phasmin",
-          "count": 10,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 30,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
-          "name": "Morphics",
-          "count": 2,
-          "craftable": true
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Orokin/BallasSword/BallasSwordWeapon",
       "uniqueName": "/Lotus/Weapons/Orokin/BallasSword/BallasSwordWeapon",
       "name": "Paracesis",
@@ -37984,59 +36304,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorUncommonRewardItem",
-      "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorUncommonRewardItem",
-      "name": "Pharaoh Predasite",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": false,
-      "mainBlueprintKey": null,
-      "componentRequirements": [],
-      "requirements": []
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadTazron",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadTazron",
-      "name": "Phazor Gyro",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadTazronBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
-          "name": "Gorgaricus Spore",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
-          "name": "Sapcaddy Venedo Case",
-          "count": 10,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
-          "name": "Rubedo",
-          "count": 1000,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Zariman/LongGuns/SemiAutoRifle/ZarimanSemiAutoRifle",
       "uniqueName": "/Lotus/Weapons/Tenno/Zariman/LongGuns/SemiAutoRifle/ZarimanSemiAutoRifle",
       "name": "Phenmor",
@@ -38110,45 +36377,6 @@
           "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
           "name": "Charamote Sagan Module",
           "count": 6,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenC",
-      "name": "PLAGEN ANTIGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterAntigenCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
-          "name": "Infested Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem",
-          "name": "Saturated Muscle Mass",
-          "count": 15,
           "craftable": false
         }
       ]
@@ -38450,45 +36678,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
           "name": "Nitain Extract",
           "count": 2,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenD",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenD",
-      "name": "POXI ANTIGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterAntigenDBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
-          "name": "Infested Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishDPartItem",
-          "name": "Waxen Sebum Deposit",
-          "count": 15,
           "craftable": false
         }
       ]
@@ -39351,45 +37540,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartBodyC",
-      "name": "Raiju Core",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartBodyCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
-          "name": "Spectral Debris",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem",
-          "name": "Adramal Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem",
-          "name": "Fersteel Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
-          "name": "Rubedo",
-          "count": 1500,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Syndicates/RedVeil/Pistols/RVBallistica",
       "uniqueName": "/Lotus/Weapons/Syndicates/RedVeil/Pistols/RVBallistica",
       "name": "Rakta Ballistica",
@@ -40012,45 +38162,6 @@
       "mainBlueprintKey": null,
       "componentRequirements": [],
       "requirements": []
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCDeck",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCDeck",
-      "name": "Runway",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCDeckBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem",
-          "name": "Hespazym Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
-          "name": "Scrap",
-          "count": 40,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
-          "name": "Kriller Thermal Laser",
-          "count": 10,
-          "craftable": false
-        }
-      ]
     },
     {
       "id": "/Lotus/Weapons/Thanotech/EntFistIncarnon/EntFistIncarnon",
@@ -41461,20 +39572,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterCommonRewardItem",
-      "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedCritterCommonRewardItem",
-      "name": "Sly Vulpaphyla",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": false,
-      "mainBlueprintKey": null,
-      "componentRequirements": [],
-      "requirements": []
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Rifle/SniperRifle",
       "uniqueName": "/Lotus/Weapons/Tenno/Rifle/SniperRifle",
       "name": "Snipetron",
@@ -42162,45 +40259,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBJet",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBJet",
-      "name": "Steeba",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardInfestedB/HoverboardInfestedBJetBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem",
-          "name": "Pustulite",
-          "count": 35,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem",
-          "name": "Parasitic Tethermaw",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 10,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem",
-          "name": "Saturated Muscle Mass",
-          "count": 20,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/LongGuns/TnoLotusPodShotgun/TnoLotusPodShotgun",
       "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/TnoLotusPodShotgun/TnoLotusPodShotgun",
       "name": "Steflos",
@@ -42237,45 +40295,6 @@
           "name": "Neurodes",
           "count": 4,
           "craftable": true
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAJet",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAJet",
-      "name": "Step Tens",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAJetBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
-          "name": "Star Amarast",
-          "count": 15,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
-          "name": "Echowinder Anoscopic Sensor",
-          "count": 20,
-          "craftable": false
         }
       ]
     },
@@ -42597,45 +40616,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
           "name": "Alloy Plate",
           "count": 1200,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/PlayerControllable/Weapons/DuviriDualSwordsWeapon",
-      "uniqueName": "/Lotus/Types/Friendly/PlayerControllable/Weapons/DuviriDualSwordsWeapon",
-      "name": "Sun & Moon",
-      "masteryReq": 0,
-      "tab": "melee",
-      "variant": "normal",
-      "productCategory": "Melee",
-      "slot": 5,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/DuviriDualSwordsBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemA",
-          "name": "Kovnik",
-          "count": 100,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriFractalItem",
-          "name": "Rune Marrow",
-          "count": 35,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriEnemyDropItem",
-          "name": "Lamentus",
-          "count": 40,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemE",
-          "name": "Silphsela",
-          "count": 45,
           "craftable": false
         }
       ]
@@ -43594,45 +41574,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenD",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedPredatorAntigenD",
-      "name": "TETHRON ANTIGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedPredatorAntigenDBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
-          "name": "Infested Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishDPartItem",
-          "name": "Waxen Sebum Deposit",
-          "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/CorpusUMP",
       "uniqueName": "/Lotus/Weapons/Corpus/LongGuns/CorpusUMP/CorpusUMP",
       "name": "Tetra",
@@ -43750,45 +41691,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCJet",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCJet",
-      "name": "Thugs",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCJetBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
-          "name": "Smooth Phasmin",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
-          "name": "Venerdo Alloy",
-          "count": 15,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
-          "name": "Charamote Sagan Module",
-          "count": 5,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatICapIIClipPart",
       "uniqueName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Clip/SUModularStatICapIIClipPart",
       "name": "Thunderdrum",
@@ -43861,45 +41763,6 @@
         {
           "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem",
           "name": "Ferment Bladder",
-          "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetLegB",
-      "name": "Tian Bracket",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetLegBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem",
-          "name": "Tepa Nodule",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 40,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
-          "name": "Smooth Phasmin",
-          "count": 20,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
-          "name": "Echowinder Anoscopic Sensor",
           "count": 15,
           "craftable": false
         }
@@ -44459,45 +42322,6 @@
       ]
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadCryoxion",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetPayloadCryoxion",
-      "name": "Trux Gyro",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadCryoxionBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
-          "name": "Heart Noctrul",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
-          "name": "Echowinder Anoscopic Sensor",
-          "count": 10,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
-          "name": "Plastids",
-          "count": 1000,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Grineer/Melee/GrnDualFireAxe/GrnDualFireAxe",
       "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrnDualFireAxe/GrnDualFireAxe",
       "name": "Twin Basolk",
@@ -44600,45 +42424,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
           "name": "Rubedo",
           "count": 1200,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAJet",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAJet",
-      "name": "Twin Kavats",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardSolarisA/HoverboardSolarisAJetBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
-          "name": "Mytocardia Spore",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
-          "name": "Heart Noctrul",
-          "count": 15,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem",
-          "name": "Echowinder Anoscopic Sensor",
-          "count": 20,
           "craftable": false
         }
       ]
@@ -44824,84 +42609,6 @@
       "requirements": []
     },
     {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCFront",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCFront",
-      "name": "Two-Sloops",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusC/HoverboardCorpusCFrontBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
-          "name": "Gorgaricus Spore",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
-          "name": "Kriller Thermal Laser",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
-          "name": "Goblite Tears",
-          "count": 15,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
-          "name": "Longwinder Lathe Coagulant",
-          "count": 5,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MeleeMoaPetPayload",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MeleeMoaPetPayload",
-      "name": "Tyli Gyro",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetPayloadMeleeBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
-          "name": "Star Amarast",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
-          "name": "Mirewinder Parallel Biode",
-          "count": 10,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
-          "name": "Oxium",
-          "count": 1200,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Infested/Pistols/InfestedDartPistol/InfestedDartPistol",
       "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfestedDartPistol/InfestedDartPistol",
       "name": "Tysis",
@@ -44975,45 +42682,6 @@
           "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem",
           "name": "Spinal Core Section",
           "count": 10,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsB",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsB",
-      "name": "Urga Bracket",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsBBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem",
-          "name": "Calda Toroid",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
-          "name": "Thermal Sludge",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem",
-          "name": "Pyrotic Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 15,
           "craftable": false
         }
       ]
@@ -45983,45 +43651,6 @@
       "requirements": []
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/CreaturePetParts/Deimos/InfestedCritterAntigenA",
-      "name": "VIROX ANTIGEN",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Pets/InfestedCritterAntigenABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Game/FishBait/Infested/InfestedFishBaitA",
-          "name": "Infested Fish Bait A",
-          "count": 6,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem",
-          "name": "Ganglion",
-          "count": 15,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem",
-          "name": "Benign Infested Tumor",
-          "count": 30,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem",
-          "name": "Pustulent Cognitive Nodule",
-          "count": 15,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Melee/Swords/NWIIIOrokinSword/NWOrokinSword",
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/NWIIIOrokinSword/NWOrokinSword",
       "name": "Vitrica",
@@ -46059,20 +43688,6 @@
           "craftable": true
         }
       ]
-    },
-    {
-      "id": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorCommonRewardItem",
-      "uniqueName": "/Lotus/Types/Items/Deimos/WoundedInfestedPredatorCommonRewardItem",
-      "name": "Vizier Predasite",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": false,
-      "mainBlueprintKey": null,
-      "componentRequirements": [],
-      "requirements": []
     },
     {
       "id": "/Lotus/Weapons/Tenno/Melee/Hammer/GlassHammer/GlassHammer",
@@ -46201,45 +43816,6 @@
       "requirements": []
     },
     {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailA",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartTailA",
-      "name": "Wanz Stabilizer",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartTailABlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
-          "name": "Salvage",
-          "count": 2500,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
-          "name": "Circuits",
-          "count": 600,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem",
-          "name": "Thaumic Distillate",
-          "count": 20,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
-          "name": "Nitain Extract",
-          "count": 3,
-          "craftable": false
-        }
-      ]
-    },
-    {
       "id": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoGreatSword",
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoGreatSword",
       "name": "War",
@@ -46299,45 +43875,6 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
           "name": "Nitain Extract",
           "count": 5,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAFront",
-      "uniqueName": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAFront",
-      "name": "Wingnut",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Vehicles/Hoverboard/HoverboardParts/PartComponents/HoverboardCorpusA/HoverboardCorpusAFrontBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
-          "name": "Gorgaricus Spore",
-          "count": 25,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem",
-          "name": "Kriller Thermal Laser",
-          "count": 20,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem",
-          "name": "Star Amarast",
-          "count": 5,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem",
-          "name": "Scrubber Exa Brain",
-          "count": 10,
           "craftable": false
         }
       ]
@@ -46797,45 +44334,6 @@
           "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
           "name": "Eye-Eye Rotoblade",
           "count": 5,
-          "craftable": false
-        }
-      ]
-    },
-    {
-      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsC",
-      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartLegsC",
-      "name": "Zubb Bracket",
-      "masteryReq": 0,
-      "tab": "secondary",
-      "variant": "normal",
-      "productCategory": "Pistols",
-      "slot": -1,
-      "hasRecipe": true,
-      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartLegsCBlueprint",
-      "componentRequirements": [],
-      "requirements": [
-        {
-          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem",
-          "name": "Vega Toroid",
-          "count": 5,
-          "craftable": false
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
-          "name": "Travocyte Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
-          "name": "Axidrol Alloy",
-          "count": 25,
-          "craftable": true
-        },
-        {
-          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishMuonBatteryItem",
-          "name": "Brickie Muon Battery",
-          "count": 15,
           "craftable": false
         }
       ]

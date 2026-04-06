@@ -227,8 +227,12 @@ function classifyWeaponTab(weapon) {
   return 'other'
 }
 
-function isExcludedWeaponEntry(weapon) {
-  return /\bmutagen\s*$/i.test(String(weapon?.name ?? "").trim());
+function isPowersuitEntry(entry) {
+  return String(entry?.uniqueName ?? '').startsWith('/Lotus/Powersuits/')
+}
+
+function isWeaponEntry(entry) {
+  return String(entry?.uniqueName ?? '').startsWith('/Lotus/Weapons/')
 }
 
 function isComponentBlueprintIngredient(itemType, recipesByResult) {
@@ -351,6 +355,7 @@ function buildNonComponentRequirements({ ingredientRows, recipesByResult, nameLo
 function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup, majorItemKeys }) {
   return warframesRaw
     .filter((frame) => frame?.uniqueName && frame?.name)
+    .filter((frame) => isPowersuitEntry(frame))
     .filter((frame) => ['Suits', 'SpaceSuits', 'MechSuits'].includes(frame.productCategory))
     .filter((frame) => frame.name !== 'Excalibur Prime')
     .map((frame) => {
@@ -389,8 +394,8 @@ function normalizeWarframes({ warframesRaw, recipesByResult, nameLookup, majorIt
 function normalizeWeapons({ weaponsRaw, recipesByResult, nameLookup, includeAllWeapons, majorItemKeys }) {
   return weaponsRaw
     .filter((weapon) => weapon?.uniqueName && weapon?.name)
+    .filter((weapon) => isWeaponEntry(weapon))
     .filter((weapon) => includeAllWeapons || CORE_WEAPON_CATEGORIES.has(weapon.productCategory))
-    .filter((weapon) => !isExcludedWeaponEntry(weapon))
     .map((weapon) => {
       const recipe = recipesByResult.get(weapon.uniqueName);
       const ingredientRows = recipe?.ingredients ?? [];
@@ -501,10 +506,12 @@ async function main() {
 
   const majorItemKeys = new Set([
     ...warframesRaw
+      .filter((frame) => isPowersuitEntry(frame))
       .filter((frame) => ['Suits', 'SpaceSuits', 'MechSuits'].includes(frame?.productCategory))
       .map((frame) => frame?.uniqueName)
       .filter(Boolean),
     ...weaponsRaw
+      .filter((weapon) => isWeaponEntry(weapon))
       .filter((weapon) => CORE_WEAPON_CATEGORIES.has(weapon?.productCategory))
       .map((weapon) => weapon?.uniqueName)
       .filter(Boolean),
