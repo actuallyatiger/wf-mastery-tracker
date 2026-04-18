@@ -1,0 +1,295 @@
+{
+  "tab": "arch-melee",
+  "itemCount": 8,
+  "items": [
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchSwordHook/ArchHookSwordWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchSwordHook/ArchHookSwordWeapon",
+      "name": "Agkuza",
+      "masteryReq": 3,
+      "tab": "arch-melee",
+      "variant": "normal",
+      "category": "Arch-Melee",
+      "type": "Arch-Melee",
+      "productCategory": "SpaceMelee",
+      "imageName": "agkuza-ad630f8d41.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchHookSwordBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordGuard::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordGuard",
+          "name": "Guard",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordHandle",
+          "name": "Handle",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/Archswordandshield/ArchSwordShield",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/Archswordandshield/ArchSwordShield",
+      "name": "Centaur",
+      "masteryReq": 8,
+      "tab": "arch-melee",
+      "variant": "normal",
+      "category": "Arch-Melee",
+      "type": "Arch-Melee",
+      "productCategory": "SpaceMelee",
+      "imageName": "centaur-a00c7e4fd8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchSwordShieldBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldAegis::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldAegis",
+          "name": "Aegis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldHandle",
+          "name": "Handle",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchScythe/ArchScythe",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchScythe/ArchScythe",
+      "name": "Kaszas",
+      "masteryReq": 4,
+      "tab": "arch-melee",
+      "variant": "normal",
+      "category": "Arch-Melee",
+      "type": "Arch-Melee",
+      "productCategory": "SpaceMelee",
+      "imageName": "kaszas-fa004e9997.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchScytheBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheHandle",
+          "name": "Handle",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Tellurium",
+          "name": "Tellurium",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/GrnArchHand/GrnArchHandWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/GrnArchHand/GrnArchHandWeapon",
+      "name": "Knux",
+      "masteryReq": 7,
+      "tab": "arch-melee",
+      "variant": "normal",
+      "category": "Arch-Melee",
+      "type": "Arch-Melee",
+      "productCategory": "SpaceMelee",
+      "imageName": "knux-939cea4c86.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Chemical/GrnArchHandBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Fist/Fist::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Melee/Fist/Fist",
+          "name": "Furax",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/ChemComponent",
+          "name": "Detonite Injector",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/Archaxe/ArchAxeWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/Archaxe/ArchAxeWeapon",
+      "name": "Onorix",
+      "masteryReq": 1,
+      "tab": "arch-melee",
+      "variant": "normal",
+      "category": "Arch-Melee",
+      "type": "Arch-Melee",
+      "productCategory": "SpaceMelee",
+      "imageName": "onorix-cec1553bd5.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchAxeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeHandle",
+          "name": "Handle",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/VoidTraderArchsword/VTArchSwordWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/VoidTraderArchsword/VTArchSwordWeapon",
+      "name": "Prisma Veritux",
+      "masteryReq": 8,
+      "tab": "arch-melee",
+      "variant": "normal",
+      "category": "Arch-Melee",
+      "type": "Arch-Melee",
+      "productCategory": "SpaceMelee",
+      "imageName": "prisma-veritux-b7348241ce.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchHammer/ArchHammer",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/ArchHammer/ArchHammer",
+      "name": "Rathbone",
+      "masteryReq": 6,
+      "tab": "arch-melee",
+      "variant": "normal",
+      "category": "Arch-Melee",
+      "type": "Arch-Melee",
+      "productCategory": "SpaceMelee",
+      "imageName": "rathbone-918424e099.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchHammerBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHandle",
+          "name": "Handle",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHead::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHead",
+          "name": "Head",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 300,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/Archsword/ArchSwordWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/Archsword/ArchSwordWeapon",
+      "name": "Veritux",
+      "masteryReq": 0,
+      "tab": "arch-melee",
+      "variant": "normal",
+      "category": "Arch-Melee",
+      "type": "Arch-Melee",
+      "productCategory": "SpaceMelee",
+      "imageName": "veritux-a2d86d183e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/VerituxBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 1000,
+          "craftable": false
+        }
+      ]
+    }
+  ]
+}

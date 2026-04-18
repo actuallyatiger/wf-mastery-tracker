@@ -1,33 +1,44 @@
 <script>
   import { onMount } from 'svelte'
-
-  const STORAGE_KEY = 'wf-mastery-tracker-v2'
-  const DEFAULT_SETTINGS = {
-    craftedMode: 'manual',
-    theme: 'system',
-  }
-
-  const TABS = [
-    { id: 'warframes', label: 'Warframes' },
-    { id: 'necramechs', label: 'Necramechs' },
-    { id: 'archwings', label: 'Archwings' },
-    { id: 'primary', label: 'Primary' },
-    { id: 'secondary', label: 'Secondary' },
-    { id: 'melee', label: 'Melee' },
-  ]
-
-  const SORT_OPTIONS = [
-    { value: 'name-asc', label: 'A to Z' },
-    { value: 'name-desc', label: 'Z to A' },
-    { value: 'mr-asc', label: 'MR (Ascending)', weaponsOnly: true },
-    { value: 'mr-desc', label: 'MR (Descending)', weaponsOnly: true },
-    { value: 'progress-desc', label: 'Blueprint Progress' },
-  ]
+  import ItemCard from './components/ItemCard.svelte'
+  import SettingsPanel from './components/SettingsPanel.svelte'
+  import Toolbar from './components/Toolbar.svelte'
+  import { loadTrackerData } from './lib/data-loader'
+  import { importProfileData } from './lib/profile-import'
+  import {
+    STORAGE_KEY,
+    DEFAULT_SETTINGS,
+    TABS,
+    SORT_OPTIONS,
+    PROFILE_URL_PC,
+    EMPTY_ITEM_STATE,
+    cleanDisplayName,
+    isPrime,
+    isUmbra,
+    createItemState,
+    normalizeItemState,
+    normalizeItems,
+    getComponentRequirementId,
+    isComponentRequirementOwned,
+    getBlueprintRows as getBlueprintRowsCore,
+    getBlueprintTreeGuides,
+    getBlueprintTooltip as getBlueprintTooltipCore,
+    isCraftReady,
+    isAutoCrafted,
+    isCrafted,
+    isSubsumed,
+    matchesSearch,
+    matchesVariant,
+    matchesStatus,
+    sortItems,
+    computeSummary,
+    getStatusFilterLabel,
+  } from './lib/tracker-core'
 
   let data = {
-    warframes: [],
-    weapons: [],
+    items: [],
     components: {},
+    blueprints: {},
     generatedAt: null,
     counts: {},
   }
@@ -48,93 +59,11 @@
   let hideMastered = false
   let hideSubsumed = false
   let sortBy = 'name-asc'
+  let filteredItems = []
+  let currentItems = []
+  let summary = { blueprintOwned: 0, blueprintTotal: 0, ready: 0, crafted: 0, mastered: 0, subsumed: 0 }
   let showSettings = false
   let settingsAnchorElement
-
-  async function loadData() {
-    loading = true
-    error = ''
-    try {
-      const response = await fetch(`${import.meta.env.BASE_URL}data/items.json`)
-      if (!response.ok) {
-        throw new Error(`Could not load data (status ${response.status}).`)
-      }
-
-      const payload = await response.json()
-      data = {
-        ...payload,
-        warframes: payload.warframes ?? [],
-        weapons: payload.weapons ?? [],
-        components: payload.components ?? {},
-        counts: payload.counts ?? {},
-      }
-
-      hydrateStoredProgress()
-      migrateLegacyProgressFormat()
-      applyTheme(progress.settings.theme)
-    } catch (loadError) {
-      error = loadError.message
-    } finally {
-      loading = false
-    }
-  }
-
-  function migrateLegacyProgressFormat() {
-    const allItems = [...(data.warframes ?? []), ...(data.weapons ?? [])]
-    if (allItems.length === 0) {
-      return false
-    }
-
-    const itemsById = new Map(allItems.map((item) => [item.id, item]))
-    const nextItems = { ...(progress.items ?? {}) }
-    let migratedAny = false
-
-    for (const [itemId, itemState] of Object.entries(progress.items ?? {})) {
-      const item = itemsById.get(itemId)
-      if (!item || !itemState || typeof itemState !== 'object') {
-        continue
-      }
-
-      const requirements = getComponentRequirements(item)
-      if (requirements.length === 0) {
-        continue
-      }
-
-      const migratedOwned = {}
-      for (let i = 0; i < requirements.length; i += 1) {
-        const requirement = requirements[i]
-        if (isComponentRequirementOwned(itemState, requirement, i, requirements)) {
-          migratedOwned[getComponentRequirementId(requirement, i)] = true
-        }
-      }
-
-      const currentOwned = itemState.componentBlueprintsOwned ?? {}
-      const currentTrueKeys = Object.keys(currentOwned).filter((key) => currentOwned[key])
-      const migratedKeys = Object.keys(migratedOwned)
-
-      const keysMatch =
-        currentTrueKeys.length === migratedKeys.length &&
-        currentTrueKeys.every((key) => migratedOwned[key])
-
-      if (!keysMatch) {
-        nextItems[itemId] = {
-          ...itemState,
-          componentBlueprintsOwned: migratedOwned,
-        }
-        migratedAny = true
-      }
-    }
-
-    if (migratedAny) {
-      progress = {
-        ...progress,
-        items: nextItems,
-      }
-      persist()
-    }
-
-    return migratedAny
-  }
 
   function resolveTheme(setting) {
     if (setting === 'light' || setting === 'dark') {
@@ -149,50 +78,52 @@
     document.documentElement.dataset.theme = theme
   }
 
-  function hydrateStoredProgress() {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) {
-      return
+  function updateItemState(item, updater) {
+    const current = normalizeItemState(progress.items?.[item.id] ?? createItemState())
+    const updated = normalizeItemState(updater(current) ?? current)
+
+    progress = {
+      ...progress,
+      items: {
+        ...(progress.items ?? {}),
+        [item.id]: updated,
+      },
     }
 
-    try {
-      const stored = JSON.parse(raw)
-      progress = {
-        settings: {
-          ...DEFAULT_SETTINGS,
-          ...(stored.settings ?? {}),
-        },
-        items: stored.items ?? {},
-      }
-    } catch {
-      progress = {
-        settings: { ...DEFAULT_SETTINGS },
-        items: {},
-      }
-    }
+    persist()
   }
 
-  function ensureItemState(item) {
-    if (!progress.items[item.id]) {
-      progress.items[item.id] = {
-        mainBlueprintOwned: false,
-        componentBlueprintsOwned: {},
-        crafted: false,
-        mastered: false,
-        subsumed: false,
-      }
-    }
+  function getBlueprintRows(item) {
+    return getBlueprintRowsCore(item, data.blueprints)
+  }
 
-    return progress.items[item.id]
+  function getBlueprintTooltip(item, row) {
+    return getBlueprintTooltipCore(item, row, data.components)
+  }
+
+  function isCraftReadyForItem(item) {
+    return isCraftReady(progress, item)
+  }
+
+  function isAutoCraftedForItem(item) {
+    return isAutoCrafted(progress, item)
+  }
+
+  function isCraftedForItem(item) {
+    return isCrafted(progress, item)
+  }
+
+  function isSubsumedForItem(item) {
+    return isSubsumed(progress, item)
   }
 
   function persist() {
-    let nextItems = progress.items ?? {}
+    let nextItems = normalizeItems(progress.items)
 
     if (progress.settings.craftedMode === 'auto') {
-      const allItems = [...(data.warframes ?? []), ...(data.weapons ?? [])]
+      const allItems = data.items ?? []
       const itemsById = new Map(allItems.map((item) => [item.id, item]))
-      const syncedItems = { ...nextItems }
+      const syncedItems = normalizeItems(nextItems)
 
       for (const [itemId, itemState] of Object.entries(nextItems)) {
         const item = itemsById.get(itemId)
@@ -200,17 +131,7 @@
           continue
         }
 
-        const requirements = getComponentRequirements(item)
-        if (requirements.length === 0) {
-          continue
-        }
-
-        const hasMain = item.mainBlueprintKey ? Boolean(itemState.mainBlueprintOwned) : true
-        const hasComponents = requirements.every((requirement, index) =>
-          isComponentRequirementOwned(itemState, requirement, index, requirements)
-        )
-        const crafted = hasMain && hasComponents
-
+        const crafted = isCraftReady(progress, item)
         if (itemState.crafted !== crafted) {
           syncedItems[itemId] = {
             ...itemState,
@@ -224,539 +145,88 @@
 
     const nextProgress = {
       ...progress,
-      items: nextItems,
+      items: normalizeItems(nextItems),
     }
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(nextProgress))
     progress = {
       ...nextProgress,
-      items: { ...nextProgress.items },
+      items: normalizeItems(nextProgress.items),
     }
   }
 
-  function isPrime(item) {
-    return item.variant === 'prime' || /\bprime\b/i.test(item.name)
-  }
-
-  function isUmbra(item) {
-    return /\bumbra\b$/i.test(cleanDisplayName(item.name))
-  }
-
-  function cleanDisplayName(name) {
-    return String(name ?? '')
-      .replace(/^<ARCHWING>\s*/i, '')
-      .trim()
-  }
-
-  function getNameSortKey(name) {
-    return cleanDisplayName(name)
-      .replace(/^(?:kuva|tenet|coda)\s+/i, '')
-      .replace(/^mk1[-\s]+/i, '')
-      .trim()
-  }
-
-  function isLichVariant(item) {
-    if (item.variant === 'lich') {
-      return true
-    }
-    return /\b(kuva|tenet|coda)\b/i.test(item.name)
-  }
-
-  function inferWarframeTab(item) {
-    if (item.tab) {
-      return item.tab
-    }
-
-    if (item.productCategory === 'SpaceSuits') {
-      return 'archwings'
-    }
-    if (item.productCategory === 'MechSuits') {
-      return 'necramechs'
-    }
-    return 'warframes'
-  }
-
-  function inferWeaponTab(item) {
-    if (item.tab) {
-      return item.tab
-    }
-
-    if (item.productCategory === 'LongGuns' || item.slot === 1) {
-      return 'primary'
-    }
-    if (item.productCategory === 'Pistols' || item.slot === 0) {
-      return 'secondary'
-    }
-    if (item.productCategory === 'Melee' || item.slot === 5) {
-      return 'melee'
-    }
-    return 'other'
-  }
-
-  function getFilteredByTab(tabId, warframes, weapons) {
-    if (['warframes', 'necramechs', 'archwings'].includes(tabId)) {
-      const direct = warframes.filter((item) => item.tab === tabId)
-      if (direct.length > 0) {
-        return direct
-      }
-
-      return warframes.filter((item) => inferWarframeTab(item) === tabId)
-    }
-
-    const direct = weapons.filter((item) => item.tab === tabId)
-    if (direct.length > 0) {
-      return direct
-    }
-
-    return weapons.filter((item) => inferWeaponTab(item) === tabId)
-  }
-
-  function matchesSearch(item, text) {
-    if (!text) {
-      return true
-    }
-    return cleanDisplayName(item.name).toLowerCase().includes(text.toLowerCase())
-  }
-
-  function resetFilters() {
-    search = ''
-    variantNormal = true
-    variantPrime = true
-    variantLich = true
-    hideCrafted = false
-    hideMastered = false
-    hideSubsumed = false
-    sortBy = 'name-asc'
-  }
-
-  function getVariantSelectedCount(hasLichOption = variantFilterHasLichOption) {
-    return (
-      (variantNormal ? 1 : 0) +
-      (variantPrime ? 1 : 0) +
-      (hasLichOption && variantLich ? 1 : 0)
-    )
-  }
-
-  function setVariantChecked(key, nextChecked) {
-    const currentChecked =
-      key === 'normal' ? variantNormal : key === 'prime' ? variantPrime : variantLich
-
-    if (!nextChecked && currentChecked) {
-      const selectedCount = getVariantSelectedCount()
-      if (selectedCount <= 1) {
+  function hydrateStoredProgress() {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (raw) {
+      try {
+        const stored = JSON.parse(raw)
+        progress = {
+          settings: {
+            ...DEFAULT_SETTINGS,
+            ...(stored.settings ?? {}),
+          },
+          items: normalizeItems(stored.items ?? {}),
+        }
+        return
+      } catch {
+        progress = {
+          settings: { ...DEFAULT_SETTINGS },
+          items: {},
+        }
         return
       }
     }
 
-    if (key === 'normal') variantNormal = nextChecked
-    if (key === 'prime') variantPrime = nextChecked
-    if (key === 'lich') variantLich = nextChecked
-  }
-
-  function shouldBlockVariantUncheck(key) {
-    const currentChecked =
-      key === 'normal' ? variantNormal : key === 'prime' ? variantPrime : variantLich
-
-    return currentChecked && getVariantSelectedCount() <= 1
-  }
-
-  function isDefaultFilterState() {
-    return (
-      !search &&
-      variantNormal &&
-      variantPrime &&
-      variantLich &&
-      !hideCrafted &&
-      !hideMastered &&
-      !hideSubsumed
-    )
-  }
-
-  function buildVariantFilterLabel({ normal, prime, lich, hasLichOption }) {
-    const selected = []
-    if (normal) selected.push('normal')
-    if (prime) selected.push('prime')
-    if (hasLichOption && lich) selected.push('lich')
-
-    const options = ['normal', 'prime', ...(hasLichOption ? ['lich'] : [])]
-
-    if (selected.length === options.length) {
-      return options
-        .map((key) => (key === 'lich' ? 'Kuva/Tenet/Coda' : key === 'prime' ? 'Prime' : 'Normal'))
-        .join(' + ')
+    progress = {
+      settings: { ...DEFAULT_SETTINGS },
+      items: {},
     }
-
-    if (selected.length === 0) return 'None'
-
-    const labels = selected.map((key) =>
-      key === 'lich' ? 'Kuva/Tenet/Coda' : key === 'prime' ? 'Prime' : 'Normal'
-    )
-    return labels.join(' + ')
-  }
-
-  function matchesVariantSelectionForCurrentTab(item, filterState) {
-    if (!filterState.visible) {
-      return true
-    }
-
-    if (filterState.noneSelected) {
-      return true
-    }
-
-    const isWeaponTab = filterState.hasLichOption
-    const lich = isLichVariant(item)
-    const prime = isPrime(item)
-
-    if (isWeaponTab && lich) {
-      return filterState.lich
-    }
-    if (prime) {
-      return filterState.prime
-    }
-    return filterState.normal
-  }
-
-  function buildStatusFilterLabel({ hideCrafted, hideMastered, hideSubsumed, isWarframeTab }) {
-    const labels = []
-    if (hideCrafted) labels.push('Hide crafted')
-    if (hideMastered) labels.push('Hide mastered')
-    if (isWarframeTab && hideSubsumed) labels.push('Hide subsumed')
-    return labels.length === 0 ? 'Status filters' : labels.join(' + ')
-  }
-
-  function matchesStatusVisibility(item, statusState) {
-    const state = ensureItemState(item)
-    if (statusState.hideCrafted && isCrafted(item)) {
-      return false
-    }
-    if (statusState.hideMastered && state.mastered) {
-      return false
-    }
-    if (statusState.hideSubsumed && statusState.isWarframeTab && isSubsumed(item)) {
-      return false
-    }
-    return true
-  }
-
-  function getItemState(item) {
-    return ensureItemState(item)
-  }
-
-  function getComponentRequirements(item) {
-    return item.componentRequirements ?? []
-  }
-
-  function getMainBlueprintName(item) {
-    if (!item.mainBlueprintKey) {
-      return `${cleanDisplayName(item.name)} Blueprint`
-    }
-
-    return data.blueprints?.[item.mainBlueprintKey] ?? `${cleanDisplayName(item.name)} Blueprint`
-  }
-
-  function getBlueprintRows(item) {
-    const rows = []
-
-    if (item.mainBlueprintKey) {
-      rows.push({
-        kind: 'main',
-        id: item.mainBlueprintKey,
-        itemKey: item.mainBlueprintKey,
-        name: getMainBlueprintName(item),
-        level: 0,
-      })
-    }
-
-    for (const [componentIndex, requirement] of getComponentRequirements(item).entries()) {
-      rows.push({
-        kind: 'component',
-        ...requirement,
-        componentIndex,
-        level: Number(requirement.level ?? 0) + (item.mainBlueprintKey ? 1 : 0),
-      })
-    }
-
-    return rows
-  }
-
-  function formatRequirementTooltip(requirements) {
-    const lines = Array.isArray(requirements)
-      ? requirements.map((requirement) => {
-        const count = Math.max(1, Number(requirement.count ?? 1))
-        const name = cleanDisplayName(requirement.name)
-        return count === 1 ? name : `${name} x${count}`
-      })
-      : []
-
-    if (lines.length === 0) {
-      return 'Resources Required:\nNone'
-    }
-
-    return `Resources Required:\n${lines.join('\n')}`
-  }
-
-  function getBlueprintTooltip(item, row) {
-    if (row.kind === 'main') {
-      return formatRequirementTooltip(item.requirements ?? [])
-    }
-
-    const requirements = data.components?.[row.itemKey]?.requirements ?? []
-    return formatRequirementTooltip(requirements)
-  }
-
-  function getBlueprintTreeGuides(rows, index) {
-    const row = rows[index]
-    const level = Number(row?.level ?? 0)
-    if (level <= 0) {
-      return []
-    }
-
-    function findAncestorIndex(targetDepth) {
-      for (let i = index - 1; i >= 0; i -= 1) {
-        const candidateLevel = Number(rows[i]?.level ?? 0)
-        if (candidateLevel < targetDepth) {
-          return -1
-        }
-        if (candidateLevel === targetDepth) {
-          return i
-        }
-      }
-      return -1
-    }
-
-    function hasNextSiblingAtDepth(fromIndex, targetDepth) {
-      for (let i = fromIndex + 1; i < rows.length; i += 1) {
-        const nextLevel = Number(rows[i]?.level ?? 0)
-        if (nextLevel < targetDepth) {
-          break
-        }
-        if (nextLevel === targetDepth) {
-          return true
-        }
-      }
-
-      return false
-    }
-
-    function hasPreviousSiblingAtDepth(fromIndex, targetDepth) {
-      for (let i = fromIndex - 1; i >= 0; i -= 1) {
-        const previousLevel = Number(rows[i]?.level ?? 0)
-        if (previousLevel < targetDepth) {
-          break
-        }
-        if (previousLevel === targetDepth) {
-          return true
-        }
-      }
-
-      return false
-    }
-
-    const guides = []
-
-    for (let depth = 1; depth < level; depth += 1) {
-      const ancestorIndex = findAncestorIndex(depth)
-      const ancestorHasNextSibling =
-        ancestorIndex >= 0 && hasNextSiblingAtDepth(ancestorIndex, depth)
-      guides.push(ancestorHasNextSibling ? 'pipe' : 'blank')
-    }
-
-    const hasNextSibling = hasNextSiblingAtDepth(index, level)
-    const hasPreviousSibling = hasPreviousSiblingAtDepth(index, level)
-
-    if (hasNextSibling) {
-      guides.push(hasPreviousSibling ? 'tee' : 'tee-root')
-    } else {
-      guides.push('elbow')
-    }
-    return guides
-  }
-
-  function getComponentRequirementId(requirement, index) {
-    return requirement.id ?? `${requirement.itemKey}::${index + 1}`
-  }
-
-  function getLegacyComponentRequirementId(requirement, index) {
-    if (!requirement?.itemKey) {
-      return null
-    }
-    return `${String(requirement.itemKey)}::${index + 1}`
-  }
-
-  function getComponentRequirementAliases(requirement, index) {
-    const aliases = new Set([getComponentRequirementId(requirement, index)])
-    const legacyId = getLegacyComponentRequirementId(requirement, index)
-    if (legacyId) {
-      aliases.add(legacyId)
-    }
-    return aliases
-  }
-
-  function isComponentRequirementOwned(state, requirement, index, requirements = null) {
-    const owned = state.componentBlueprintsOwned ?? {}
-    const aliases = getComponentRequirementAliases(requirement, index)
-
-    for (const alias of aliases) {
-      if (owned[alias]) {
-        return true
-      }
-    }
-
-    if (!requirement?.itemKey || !owned[String(requirement.itemKey)]) {
-      return false
-    }
-
-    // Legacy fallback for very old saves that stored raw item keys with no instance suffix.
-    if (Array.isArray(requirements)) {
-      const sameKeyCount = requirements.filter((row) => row.itemKey === requirement.itemKey).length
-      return sameKeyCount === 1
-    }
-
-    return false
-  }
-
-  function getOwnedBlueprintCount(item) {
-    const state = ensureItemState(item)
-    const requirements = getComponentRequirements(item)
-    let owned = state.mainBlueprintOwned && item.mainBlueprintKey ? 1 : 0
-
-    for (let i = 0; i < requirements.length; i += 1) {
-      if (isComponentRequirementOwned(state, requirements[i], i, requirements)) {
-        owned += 1
-      }
-    }
-
-    return owned
-  }
-
-  function getTotalBlueprintCount(item) {
-    return (item.mainBlueprintKey ? 1 : 0) + getComponentRequirements(item).length
-  }
-
-  function isCraftReady(item) {
-    const state = ensureItemState(item)
-    const requirements = getComponentRequirements(item)
-    const hasMain = item.mainBlueprintKey ? state.mainBlueprintOwned : true
-    const hasComponents = requirements.every((requirement, index) =>
-      isComponentRequirementOwned(state, requirement, index, requirements)
-    )
-    return hasMain && hasComponents
-  }
-
-  function isAutoCrafted(item) {
-    return progress.settings.craftedMode === 'auto' && getComponentRequirements(item).length > 0
-  }
-
-  function isCrafted(item) {
-    const state = ensureItemState(item)
-    if (isAutoCrafted(item)) {
-      return isCraftReady(item)
-    }
-    return state.crafted
-  }
-
-  function getProgressScore(item) {
-    const total = getTotalBlueprintCount(item)
-    if (total === 0) {
-      return 0
-    }
-    return getOwnedBlueprintCount(item) / total
-  }
-
-  function sortItems(items, sortState) {
-    const next = [...items]
-    if (sortState.mode === 'name-asc') {
-      next.sort(
-        (a, b) =>
-          getNameSortKey(a.name).localeCompare(getNameSortKey(b.name)) ||
-          cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
-      )
-      return next
-    }
-    if (sortState.mode === 'name-desc') {
-      next.sort(
-        (a, b) =>
-          getNameSortKey(b.name).localeCompare(getNameSortKey(a.name)) ||
-          cleanDisplayName(b.name).localeCompare(cleanDisplayName(a.name))
-      )
-      return next
-    }
-    if (sortState.mode === 'mr-asc') {
-      next.sort(
-        (a, b) =>
-          Number(a.masteryReq ?? 0) - Number(b.masteryReq ?? 0) ||
-          cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
-      )
-      return next
-    }
-    if (sortState.mode === 'mr-desc') {
-      next.sort(
-        (a, b) =>
-          Number(b.masteryReq ?? 0) - Number(a.masteryReq ?? 0) ||
-          cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
-      )
-      return next
-    }
-    if (sortState.mode === 'progress-desc') {
-      next.sort(
-        (a, b) =>
-          getProgressScore(b) - getProgressScore(a) ||
-          cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name))
-      )
-      return next
-    }
-
-    next.sort((a, b) => cleanDisplayName(a.name).localeCompare(cleanDisplayName(b.name)))
-    return next
   }
 
   function toggleMainBlueprint(item, value) {
-    const state = ensureItemState(item)
-    state.mainBlueprintOwned = value
-    persist()
+    updateItemState(item, (state) => ({
+      ...state,
+      mainBlueprintOwned: value,
+    }))
   }
 
   function toggleComponentBlueprint(item, requirement, index, value) {
-    const state = ensureItemState(item)
-    const currentOwned = { ...(state.componentBlueprintsOwned ?? {}) }
-    const aliases = getComponentRequirementAliases(requirement, index)
+    updateItemState(item, (state) => {
+      const currentOwned = { ...(state.componentBlueprintsOwned ?? {}) }
+      const requirementId = getComponentRequirementId(requirement, index)
 
-    if (value) {
-      const canonicalId = getComponentRequirementId(requirement, index)
-      currentOwned[canonicalId] = true
-    } else {
-      for (const key of aliases) {
-        delete currentOwned[key]
+      if (value) {
+        currentOwned[requirementId] = true
+      } else {
+        delete currentOwned[requirementId]
       }
-    }
 
-    state.componentBlueprintsOwned = currentOwned
-    persist()
+      return {
+        ...state,
+        componentBlueprintsOwned: currentOwned,
+      }
+    })
   }
 
   function toggleCrafted(item, value) {
-    const state = ensureItemState(item)
-    state.crafted = value
-    persist()
+    updateItemState(item, (state) => ({
+      ...state,
+      crafted: value,
+    }))
   }
 
   function toggleMastered(item, value) {
-    const state = ensureItemState(item)
-    state.mastered = value
-    persist()
+    updateItemState(item, (state) => ({
+      ...state,
+      mastered: value,
+    }))
   }
 
   function toggleSubsumed(item, value) {
-    const state = ensureItemState(item)
-    state.subsumed = value
-    persist()
-  }
-
-  function isSubsumed(item) {
-    if (isPrime(item) || isUmbra(item)) {
-      return false
-    }
-    return ensureItemState(item).subsumed
+    updateItemState(item, (state) => ({
+      ...state,
+      subsumed: value,
+    }))
   }
 
   function setCraftedMode(value) {
@@ -776,55 +246,15 @@
     applyTheme(value)
   }
 
-  function exportProgress() {
-    const exportPayload = {
-      items: progress.items ?? {},
-    }
-
-    const serialized = JSON.stringify(exportPayload, null, 2)
-    const blob = new Blob([serialized], { type: 'application/json' })
-    const url = URL.createObjectURL(blob)
-    const link = document.createElement('a')
-    link.href = url
-    link.download = `wf-progress-${new Date().toISOString().slice(0, 10)}.json`
-    link.click()
-    URL.revokeObjectURL(url)
-  }
-
-  function importProgress(event) {
-    const file = event.target.files?.[0]
-    if (!file) return
-
-    const reader = new FileReader()
-    reader.onload = () => {
-      try {
-        const parsed = JSON.parse(String(reader.result))
-
-        progress = {
-          settings: {
-            ...progress.settings,
-            craftedMode: DEFAULT_SETTINGS.craftedMode,
-          },
-          items: parsed.items ?? {},
-        }
-        persist()
-      } catch {
-        alert('Could not import progress JSON.')
-      }
-    }
-    reader.readAsText(file)
-  }
-
-  function clearProgress() {
-    if (!confirm('Clear all tracked progress? This cannot be undone.')) return
-    progress = {
-      settings: {
-        ...DEFAULT_SETTINGS,
-        theme: progress.settings.theme,
-      },
-      items: {},
-    }
-    persist()
+  function resetFilters() {
+    search = ''
+    variantNormal = true
+    variantPrime = true
+    variantLich = true
+    hideCrafted = false
+    hideMastered = false
+    hideSubsumed = false
+    sortBy = 'name-asc'
   }
 
   function closeOpenMenus() {
@@ -854,92 +284,113 @@
     }
   }
 
-  $: tabItems = getFilteredByTab(activeTab, data.warframes, data.weapons)
 
-  $: variantFilterVisible = ['warframes', 'archwings', 'primary', 'secondary', 'melee'].includes(activeTab)
-  $: variantFilterHasLichOption = ['primary', 'secondary', 'melee'].includes(activeTab)
-
-  $: if (variantFilterHasLichOption && getVariantSelectedCount(true) === 0) {
-    variantNormal = true
+  function applyImportedProfile(parsed) {
+    const result = importProfileData(parsed, data.items, progress.items, DEFAULT_SETTINGS.craftedMode)
+    progress = {
+      settings: {
+        ...progress.settings,
+        ...result.settingsPatch,
+      },
+      items: result.items,
+    }
+    persist()
   }
 
-  $: if (!variantFilterHasLichOption && getVariantSelectedCount(false) === 0) {
-    variantNormal = true
+  function importProgress(event) {
+    const file = event.target.files?.[0]
+    if (!file) return
+
+    const reader = new FileReader()
+    reader.onload = () => {
+      try {
+        const parsed = JSON.parse(String(reader.result))
+
+        applyImportedProfile(parsed)
+      } catch {
+        alert('Could not import JSON. Use profile JSON from Warframe.')
+      } finally {
+        if (event.target) {
+          event.target.value = ''
+        }
+      }
+    }
+    reader.readAsText(file)
   }
 
-  $: noVariantSelection = variantFilterHasLichOption
-    ? !variantNormal && !variantPrime && !variantLich
-    : !variantNormal && !variantPrime
-
-  $: variantFilterState = {
-    visible: variantFilterVisible,
-    hasLichOption: variantFilterHasLichOption,
-    noneSelected: noVariantSelection,
-    normal: variantNormal,
-    prime: variantPrime,
-    lich: variantLich,
+  function clearProgress() {
+    if (!confirm('Clear all tracked progress? This cannot be undone.')) return
+    progress = {
+      settings: {
+        ...DEFAULT_SETTINGS,
+        theme: progress.settings.theme,
+      },
+      items: {},
+    }
+    persist()
+    progress = {
+      ...progress,
+      items: { ...progress.items },
+    }
   }
 
-  $: variantFilterLabel = buildVariantFilterLabel({
-    normal: variantNormal,
-    prime: variantPrime,
-    lich: variantLich,
-    hasLichOption: variantFilterHasLichOption,
-  })
+  async function loadData() {
+    loading = true
+    error = ''
 
-  $: statusFilterState = {
+    try {
+      const payload = await loadTrackerData(import.meta.env.BASE_URL)
+
+      data = {
+        items: payload.items ?? [],
+        components: payload.components ?? {},
+        blueprints: payload.blueprints ?? {},
+        generatedAt: payload.generatedAt ?? null,
+        counts: payload.counts ?? {},
+      }
+
+      hydrateStoredProgress()
+      applyTheme(progress.settings.theme)
+    } catch (loadError) {
+      error = loadError.message
+    } finally {
+      loading = false
+    }
+  }
+
+  $: tabItems = (data.items ?? []).filter((item) => item.tab === activeTab)
+
+  $: activeFilters = {
+    variantNormal,
+    variantPrime,
+    variantLich,
     hideCrafted,
     hideMastered,
     hideSubsumed,
-    isWarframeTab: activeTab === 'warframes',
   }
 
-  $: statusFilterLabel = buildStatusFilterLabel(statusFilterState)
-
-  $: sortState = {
-    mode: sortBy,
-    progressItems: progress.items,
+  $: {
+    progress
+    filteredItems = sortItems(
+      tabItems
+        .filter((item) => matchesSearch(item, search))
+        .filter((item) => matchesVariant(item, activeTab, activeFilters))
+        .filter((item) => matchesStatus(progress, item, activeTab, activeFilters)),
+      sortBy,
+      progress
+    )
   }
 
-  $: isWeaponTab = ['primary', 'secondary', 'melee'].includes(activeTab)
-  $: availableSortOptions = SORT_OPTIONS.filter((option) => !option.weaponsOnly || isWeaponTab)
-  $: sortLabel = availableSortOptions.find((option) => option.value === sortBy)?.label ?? 'A to Z'
+  $: currentItems = filteredItems.length === 0 && tabItems.length > 0 ? tabItems : filteredItems
 
-  $: if (
-    !isWeaponTab &&
-    (sortBy === 'mr-asc' || sortBy === 'mr-desc')
-  ) {
-    sortBy = 'name-asc'
+  $: {
+    progress
+    summary = computeSummary(currentItems, activeTab, progress)
   }
 
-  $: filteredItems = sortItems(
-    tabItems
-      .filter((item) => matchesSearch(item, search))
-      .filter((item) => matchesVariantSelectionForCurrentTab(item, variantFilterState))
-      .filter((item) => matchesStatusVisibility(item, statusFilterState)),
-    sortState
-  )
+  $: statusFilterLabel = getStatusFilterLabel(activeTab, activeFilters)
 
-  $: currentItems =
-    filteredItems.length === 0 && tabItems.length > 0 && isDefaultFilterState()
-      ? sortItems(tabItems, sortState)
-      : filteredItems
-
-  $: summary = currentItems.reduce(
-    (acc, item) => {
-      const state = ensureItemState(item)
-      const ownedBlueprints = getOwnedBlueprintCount(item)
-      const totalBlueprints = getTotalBlueprintCount(item)
-      acc.blueprintOwned += ownedBlueprints
-      acc.blueprintTotal += totalBlueprints
-      if (isCraftReady(item)) acc.ready += 1
-      if (isCrafted(item)) acc.crafted += 1
-      if (state.mastered) acc.mastered += 1
-      if (activeTab === 'warframes' && isSubsumed(item)) acc.subsumed += 1
-      return acc
-    },
-    { blueprintOwned: 0, blueprintTotal: 0, ready: 0, crafted: 0, mastered: 0, subsumed: 0 }
-  )
+  $: sortLabel = SORT_OPTIONS.find((option) => option.value === sortBy)?.label ?? 'A to Z'
 
   onMount(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
@@ -977,7 +428,7 @@
     <div class="header-row">
       <div>
         <h1>Warframe Mastery Tracker</h1>
-        <p class="subtitle">Track blueprints, crafted status, and mastery.</p>
+        <p class="subtitle">Track blueprints, crafted status, and mastery with WFCD item data.</p>
       </div>
       <div class="settings-anchor header-actions" bind:this={settingsAnchorElement}>
         <a
@@ -997,293 +448,70 @@
         <button class="icon-button" on:click={() => (showSettings = !showSettings)} aria-label="Open settings">⚙</button>
 
         {#if showSettings}
-          <section class="settings-popover card">
-            <h2>Settings</h2>
-            <label>
-              Crafted behavior
-              <select
-                value={progress.settings.craftedMode}
-                on:change={(event) => setCraftedMode(event.currentTarget.value)}
-              >
-                <option value="manual">Manual crafted toggle (default)</option>
-                <option value="auto">Auto crafted from required blueprints</option>
-              </select>
-            </label>
-
-            <label>
-              Theme
-              <select
-                value={progress.settings.theme}
-                on:change={(event) => setTheme(event.currentTarget.value)}
-              >
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-                <option value="system">System</option>
-              </select>
-            </label>
-
-            <div class="actions">
-              <button on:click={exportProgress}>Export progress</button>
-              <label class="file-upload">
-                Import progress
-                <input type="file" accept="application/json" on:change={importProgress} />
-              </label>
-              <button class="danger" on:click={clearProgress}>Clear progress</button>
-            </div>
-          </section>
+          <SettingsPanel
+            settings={progress.settings}
+            profileUrl={PROFILE_URL_PC}
+            onSetCraftedMode={setCraftedMode}
+            onSetTheme={setTheme}
+            onImportProgress={importProgress}
+            onClearProgress={clearProgress}
+          />
         {/if}
       </div>
     </div>
   </header>
 
-  <section class="toolbar card">
-    <div class="tab-row">
-      {#each TABS as tab}
-        <button class:active={activeTab === tab.id} on:click={() => (activeTab = tab.id)}>{tab.label}</button>
-      {/each}
-    </div>
-
-    <div class="controls">
-      <div class="search-input-wrap">
-        <input placeholder="Search by name" bind:value={search} />
-        {#if search}
-          <button
-            type="button"
-            class="search-clear"
-            aria-label="Clear search"
-            on:click={() => {
-              search = ''
-            }}
-          >
-            ×
-          </button>
-        {/if}
-      </div>
-
-      {#if variantFilterVisible}
-        <details class="filter-menu">
-          <summary><span class="summary-label">{variantFilterLabel}</span></summary>
-          <div class="filter-list">
-            <label>
-              <input
-                type="checkbox"
-                checked={variantNormal}
-                on:click={(event) => {
-                  if (shouldBlockVariantUncheck('normal')) {
-                    event.preventDefault()
-                  }
-                }}
-                on:change={(event) => setVariantChecked('normal', event.currentTarget.checked)}
-              />
-              Normal
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={variantPrime}
-                on:click={(event) => {
-                  if (shouldBlockVariantUncheck('prime')) {
-                    event.preventDefault()
-                  }
-                }}
-                on:change={(event) => setVariantChecked('prime', event.currentTarget.checked)}
-              />
-              Prime
-            </label>
-            {#if variantFilterHasLichOption}
-              <label>
-                <input
-                  type="checkbox"
-                  checked={variantLich}
-                  on:click={(event) => {
-                    if (shouldBlockVariantUncheck('lich')) {
-                      event.preventDefault()
-                    }
-                  }}
-                  on:change={(event) => setVariantChecked('lich', event.currentTarget.checked)}
-                />
-                Kuva / Tenet / Coda
-              </label>
-            {/if}
-          </div>
-        </details>
-      {/if}
-
-      <details class="filter-menu status-menu">
-        <summary><span class="summary-label">{statusFilterLabel}</span></summary>
-        <div class="filter-list">
-          <label>
-            <input type="checkbox" bind:checked={hideCrafted} />
-            Hide crafted
-          </label>
-          <label>
-            <input type="checkbox" bind:checked={hideMastered} />
-            Hide mastered
-          </label>
-          {#if activeTab === 'warframes'}
-            <label>
-              <input type="checkbox" bind:checked={hideSubsumed} />
-              Hide subsumed
-            </label>
-          {/if}
-        </div>
-      </details>
-
-      <details class="filter-menu sort-menu">
-        <summary><span class="summary-label">{sortLabel}</span></summary>
-        <div class="filter-list">
-          {#each availableSortOptions as option}
-            <button
-              type="button"
-              class:active={sortBy === option.value}
-              on:click={(event) => {
-                sortBy = option.value
-                const parent = event.currentTarget.closest('details')
-                if (parent) {
-                  parent.removeAttribute('open')
-                }
-              }}
-            >
-              {option.label}
-            </button>
-          {/each}
-        </div>
-      </details>
-    </div>
-
-    <div class="stats">
-      <span>Blueprints: {summary.blueprintOwned}/{summary.blueprintTotal}</span>
-      <span>Craft-ready: {summary.ready}/{currentItems.length}</span>
-      <span>Crafted: {summary.crafted}/{currentItems.length}</span>
-      <span>Mastered: {summary.mastered}/{currentItems.length}</span>
-      {#if activeTab === 'warframes'}
-        <span>Subsumed: {summary.subsumed}/{currentItems.length}</span>
-      {/if}
-    </div>
-  </section>
+  <Toolbar
+    tabs={TABS}
+    sortOptions={SORT_OPTIONS}
+    bind:activeTab
+    bind:search
+    bind:variantNormal
+    bind:variantPrime
+    bind:variantLich
+    bind:hideCrafted
+    bind:hideMastered
+    bind:hideSubsumed
+    bind:sortBy
+    statusFilterLabel={statusFilterLabel}
+    sortLabel={sortLabel}
+    summary={summary}
+    currentItemCount={currentItems.length}
+    onResetFilters={resetFilters}
+  />
 
   {#if loading}
     <p class="status">Loading data...</p>
   {:else if error}
     <p class="status error">{error}</p>
   {:else if currentItems.length === 0}
-    {#if tabItems.length > 0}
-      <div class="status">
-        <p>No items match your current filters since the last data update.</p>
-        <button on:click={resetFilters}>Reset filters</button>
-      </div>
-    {:else}
-      <p class="status">No items available for this tab since the last data update.</p>
-    {/if}
+    <div class="status">
+      <p>No items match your current filters.</p>
+      <button on:click={resetFilters}>Reset filters</button>
+    </div>
   {:else}
     <section class="grid">
       {#each currentItems as item}
-        {@const state = getItemState(item)}
-        {@const hasBlueprintRows = getBlueprintRows(item).length > 0}
-        <article class="card item-card">
-          <div class="title-row">
-            <h3>{cleanDisplayName(item.name)}</h3>
-            {#if ['primary', 'secondary', 'melee'].includes(activeTab)}
-              <small>MR {item.masteryReq}</small>
-            {/if}
-          </div>
-
-          {#if hasBlueprintRows}
-            {@const blueprintRows = getBlueprintRows(item)}
-            <div class="blueprints-section">
-              <p class="blueprints-heading">Blueprints</p>
-              {#each blueprintRows as row, index}
-                <label
-                  class="check-row component-row"
-                  class:component-row-nested={Number(row.level ?? 0) > 0}
-                  class:component-row-deep={Number(row.level ?? 0) > 1}
-                  style={`--blueprint-level:${Math.max(0, Number(row.level ?? 0))}`}
-                >
-                  {#if Number(row.level ?? 0) > 0}
-                    <span class="tree-guides" aria-hidden="true">
-                      {#each getBlueprintTreeGuides(blueprintRows, index) as guide}
-                        <span class={`tree-guide ${guide}`}></span>
-                      {/each}
-                    </span>
-                  {/if}
-
-                  {#if row.kind === 'main'}
-                    <input
-                      type="checkbox"
-                      checked={state.mainBlueprintOwned}
-                      on:change={(event) => toggleMainBlueprint(item, event.currentTarget.checked)}
-                    />
-                    <span class="component-row-text" data-tooltip={getBlueprintTooltip(item, row)}>
-                      {cleanDisplayName(row.name)}
-                    </span>
-                  {:else}
-                    {@const componentIndex = Number(row.componentIndex ?? index)}
-                    <input
-                      type="checkbox"
-                      checked={isComponentRequirementOwned(
-                        state,
-                        row,
-                        componentIndex,
-                        getComponentRequirements(item)
-                      )}
-                      on:change={(event) =>
-                        toggleComponentBlueprint(
-                          item,
-                          row,
-                          componentIndex,
-                          event.currentTarget.checked
-                        )}
-                    />
-                    <span class="component-row-text" data-tooltip={getBlueprintTooltip(item, row)}>
-                      {cleanDisplayName(row.name)}
-                    </span>
-                  {/if}
-                </label>
-              {/each}
-            </div>
-          {/if}
-
-          <div class="toggle-grid" class:with-blueprint-divider={hasBlueprintRows}>
-            <label class="check-row">
-              <input
-                type="checkbox"
-                checked={isCrafted(item)}
-                aria-readonly={isAutoCrafted(item)}
-                on:click={(event) => {
-                  if (isAutoCrafted(item)) {
-                    event.preventDefault()
-                  }
-                }}
-                on:change={(event) => {
-                  if (!isAutoCrafted(item)) {
-                    toggleCrafted(item, event.currentTarget.checked)
-                  }
-                }}
-              />
-              Crafted
-            </label>
-
-            <label class="check-row">
-              <input
-                type="checkbox"
-                checked={state.mastered}
-                on:change={(event) => toggleMastered(item, event.currentTarget.checked)}
-              />
-              Mastered
-            </label>
-
-            {#if activeTab === 'warframes' && !isPrime(item) && !isUmbra(item)}
-              <label class="check-row">
-                <input
-                  type="checkbox"
-                  checked={isSubsumed(item)}
-                  on:change={(event) => toggleSubsumed(item, event.currentTarget.checked)}
-                />
-                Subsumed
-              </label>
-            {/if}
-          </div>
-        </article>
+        <ItemCard
+          item={item}
+          activeTab={activeTab}
+          state={progress.items?.[item.id] ?? EMPTY_ITEM_STATE}
+          cleanDisplayName={cleanDisplayName}
+          isPrime={isPrime}
+          isUmbra={isUmbra}
+          isSubsumed={isSubsumedForItem}
+          isCrafted={isCraftedForItem}
+          isAutoCrafted={isAutoCraftedForItem}
+          getBlueprintRows={getBlueprintRows}
+          getBlueprintTreeGuides={getBlueprintTreeGuides}
+          getBlueprintTooltip={getBlueprintTooltip}
+          isComponentRequirementOwned={isComponentRequirementOwned}
+          toggleMainBlueprint={toggleMainBlueprint}
+          toggleComponentBlueprint={toggleComponentBlueprint}
+          toggleCrafted={toggleCrafted}
+          toggleMastered={toggleMastered}
+          toggleSubsumed={toggleSubsumed}
+        />
       {/each}
     </section>
   {/if}
@@ -1291,9 +519,9 @@
   <footer>
     <p>Last data update: {data.generatedAt ? new Date(data.generatedAt).toLocaleString() : 'unknown'}</p>
     <p>
-      Counts: {data.counts.warframes ?? 0} Warframes, {data.counts.necramechs ?? 0} Necramechs,
-      {data.counts.archwings ?? 0} Archwings, {data.counts.primary ?? 0} Primary,
-      {data.counts.secondary ?? 0} Secondary, {data.counts.melee ?? 0} Melee
+      {#each TABS as tab, index}
+        {data.counts?.[tab.id] ?? 0} {tab.label}{index < TABS.length - 1 ? ', ' : ''}
+      {/each}
     </p>
   </footer>
 </main>

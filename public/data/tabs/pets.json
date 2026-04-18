@@ -1,0 +1,533 @@
+{
+  "tab": "pets",
+  "itemCount": 22,
+  "items": [
+    {
+      "id": "/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit",
+      "name": "Adarza Kavat",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "adarza-kavat-9155649686.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadB",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadB",
+      "name": "Bhaira Hound",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "Pistols",
+      "imageName": "bhaira-hound-7cde58bf1c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadBBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem",
+          "name": "Eye-Eye Rotoblade",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
+          "name": "Marquise Thyst",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+          "name": "Spectral Debris",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit",
+      "name": "Chesa Kubrow",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "chesa-kubrow-d9e3052301.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/HornedInfestedCatbrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/HornedInfestedCatbrowPetPowerSuit",
+      "name": "Crescent Vulpaphyla",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "crescent-vulpaphyla-7926240141.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadA",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadA",
+      "name": "Dorma Hound",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "Pistols",
+      "imageName": "dorma-hound-e3020d33c4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadABlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem",
+          "name": "Mirewinder Parallel Biode",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem",
+          "name": "Radian Sentirum",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+          "name": "Spectral Debris",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadC",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/ZanukaPets/ZanukaPetParts/ZanukaPetPartHeadC",
+      "name": "Hec Hound",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "Pistols",
+      "imageName": "hec-hound-2a523e3443.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/ZanukaPetParts/ZanukaPetPartHeadCBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem",
+          "name": "Sapcaddy Venedo Case",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/SpecterParticleResidue",
+          "name": "Spectral Debris",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem",
+          "name": "Trapezium Xenorhast",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit",
+      "name": "Helminth Charger",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "helminth-charger-eb4e8d41ec.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit",
+      "name": "Huras Kubrow",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "huras-kubrow-8d5f938fa0.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadLambeo",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadLambeo",
+      "name": "Lambeo Moa",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "Pistols",
+      "imageName": "lambeo-moa-2cf268fdc0.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadLambeoBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+          "name": "Gorgaricus Spore",
+          "count": 20,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem",
+          "name": "Heart Noctrul",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+          "name": "Venerdo Alloy",
+          "count": 30,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/MedjayPredatorKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/MedjayPredatorKubrowPetPowerSuit",
+      "name": "Medjay Predasite",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "medjay-predasite-0c531c81da.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadMelee",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadMelee",
+      "name": "Nychus Moa",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "Pistols",
+      "imageName": "nychus-moa-679ad59727.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadMeleeBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+          "name": "Goblite Tears",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem",
+          "name": "Gorgaricus Spore",
+          "count": 20,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+          "name": "Venerdo Alloy",
+          "count": 20,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadOloro",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadOloro",
+      "name": "Oloro Moa",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "Pistols",
+      "imageName": "oloro-moa-31c59ff67f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadOloroBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+          "name": "Goblite Tears",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+          "name": "Thermal Sludge",
+          "count": 20,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem",
+          "name": "Travocyte Alloy",
+          "count": 30,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/ArmoredInfestedCatbrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/ArmoredInfestedCatbrowPetPowerSuit",
+      "name": "Panzer Vulpaphyla",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "panzer-vulpaphyla-5d6c5d857b.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadPara",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetParts/MoaPetHeadPara",
+      "name": "Para Moa",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "Pistols",
+      "imageName": "para-moa-e983dce892.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/MoaPetParts/MoaPetHeadParaBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+          "name": "Axidrol Alloy",
+          "count": 30,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem",
+          "name": "Mytocardia Spore",
+          "count": 20,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem",
+          "name": "Smooth Phasmin",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/PharaohPredatorKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/PharaohPredatorKubrowPetPowerSuit",
+      "name": "Pharaoh Predasite",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "pharaoh-predasite-a8fee1bece.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit",
+      "name": "Raksa Kubrow",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "raksa-kubrow-f12afc941f.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit",
+      "name": "Sahasa Kubrow",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "sahasa-kubrow-2f3f1069b3.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/VulpineInfestedCatbrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/VulpineInfestedCatbrowPetPowerSuit",
+      "name": "Sly Vulpaphyla",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "sly-vulpaphyla-4cda8d7962.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit",
+      "name": "Smeeta Kavat",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "smeeta-kavat-221e85b8af.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit",
+      "name": "Sunika Kubrow",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "sunika-kubrow-5047769a99.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit",
+      "name": "Vasca Kavat",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "vasca-kavat-ea0afbf0ec.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Friendly/Pets/CreaturePets/VizierPredatorKubrowPetPowerSuit",
+      "uniqueName": "/Lotus/Types/Friendly/Pets/CreaturePets/VizierPredatorKubrowPetPowerSuit",
+      "name": "Vizier Predasite",
+      "masteryReq": 0,
+      "tab": "pets",
+      "variant": "normal",
+      "category": "Pets",
+      "type": "Pets",
+      "productCategory": "KubrowPets",
+      "imageName": "vizier-predasite-6334788772.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    }
+  ]
+}

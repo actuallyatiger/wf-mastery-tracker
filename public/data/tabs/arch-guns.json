@@ -1,0 +1,725 @@
+{
+  "tab": "arch-guns",
+  "itemCount": 20,
+  "items": [
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/NokkoArchGun/NokkoArchGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/NokkoArchGun/NokkoArchGun",
+      "name": "Arbucep",
+      "masteryReq": 0,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "arbucep-6cabdc8f25.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/NokkoArchGunBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/NokkoArchGunBarrelItem::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/NokkoArchGunBarrelItem",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/NokkoArchGunReceiverItem::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/NokkoArchGunReceiverItem",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/NokkoArchGunStockItem::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/NokkoArchGunStockItem",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MushroomJournal/PlainMushroomJournalItem",
+          "name": "Dull Button",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchGun/ThanoTechArchGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchGun/ThanoTechArchGun",
+      "name": "Cortege",
+      "masteryReq": 14,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "cortege-9af4117990.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ThanotechArchGunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunBarrelItem",
+          "name": "Cortege Barrel",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunReceiverItem",
+          "name": "Cortege Receiver",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechArchGunStockItem",
+          "name": "Cortege Stock",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/LaunchGrenade/ArchCannon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/LaunchGrenade/ArchCannon",
+      "name": "Corvas",
+      "masteryReq": 1,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "corvas-13db9b551f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchCannonBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/PrimeCorvas/PrimeCorvasWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/PrimeCorvas/PrimeCorvasWeapon",
+      "name": "Corvas Prime",
+      "masteryReq": 14,
+      "tab": "arch-guns",
+      "variant": "prime",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "corvas-prime-3a5514ae24.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/CorvasPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchBurstGun/ArchBurstGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchBurstGun/ArchBurstGun",
+      "name": "Cyngas",
+      "masteryReq": 4,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "cyngas-842f5f0899.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchBurstGunBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Tellurium",
+          "name": "Tellurium",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/ArchHeavyPistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/ArchHeavyPistols",
+      "name": "Dual Decurion",
+      "masteryReq": 1,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "dual-decurion-2c12e236ac.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchHeavyPistolsBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsBarrel",
+          "name": "Decurion Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsBarrel::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsBarrel",
+          "name": "Decurion Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsReceiver",
+          "name": "Decurion Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsReceiver::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsReceiver",
+          "name": "Decurion Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/RocketArtillery/ArchRocketCrossbow",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/RocketArtillery/ArchRocketCrossbow",
+      "name": "Fluctus",
+      "masteryReq": 2,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "fluctus-1e012e3298.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchRocketCrossbowBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowStock",
+          "name": "Limbs",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowReceiver",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/RepurposedGrineerAntiAircraftGun/ArchGRNAAGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/RepurposedGrineerAntiAircraftGun/ArchGRNAAGun",
+      "name": "Grattler",
+      "masteryReq": 4,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "grattler-ce089ce28a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Chemical/ArchGrnAAGunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+          "name": "Oxium",
+          "count": 3500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 6000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Tellurium",
+          "name": "Tellurium",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/FoldingMachineGun/ArchMachineGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/FoldingMachineGun/ArchMachineGun",
+      "name": "Imperator",
+      "masteryReq": 0,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "imperator-06651a85cb.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ImperatorBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 300,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 1500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 150,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/FoldingMachineGun/ArchMachineGunVandal",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/FoldingMachineGun/ArchMachineGunVandal",
+      "name": "Imperator Vandal",
+      "masteryReq": 5,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "imperator-vandal-11d120197b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ImperatorVandalBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ImperatorVandalBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ImperatorVandalBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ImperatorVandalReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ImperatorVandalReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Tellurium",
+          "name": "Tellurium",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/HeavyWeapons/GrnHeavyGrenadeLauncher",
+      "uniqueName": "/Lotus/Weapons/Grineer/HeavyWeapons/GrnHeavyGrenadeLauncher",
+      "name": "Kuva Ayanga",
+      "masteryReq": 13,
+      "tab": "arch-guns",
+      "variant": "lich",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "kuva-ayanga-191784ae00.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KuvaWeapons/GrnHeavyGrenadeLauncherBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/KuvaLich/HeavyWeapons/Grattler/KuvaGrattler",
+      "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/HeavyWeapons/Grattler/KuvaGrattler",
+      "name": "Kuva Grattler",
+      "masteryReq": 15,
+      "tab": "arch-guns",
+      "variant": "lich",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "kuva-grattler-57e1150f75.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KuvaWeapons/KuvaGrattlerBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/TnShieldframeArchGun/TnShieldFrameArchGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/TnShieldframeArchGun/TnShieldFrameArchGun",
+      "name": "Larkspur",
+      "masteryReq": 8,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "larkspur-75e75160ee.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TnShieldFrameArchGunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidCamperItem",
+          "name": "Crisma Toroid",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem",
+          "name": "Radiant Zodian",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEcosynthAnalyzerItem",
+          "name": "Synathid Ecosynth Analyzer",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+          "name": "Venerdo Alloy",
+          "count": 80,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/PrimeLarkspur/PrimeLarkspurWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/PrimeLarkspur/PrimeLarkspurWeapon",
+      "name": "Larkspur Prime",
+      "masteryReq": 8,
+      "tab": "arch-guns",
+      "variant": "prime",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "larkspur-prime-2320f70a2f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LarkspurPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/TnConcreteArchgun/TnConcreteArchgunWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/TnConcreteArchgun/TnConcreteArchgunWeapon",
+      "name": "Mandonel",
+      "masteryReq": 10,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "mandonel-e7a5f57785.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TnConcreteArchgunBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagRare",
+          "name": "Echo Voca",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun",
+      "name": "Mausolon",
+      "masteryReq": 14,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "mausolon-483fb60c57.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechGrenadeLaunch/ThanoTechGrenadeLauncher",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechGrenadeLaunch/ThanoTechGrenadeLauncher",
+      "name": "Morgha",
+      "masteryReq": 15,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "morgha-40068b33ff.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ThanotechGrenadeLauncherBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherBarrelItem",
+          "name": "Morgha Barrel",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherReceiverItem",
+          "name": "Morgha Receiver",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanotechGrenadeLauncherStockItem",
+          "name": "Morgha Stock",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchLongRifle/ArchLongRifle",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchLongRifle/ArchLongRifle",
+      "name": "Phaedra",
+      "masteryReq": 3,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "phaedra-629ac9ffc2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchLongRifleBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Tellurium",
+          "name": "Tellurium",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/Prisma/PrismaArchHeavyPistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/ArchwingHeavyPistols/Prisma/PrismaArchHeavyPistols",
+      "name": "Prisma Dual Decurions",
+      "masteryReq": 1,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "prisma-dual-decurions-e4d5a8cf9e.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Primary/Railgun/ArchRailgun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Archwing/Primary/Railgun/ArchRailgun",
+      "name": "Velocitus",
+      "masteryReq": 0,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "velocitus-218fe8d40e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchRailgunBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    }
+  ]
+}

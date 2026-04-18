@@ -151,6 +151,10 @@ h1 {
   font-weight: 400;
 }
 
+.settings-popover > label input:not([type='checkbox']) {
+  font-weight: 400;
+}
+
 .card {
   border: 1px solid var(--border);
   background: var(--panel);
@@ -410,6 +414,61 @@ button.active {
 .tiny {
   color: var(--text-dim);
   font-size: 0.93rem;
+}
+
+.import-json-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.import-help {
+  position: relative;
+}
+
+.import-help > summary {
+  list-style: none;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-strong);
+  color: var(--text-dim);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.import-help > summary::-webkit-details-marker {
+  display: none;
+}
+
+.import-help-popover {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.35rem);
+  width: min(32rem, calc(100vw - 3rem));
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.65rem;
+  box-shadow: 0 10px 24px rgba(24, 32, 42, 0.12);
+  z-index: 20;
+}
+
+.import-help-popover p {
+  margin: 0 0 0.45rem;
+}
+
+.import-help-popover p:last-child {
+  margin-bottom: 0;
+}
+
+.import-help-popover code {
+  color: var(--text);
+  word-break: break-all;
 }
 
 .check-row {

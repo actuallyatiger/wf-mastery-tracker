@@ -1,0 +1,679 @@
+{
+  "tab": "sentinels",
+  "itemCount": 17,
+  "items": [
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit",
+      "name": "Carrier",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "carrier-f4e5806f6e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/CarrierSentinelBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 1000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 3,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 1500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit",
+      "name": "Carrier Prime",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "prime",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "carrier-prime-7e84bae628.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/PrimeCarrierSentinelBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCarapace::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCarapace",
+          "name": "Carapace",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCerebrum::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCerebrum",
+          "name": "Cerebrum",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierSystems::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierSystems",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 6,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit",
+      "name": "Dethcube",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "dethcube-c0fb93fb8c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/DethCubeSentinelBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 200,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeDethCubePowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeDethCubePowerSuit",
+      "name": "Dethcube Prime",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "prime",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "dethcube-prime-568b4f3c87.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/PrimeDethcubeSentinelBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeCarapace::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeCarapace",
+          "name": "Carapace",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeCerebrum::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeCerebrum",
+          "name": "Cerebrum",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeSystems::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeSystems",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 6,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit",
+      "name": "Diriga",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "diriga-b51a3dc56d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/ArcTrapSentinelBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 350,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit",
+      "name": "Djinn",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "djinn-95bb8b0ef8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Bio/InfestedSentinelWeaponBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 3500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/BioComponent",
+          "name": "Mutagen Mass",
+          "count": 6,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 30000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit",
+      "name": "Helios",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "helios-8cacabc9a2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Energy/HeliosSentinelBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 5000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/EnergyComponent",
+          "name": "Fieldron",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+          "name": "Oxium",
+          "count": 300,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit",
+      "name": "Helios Prime",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "prime",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "helios-prime-7bd311ccae.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/PrimeHeliosSentinelBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCarapace::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCarapace",
+          "name": "Carapace",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCerebrum::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCerebrum",
+          "name": "Cerebrum",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosSystems::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosSystems",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 6,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelPowerSuit",
+      "name": "Nautilus",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "nautilus-b1bfae3524.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/EmpyreanSentinelBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelCarapace::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelCarapace",
+          "name": "Carapace",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelCerebrum::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelCerebrum",
+          "name": "Cerebrum",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelSystems::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelSystems",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/RailjackMiscItems/NullstonesRailjackItem",
+          "name": "Nullstones",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/NautilusPrimeSentinelPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/NautilusPrimeSentinelPowerSuit",
+      "name": "Nautilus Prime",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "prime",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "nautilus-prime-710cc92335.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/NautilusPrimeSentinelBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeCarapace::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeCarapace",
+          "name": "Carapace",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeCerebrum::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeCerebrum",
+          "name": "Cerebrum",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeSystems::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeSystems",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 6,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit",
+      "name": "Oxylus",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "oxylus-9cb847b2e4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/RadarSentinelBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem",
+          "name": "Axidrol Alloy",
+          "count": 45,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem",
+          "name": "Goblite Tears",
+          "count": 15,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem",
+          "name": "Longwinder Lathe Coagulant",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem",
+          "name": "Scrap",
+          "count": 40,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit",
+      "name": "Prisma Shade",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "prisma-shade-25398bfb4c.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/ShadePowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/ShadePowerSuit",
+      "name": "Shade",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "shade-fae1390837.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/ShadeSentinelBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 200,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeShadePowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeShadePowerSuit",
+      "name": "Shade Prime",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "prime",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "shade-prime-53572a63b2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/ShadePrimeSentinelBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeCarapace::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeCarapace",
+          "name": "Carapace",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeCerebrum::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeCerebrum",
+          "name": "Cerebrum",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeSystems::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeSystems",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 6,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit",
+      "name": "Taxon",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "taxon-99ef68d98a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/TnSentinelCrossBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 200,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit",
+      "name": "Wyrm",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "normal",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "wyrm-7593567ef4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/WyrmSentinelBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 200,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit",
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit",
+      "name": "Wyrm Prime",
+      "masteryReq": 0,
+      "tab": "sentinels",
+      "variant": "prime",
+      "category": "Sentinels",
+      "type": "Sentinel",
+      "productCategory": "Sentinels",
+      "imageName": "wyrm-prime-62d6263c3e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/SentinelRecipes/PrimeWyrmSentinelBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCarapace::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCarapace",
+          "name": "Carapace",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum",
+          "name": "Cerebrum",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmSystems::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmSystems",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 6,
+          "craftable": false
+        }
+      ]
+    }
+  ]
+}

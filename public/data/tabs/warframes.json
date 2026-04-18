@@ -1,0 +1,4884 @@
+{
+  "tab": "warframes",
+  "itemCount": 117,
+  "items": [
+    {
+      "id": "/Lotus/Powersuits/Ninja/Ninja",
+      "uniqueName": "/Lotus/Powersuits/Ninja/Ninja",
+      "name": "Ash",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "ash-f2c6f3ab3f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/AshBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AshChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AshChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AshHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AshHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AshSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AshSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Ninja/AshPrime",
+      "uniqueName": "/Lotus/Powersuits/Ninja/AshPrime",
+      "name": "Ash Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "ash-prime-bfcb09331e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Brawler/Brawler",
+      "uniqueName": "/Lotus/Powersuits/Brawler/Brawler",
+      "name": "Atlas",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "atlas-a39443cc8b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Brawler/AtlasPrime",
+      "uniqueName": "/Lotus/Powersuits/Brawler/AtlasPrime",
+      "name": "Atlas Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "atlas-prime-7312f6d838.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Banshee/Banshee",
+      "uniqueName": "/Lotus/Powersuits/Banshee/Banshee",
+      "name": "Banshee",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "banshee-f3216d3957.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BansheeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BansheeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BansheeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Banshee/BansheePrime",
+      "uniqueName": "/Lotus/Powersuits/Banshee/BansheePrime",
+      "name": "Banshee Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "banshee-prime-7bebac6654.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Pacifist/Pacifist",
+      "uniqueName": "/Lotus/Powersuits/Pacifist/Pacifist",
+      "name": "Baruuk",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "baruuk-e935d0749d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PacifistBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PacifistChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PacifistChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PacifistHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PacifistHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PacifistSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PacifistSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Pacifist/BaruukPrime",
+      "uniqueName": "/Lotus/Powersuits/Pacifist/BaruukPrime",
+      "name": "Baruuk Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "baruuk-prime-7e1a50c877.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BaruukPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BaruukPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BaruukPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BaruukPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BaruukPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BaruukPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BaruukPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/EntratiMech/ThanoTech",
+      "uniqueName": "/Lotus/Powersuits/EntratiMech/ThanoTech",
+      "name": "Bonewidow",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "MechSuits",
+      "imageName": "bonewidow-e6080b9313.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartSystemsItem",
+          "name": "Bonewidow Capsule",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartChassisItem",
+          "name": "Bonewidow Casing",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartEngineItem",
+          "name": "Bonewidow Engine",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/ThanomechPartWeaponPodItem",
+          "name": "Bonewidow Weapon Pod",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Sentient/Sentient",
+      "uniqueName": "/Lotus/Powersuits/Sentient/Sentient",
+      "name": "Caliban",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "caliban-c2f7820be2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SentientBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SentientChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SentientChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SentientHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SentientHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SentientSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SentientSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 12,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Sentient/CalibanPrime",
+      "uniqueName": "/Lotus/Powersuits/Sentient/CalibanPrime",
+      "name": "Caliban Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "caliban-prime-6e04a41118.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Dragon/Dragon",
+      "uniqueName": "/Lotus/Powersuits/Dragon/Dragon",
+      "name": "Chroma",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "chroma-2fd0ea0ba6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChromaChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChromaHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChromaSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent",
+          "name": "Volt Neuroptics",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Powersuits/Dragon/ChromaPrime",
+      "uniqueName": "/Lotus/Powersuits/Dragon/ChromaPrime",
+      "name": "Chroma Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "chroma-prime-2ac05d2866.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChromaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChromaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChromaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Geode/Geode",
+      "uniqueName": "/Lotus/Powersuits/Geode/Geode",
+      "name": "Citrine",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "citrine-d7392c4d7d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GeodeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GeodeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GeodeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GeodeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GeodeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GeodeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GeodeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Frumentarius/Frumentarius",
+      "uniqueName": "/Lotus/Powersuits/Frumentarius/Frumentarius",
+      "name": "Cyte-09",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "cyte-09-62e778e37c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/Cyte09Blueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/Cyte09ChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/Cyte09ChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/Cyte09HelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/Cyte09HelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/Cyte09SystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/Cyte09SystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Dagath/Dagath",
+      "uniqueName": "/Lotus/Powersuits/Dagath/Dagath",
+      "name": "Dagath",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "dagath-7589f2ce5b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/DagathBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/DagathChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/DagathChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/DagathHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/DagathHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/DagathSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/DagathSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Pagemaster/Pagemaster",
+      "uniqueName": "/Lotus/Powersuits/Pagemaster/Pagemaster",
+      "name": "Dante",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "dante-43d70fb91a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Ember/Ember",
+      "uniqueName": "/Lotus/Powersuits/Ember/Ember",
+      "name": "Ember",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "ember-338265ce88.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EmberChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EmberHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EmberSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Ember/EmberPrime",
+      "uniqueName": "/Lotus/Powersuits/Ember/EmberPrime",
+      "name": "Ember Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "ember-prime-e978f28a35.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/YinYang/YinYang",
+      "uniqueName": "/Lotus/Powersuits/YinYang/YinYang",
+      "name": "Equinox",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "equinox-ae1572be82.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/AnimaAnimusBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AnimusComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AnimusComponent",
+          "name": "Day Aspect",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/AnimaComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/AnimaComponent",
+          "name": "Night Aspect",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/YinYang/EquinoxPrime",
+      "uniqueName": "/Lotus/Powersuits/YinYang/EquinoxPrime",
+      "name": "Equinox Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "equinox-prime-9fbe947b57.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/EquinoxPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EquinoxPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EquinoxPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EquinoxPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EquinoxPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/EquinoxPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/EquinoxPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Excalibur/Excalibur",
+      "uniqueName": "/Lotus/Powersuits/Excalibur/Excalibur",
+      "name": "Excalibur",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "excalibur-2621a69bfa.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Excalibur/ExcaliburPrime",
+      "uniqueName": "/Lotus/Powersuits/Excalibur/ExcaliburPrime",
+      "name": "Excalibur Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "excalibur-prime-6d56b10bbf.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Powersuits/Excalibur/ExcaliburUmbra",
+      "uniqueName": "/Lotus/Powersuits/Excalibur/ExcaliburUmbra",
+      "name": "Excalibur Umbra",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "excalibur-umbra-d421af56c1.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburUmbraBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 1600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Kuva",
+          "name": "Kuva",
+          "count": 60,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 1200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Inkblot/Inkblot",
+      "uniqueName": "/Lotus/Powersuits/Inkblot/Inkblot",
+      "name": "Follie",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "follie-2c6d732813.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/FollieBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FollieChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FollieChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FollieHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FollieHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FollieSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FollieSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Frost/Frost",
+      "uniqueName": "/Lotus/Powersuits/Frost/Frost",
+      "name": "Frost",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "frost-620cddb4a6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FrostChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FrostHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FrostSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Frost/FrostPrime",
+      "uniqueName": "/Lotus/Powersuits/Frost/FrostPrime",
+      "name": "Frost Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "frost-prime-f177de2e0c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Glass/Glass",
+      "uniqueName": "/Lotus/Powersuits/Glass/Glass",
+      "name": "Gara",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "gara-b2089c43f8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GlassBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GlassChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GlassChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GlassHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GlassHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GlassSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GlassSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Glass/GaraPrime",
+      "uniqueName": "/Lotus/Powersuits/Glass/GaraPrime",
+      "name": "Gara Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "gara-prime-faf70dfd7c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GaraPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaraPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaraPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaraPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaraPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaraPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaraPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Garuda/Garuda",
+      "uniqueName": "/Lotus/Powersuits/Garuda/Garuda",
+      "name": "Garuda",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "garuda-5e3cc04493.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GarudaChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GarudaHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GarudaSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Kuva",
+          "name": "Kuva",
+          "count": 3500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Garuda/GarudaPrime",
+      "uniqueName": "/Lotus/Powersuits/Garuda/GarudaPrime",
+      "name": "Garuda Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "garuda-prime-2c4ce210a0.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GarudaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GarudaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GarudaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Runner/Runner",
+      "uniqueName": "/Lotus/Powersuits/Runner/Runner",
+      "name": "Gauss",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "gauss-8060019853.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaussChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaussHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaussSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Runner/GaussPrime",
+      "uniqueName": "/Lotus/Powersuits/Runner/GaussPrime",
+      "name": "Gauss Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "gauss-prime-170a77a036.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaussPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaussPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GaussPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Devourer/Devourer",
+      "uniqueName": "/Lotus/Powersuits/Devourer/Devourer",
+      "name": "Grendel",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "grendel-4d1c382605.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GrendelChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GrendelHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GrendelSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Devourer/GrendelPrime",
+      "uniqueName": "/Lotus/Powersuits/Devourer/GrendelPrime",
+      "name": "Grendel Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "grendel-prime-e23d41072d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GrendelPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GrendelPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GrendelPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Gyre/Gyre",
+      "uniqueName": "/Lotus/Powersuits/Gyre/Gyre",
+      "name": "Gyre",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "gyre-b17b2d4464.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GyreBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GyreChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GyreChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GyreHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GyreHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GyreSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GyreSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Gyre/GyrePrime",
+      "uniqueName": "/Lotus/Powersuits/Gyre/GyrePrime",
+      "name": "Gyre Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "gyre-prime-f8b507d90e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Priest/Priest",
+      "uniqueName": "/Lotus/Powersuits/Priest/Priest",
+      "name": "Harrow",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "harrow-7f74b91fce.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PriestBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PriestChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PriestChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PriestHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PriestHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PriestSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PriestSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Kuva",
+          "name": "Kuva",
+          "count": 2000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Priest/HarrowPrime",
+      "uniqueName": "/Lotus/Powersuits/Priest/HarrowPrime",
+      "name": "Harrow Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "harrow-prime-8237c36a69.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HarrowPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HarrowPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HarrowPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HarrowPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HarrowPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HarrowPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HarrowPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/IronFrame/IronFrame",
+      "uniqueName": "/Lotus/Powersuits/IronFrame/IronFrame",
+      "name": "Hildryn",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "hildryn-ceaeb4320d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/IronframeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/IronframeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/IronframeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/IronframeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/IronframeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/IronframeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/IronframeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/IronFrame/IronFramePrime",
+      "uniqueName": "/Lotus/Powersuits/IronFrame/IronFramePrime",
+      "name": "Hildryn Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "hildryn-prime-20937cebe2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HildrynPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HildrynPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HildrynPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HildrynPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HildrynPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HildrynPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HildrynPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Pirate/Pirate",
+      "uniqueName": "/Lotus/Powersuits/Pirate/Pirate",
+      "name": "Hydroid",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "hydroid-e97d6abb00.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HydroidChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HydroidHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HydroidSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Pirate/HydroidPrime",
+      "uniqueName": "/Lotus/Powersuits/Pirate/HydroidPrime",
+      "name": "Hydroid Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "hydroid-prime-718aec2104.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Sandman/Sandman",
+      "uniqueName": "/Lotus/Powersuits/Sandman/Sandman",
+      "name": "Inaros",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "inaros-826f62196f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MummyBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MummyChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MummyChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MummyHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MummyHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MummySystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MummySystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Sandman/InarosPrime",
+      "uniqueName": "/Lotus/Powersuits/Sandman/InarosPrime",
+      "name": "Inaros Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "inaros-prime-f6689c5568.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Ranger/Ranger",
+      "uniqueName": "/Lotus/Powersuits/Ranger/Ranger",
+      "name": "Ivara",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "ivara-d0be78df04.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RangerBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RangerChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RangerChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RangerHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RangerHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RangerSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RangerSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Ranger/IvaraPrime",
+      "uniqueName": "/Lotus/Powersuits/Ranger/IvaraPrime",
+      "name": "Ivara Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "ivara-prime-1be20f1393.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/IvaraPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/IvaraPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/IvaraPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/IvaraPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/IvaraPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/IvaraPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/IvaraPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Choir/Choir",
+      "uniqueName": "/Lotus/Powersuits/Choir/Choir",
+      "name": "Jade",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "jade-d88fcb42ca.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ChoirBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChoirChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChoirChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChoirHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChoirHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ChoirSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ChoirSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Khora/Khora",
+      "uniqueName": "/Lotus/Powersuits/Khora/Khora",
+      "name": "Khora",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "khora-2062e830c0.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KhoraChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KhoraHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KhoraSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Khora/KhoraPrime",
+      "uniqueName": "/Lotus/Powersuits/Khora/KhoraPrime",
+      "name": "Khora Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "khora-prime-29d9f8a9d7.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KhoraPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KhoraPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KhoraPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Koumei/Koumei",
+      "uniqueName": "/Lotus/Powersuits/Koumei/Koumei",
+      "name": "Koumei",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "koumei-6cf94f7516.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/KoumeiBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KoumeiChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KoumeiChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KoumeiHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KoumeiHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/KoumeiSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/KoumeiSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ShrineFragment",
+          "name": "Fate Pearl",
+          "count": 30,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/PaxDuviricus/PaxDuviricus",
+      "uniqueName": "/Lotus/Powersuits/PaxDuviricus/PaxDuviricus",
+      "name": "Kullervo",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "kullervo-994239dee1.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PaxDuviricusBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PaxDuviricusChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PaxDuviricusChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PaxDuviricusHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PaxDuviricusHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PaxDuviricusSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PaxDuviricusSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Duviri/Resource/DuviriDragonDropItem",
+          "name": "Pathos Clamp",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Alchemist/Alchemist",
+      "uniqueName": "/Lotus/Powersuits/Alchemist/Alchemist",
+      "name": "Lavos",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "lavos-aea18ae52f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LavosChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LavosHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LavosSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Alchemist/LavosPrime",
+      "uniqueName": "/Lotus/Powersuits/Alchemist/LavosPrime",
+      "name": "Lavos Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "lavos-prime-90a6c16d29.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Magician/Magician",
+      "uniqueName": "/Lotus/Powersuits/Magician/Magician",
+      "name": "Limbo",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "limbo-c107f3bcc2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MagicianBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagicianChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagicianChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagicianHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagicianHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagicianSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagicianSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Magician/LimboPrime",
+      "uniqueName": "/Lotus/Powersuits/Magician/LimboPrime",
+      "name": "Limbo Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "limbo-prime-7449a6c1ce.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Loki/Loki",
+      "uniqueName": "/Lotus/Powersuits/Loki/Loki",
+      "name": "Loki",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "loki-04905b317a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LOKIBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LOKIChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LOKIChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LOKIHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LOKIHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LOKISystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LOKISystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Loki/LokiPrime",
+      "uniqueName": "/Lotus/Powersuits/Loki/LokiPrime",
+      "name": "Loki Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "loki-prime-5b192774c4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Mag/Mag",
+      "uniqueName": "/Lotus/Powersuits/Mag/Mag",
+      "name": "Mag",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "mag-1a461f5a07.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MagBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Mag/MagPrime",
+      "uniqueName": "/Lotus/Powersuits/Mag/MagPrime",
+      "name": "Mag Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "mag-prime-a3d6c2f9ba.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Cowgirl/Cowgirl",
+      "uniqueName": "/Lotus/Powersuits/Cowgirl/Cowgirl",
+      "name": "Mesa",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "mesa-30651569ff.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Cowgirl/MesaPrime",
+      "uniqueName": "/Lotus/Powersuits/Cowgirl/MesaPrime",
+      "name": "Mesa Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "mesa-prime-f912b57a14.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Harlequin/Harlequin",
+      "uniqueName": "/Lotus/Powersuits/Harlequin/Harlequin",
+      "name": "Mirage",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "mirage-83f6195ffb.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Harlequin/MiragePrime",
+      "uniqueName": "/Lotus/Powersuits/Harlequin/MiragePrime",
+      "name": "Mirage Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "mirage-prime-96a31c01da.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Necro/Necro",
+      "uniqueName": "/Lotus/Powersuits/Necro/Necro",
+      "name": "Nekros",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nekros-61cb2c9f69.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NecroBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NecroChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NecroChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NecroHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NecroHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NecroSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NecroSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Necro/NekrosPrime",
+      "uniqueName": "/Lotus/Powersuits/Necro/NekrosPrime",
+      "name": "Nekros Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nekros-prime-4f3e86be2a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Nezha/Nezha",
+      "uniqueName": "/Lotus/Powersuits/Nezha/Nezha",
+      "name": "Nezha",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nezha-39ab6803c6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NezhaChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NezhaHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NezhaSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Nezha/NezhaPrime",
+      "uniqueName": "/Lotus/Powersuits/Nezha/NezhaPrime",
+      "name": "Nezha Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nezha-prime-b5e9ddf42b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NezhaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NezhaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NezhaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Infestation/Infestation",
+      "uniqueName": "/Lotus/Powersuits/Infestation/Infestation",
+      "name": "Nidus",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nidus-02067c4ce9.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NidusChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NidusHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NidusSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Kuva",
+          "name": "Kuva",
+          "count": 2000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Infestation/InfestationPrime",
+      "uniqueName": "/Lotus/Powersuits/Infestation/InfestationPrime",
+      "name": "Nidus Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nidus-prime-c1781ebcc9.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NidusPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NidusPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NidusPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Nokko/Nokko",
+      "uniqueName": "/Lotus/Powersuits/Nokko/Nokko",
+      "name": "Nokko",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nokko-519627ee77.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NokkoBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NokkoChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NokkoChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NokkoHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NokkoHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NokkoSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NokkoSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/AntiMatter/Anti",
+      "uniqueName": "/Lotus/Powersuits/AntiMatter/Anti",
+      "name": "Nova",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nova-1f908986f1.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NovaChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NovaHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NovaSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/AntiMatter/NovaPrime",
+      "uniqueName": "/Lotus/Powersuits/AntiMatter/NovaPrime",
+      "name": "Nova Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nova-prime-2345192401.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Jade/Jade",
+      "uniqueName": "/Lotus/Powersuits/Jade/Jade",
+      "name": "Nyx",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nyx-b6f1ec8736.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NyxChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NyxHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NyxSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Jade/NyxPrime",
+      "uniqueName": "/Lotus/Powersuits/Jade/NyxPrime",
+      "name": "Nyx Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "nyx-prime-b16b670098.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Paladin/Paladin",
+      "uniqueName": "/Lotus/Powersuits/Paladin/Paladin",
+      "name": "Oberon",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "oberon-61900220ad.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PaladinBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PaladinChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PaladinChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PaladinHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PaladinHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/PaladinSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/PaladinSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Paladin/PaladinPrime",
+      "uniqueName": "/Lotus/Powersuits/Paladin/PaladinPrime",
+      "name": "Oberon Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "oberon-prime-71fc40c9ca.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Bard/Bard",
+      "uniqueName": "/Lotus/Powersuits/Bard/Bard",
+      "name": "Octavia",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "octavia-d57837e36e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Keys/BardQuest/BardQuestSequencerItem",
+          "name": "Mandachord",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Bard/OctaviaPrime",
+      "uniqueName": "/Lotus/Powersuits/Bard/OctaviaPrime",
+      "name": "Octavia Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "octavia-prime-93e1ad02f0.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Oraxia/Oraxia",
+      "uniqueName": "/Lotus/Powersuits/Oraxia/Oraxia",
+      "name": "Oraxia",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "oraxia-8a9e4aab09.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Odalisk/Odalisk",
+      "uniqueName": "/Lotus/Powersuits/Odalisk/Odalisk",
+      "name": "Protea",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "protea-69a74795e8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ProteaChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ProteaHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ProteaSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Odalisk/ProteaPrime",
+      "uniqueName": "/Lotus/Powersuits/Odalisk/ProteaPrime",
+      "name": "Protea Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "protea-prime-86cbc2b038.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ProteaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ProteaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ProteaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/ConcreteFrame/ConcreteFrame",
+      "uniqueName": "/Lotus/Powersuits/ConcreteFrame/ConcreteFrame",
+      "name": "Qorvex",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "qorvex-ec9d170e8b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ConcreteFrameBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ConcreteFrameChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ConcreteFrameChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ConcreteFrameHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ConcreteFrameHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ConcreteFrameSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ConcreteFrameSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagRare",
+          "name": "Echo Voca",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Revenant/Revenant",
+      "uniqueName": "/Lotus/Powersuits/Revenant/Revenant",
+      "name": "Revenant",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "revenant-c9bd7cfbcc.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Revenant/RevenantPrime",
+      "uniqueName": "/Lotus/Powersuits/Revenant/RevenantPrime",
+      "name": "Revenant Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "revenant-prime-a5be34cbf2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RevenantPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Rhino/Rhino",
+      "uniqueName": "/Lotus/Powersuits/Rhino/Rhino",
+      "name": "Rhino",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "rhino-87af2466b6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RhinoChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RhinoHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RhinoSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Rhino/RhinoPrime",
+      "uniqueName": "/Lotus/Powersuits/Rhino/RhinoPrime",
+      "name": "Rhino Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "rhino-prime-7142165571.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Saryn/Saryn",
+      "uniqueName": "/Lotus/Powersuits/Saryn/Saryn",
+      "name": "Saryn",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "saryn-88c1d4da08.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SarynChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SarynHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SarynSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Saryn/SarynPrime",
+      "uniqueName": "/Lotus/Powersuits/Saryn/SarynPrime",
+      "name": "Saryn Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "saryn-prime-8703933001.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Wraith/Wraith",
+      "uniqueName": "/Lotus/Powersuits/Wraith/Wraith",
+      "name": "Sevagoth",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "sevagoth-9264d64897.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WraithBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WraithChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WraithChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WraithHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WraithHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WraithSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WraithSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Wraith/SevagothPrime",
+      "uniqueName": "/Lotus/Powersuits/Wraith/SevagothPrime",
+      "name": "Sevagoth Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "sevagoth-prime-5f34bf2dba.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Hoplite/Hoplite",
+      "uniqueName": "/Lotus/Powersuits/Hoplite/Hoplite",
+      "name": "Styanax",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "styanax-09419fb39f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 12,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Temple/Temple",
+      "uniqueName": "/Lotus/Powersuits/Temple/Temple",
+      "name": "Temple",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "temple-c3d2feb7ae.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TempleBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TempleChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TempleChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TempleHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TempleHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TempleSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TempleSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Fairy/Fairy",
+      "uniqueName": "/Lotus/Powersuits/Fairy/Fairy",
+      "name": "Titania",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "titania-dd20b18d5b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/FairyBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FairyChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FairyChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FairyHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FairyHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/FairySystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/FairySystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Fairy/TitaniaPrime",
+      "uniqueName": "/Lotus/Powersuits/Fairy/TitaniaPrime",
+      "name": "Titania Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "titania-prime-7a328a3d8a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TitaniaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TitaniaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TitaniaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TitaniaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TitaniaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TitaniaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TitaniaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Trinity/Trinity",
+      "uniqueName": "/Lotus/Powersuits/Trinity/Trinity",
+      "name": "Trinity",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "trinity-b59556a37b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrinityChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrinityHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrinitySystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinitySystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Trinity/TrinityPrime",
+      "uniqueName": "/Lotus/Powersuits/Trinity/TrinityPrime",
+      "name": "Trinity Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "trinity-prime-aa68b6373d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/DemonFrame/DemonFrame",
+      "uniqueName": "/Lotus/Powersuits/DemonFrame/DemonFrame",
+      "name": "Uriel",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "uriel-f39d1dadc6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/UrielBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/UrielChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/UrielChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/UrielHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/UrielHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/UrielSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/UrielSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Berserker/Berserker",
+      "uniqueName": "/Lotus/Powersuits/Berserker/Berserker",
+      "name": "Valkyr",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "valkyr-c1f7e5d2ab.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Berserker/ValkyrPrime",
+      "uniqueName": "/Lotus/Powersuits/Berserker/ValkyrPrime",
+      "name": "Valkyr Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "valkyr-prime-354cd87f77.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Trapper/Trapper",
+      "uniqueName": "/Lotus/Powersuits/Trapper/Trapper",
+      "name": "Vauban",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "vauban-c95db9ee09.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TrapperBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrapperChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrapperChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrapperHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrapperHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TrapperSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TrapperSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Trapper/TrapperPrime",
+      "uniqueName": "/Lotus/Powersuits/Trapper/TrapperPrime",
+      "name": "Vauban Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "vauban-prime-f9c539bdde.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
+          "name": "Nitain Extract",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/EntratiMech/NechroTech",
+      "uniqueName": "/Lotus/Powersuits/EntratiMech/NechroTech",
+      "name": "Voidrig",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "MechSuits",
+      "imageName": "voidrig-51bc3a4b3c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/NecromechBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartSystemsItem",
+          "name": "Voidrig Capsule",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartChassisItem",
+          "name": "Voidrig Casing",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartEngineItem",
+          "name": "Voidrig Engine",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/NecromechPartWeaponPodItem",
+          "name": "Voidrig Weapon Pod",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Volt/Volt",
+      "uniqueName": "/Lotus/Powersuits/Volt/Volt",
+      "name": "Volt",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "volt-9ad956c441.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/VOLTBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VOLTChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VOLTChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VOLTSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VOLTSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Volt/VoltPrime",
+      "uniqueName": "/Lotus/Powersuits/Volt/VoltPrime",
+      "name": "Volt Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "volt-prime-dd65a6befd.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Werewolf/Werewolf",
+      "uniqueName": "/Lotus/Powersuits/Werewolf/Werewolf",
+      "name": "Voruna",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "voruna-83e8799edc.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WolfFrameBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WolfFrameChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WolfFrameChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WolfFrameHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WolfFrameHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WolfFrameSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WolfFrameSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/EclipseVoidWraithItem",
+          "name": "Lua Thrax Plasm",
+          "count": 50,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Werewolf/VorunaPrime",
+      "uniqueName": "/Lotus/Powersuits/Werewolf/VorunaPrime",
+      "name": "Voruna Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "voruna-prime-ffc806f3a8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Wisp/Wisp",
+      "uniqueName": "/Lotus/Powersuits/Wisp/Wisp",
+      "name": "Wisp",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "wisp-a046bb62f4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WispBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WispChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WispChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WispHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WispHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WispSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WispSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Wisp/WispPrime",
+      "uniqueName": "/Lotus/Powersuits/Wisp/WispPrime",
+      "name": "Wisp Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "wisp-prime-7a898e071d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WispPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WispPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WispPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WispPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WispPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WispPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WispPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/MonkeyKing/MonkeyKing",
+      "uniqueName": "/Lotus/Powersuits/MonkeyKing/MonkeyKing",
+      "name": "Wukong",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "wukong-bbc641319b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WukongChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WukongHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WukongSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/MonkeyKing/WukongPrime",
+      "uniqueName": "/Lotus/Powersuits/MonkeyKing/WukongPrime",
+      "name": "Wukong Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "wukong-prime-4e1c56fd43.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WukongPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WukongPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/WukongPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/BrokenFrame/BrokenFrame",
+      "uniqueName": "/Lotus/Powersuits/BrokenFrame/BrokenFrame",
+      "name": "Xaku",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "xaku-8fb3ad2779.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/BrokenFrame/XakuPrime",
+      "uniqueName": "/Lotus/Powersuits/BrokenFrame/XakuPrime",
+      "name": "Xaku Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "xaku-prime-f6213dd36f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/XakuPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/XakuPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/XakuPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/XakuPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/XakuPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/XakuPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/XakuPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Yareli/Yareli",
+      "uniqueName": "/Lotus/Powersuits/Yareli/Yareli",
+      "name": "Yareli",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "yareli-3b577c5064.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/YareliChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/YareliHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/YareliSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Yareli/YareliPrime",
+      "uniqueName": "/Lotus/Powersuits/Yareli/YareliPrime",
+      "name": "Yareli Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "yareli-prime-c4dbed6caa.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Tengu/Tengu",
+      "uniqueName": "/Lotus/Powersuits/Tengu/Tengu",
+      "name": "Zephyr",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "zephyr-02db9643ed.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TenguBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TenguChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TenguChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TenguHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TenguHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/TenguSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/TenguSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Tengu/ZephyrPrime",
+      "uniqueName": "/Lotus/Powersuits/Tengu/ZephyrPrime",
+      "name": "Zephyr Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "zephyr-prime-c777d1497b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    }
+  ]
+}

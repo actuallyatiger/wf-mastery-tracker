@@ -1,0 +1,5173 @@
+{
+  "tab": "secondary",
+  "itemCount": 147,
+  "items": [
+    {
+      "id": "/Lotus/Weapons/ClanTech/Bio/AcidDartPistol",
+      "uniqueName": "/Lotus/Weapons/ClanTech/Bio/AcidDartPistol",
+      "name": "Acrid",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "acrid-6363c31728.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Bio/AcidDartPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/BioComponent",
+          "name": "Mutagen Mass",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 5000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 6000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb",
+      "uniqueName": "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb",
+      "name": "Aegrit",
+      "masteryReq": 11,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "aegrit-fe86bbbea4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrnVorStickyBombBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 8500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 12500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Kuva",
+          "name": "Kuva",
+          "count": 2200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/AkimboAutoPistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboAutoPistols",
+      "name": "Afuris",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "afuris-c36c694ba4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AFurisBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/AutoPistol::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/AutoPistol",
+          "name": "Furis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/AutoPistol::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/AutoPistol",
+          "name": "Furis",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeAfuris/PrimeAFurisWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAfuris/PrimeAFurisWeapon",
+      "name": "Afuris Prime",
+      "masteryReq": 12,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "afuris-prime-abcebdfbfa.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AfurisPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeBarrel::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeReceiver::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/SapientPistol/SapientPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/SapientPistol/SapientPistol",
+      "name": "Akarius",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akarius-2009d8750f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/SapientPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ConcentratedGas",
+          "name": "Hexenon",
+          "count": 150,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 7500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 3,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 1600,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeAkarius/PrimeAkariusWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAkarius/PrimeAkariusWeapon",
+      "name": "Akarius Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akarius-prime-7d8f0a0779.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AkariusPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeBarrel::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeReceiver::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto",
+      "name": "Akbolto",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "akbolto-6b0f3d7ac2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AkBoltoBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/CrossBow::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
+          "name": "Bolto",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/CrossBow::1::/Lotus/Weapons/Tenno/Pistol/Pistol::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/Pistol",
+          "name": "Lato",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistol/CrossBow::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistol/CrossBow"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/CrossBow::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
+          "name": "Bolto",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/CrossBow::2::/Lotus/Weapons/Tenno/Pistol/Pistol::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/Pistol",
+          "name": "Lato",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistol/CrossBow::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistol/CrossBow"
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeAkbolto/PrimeAkBoltoWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAkbolto/PrimeAkBoltoWeapon",
+      "name": "Akbolto Prime",
+      "masteryReq": 13,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akbolto-prime-1bf267febc.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AkboltoPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeBarrel::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeReceiver::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/AkimboShotGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboShotGun",
+      "name": "Akbronco",
+      "masteryReq": 2,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "akbronco-2345401e0c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/DualBroncosBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/HandShotGun::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/HandShotGun",
+          "name": "Bronco",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/HandShotGun::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/HandShotGun",
+          "name": "Bronco",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
+      "name": "Akbronco Prime",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "akbronco-prime-e0b3fd0788.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AkbroncoPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+          "name": "Bronco Prime",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::1::/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel",
+          "name": "Barrel",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::1::/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
+          "name": "Receiver",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+          "name": "Bronco Prime",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::2::/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel",
+          "name": "Barrel",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::2::/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
+          "name": "Receiver",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime"
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkbroncoPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkbroncoPrimeLink",
+          "name": "Link",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TigrisRedeemerSetPistol/TnoBladedPistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TigrisRedeemerSetPistol/TnoBladedPistols",
+      "name": "Akjagara",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akjagara-091d3b6fa7.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TnoBladedPistolsBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto",
+          "name": "Akbolto",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto::1::/Lotus/Weapons/Tenno/Pistol/CrossBow::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
+          "name": "Bolto",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto::1::/Lotus/Weapons/Tenno/Pistol/CrossBow::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
+          "name": "Bolto",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualShortSword::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualShortSword",
+          "name": "Dual Skana",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeAkjagara/AkJagaraPrime",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAkjagara/AkJagaraPrime",
+      "name": "Akjagara Prime",
+      "masteryReq": 12,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akjagara-prime-c44280a30c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AkjagaraPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeBarrel::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeReceiver::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/AkimboPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboPistol",
+      "name": "Aklato",
+      "masteryReq": 3,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "aklato-c5ecafca06.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/AkLexPistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkLexPistols",
+      "name": "Aklex",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "aklex-20f578f0e2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AklexBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol",
+          "name": "Lex",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol",
+          "name": "Lex",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/AkLexPrimePistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkLexPrimePistols",
+      "name": "Aklex Prime",
+      "masteryReq": 15,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "aklex-prime-3ba6556b1f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AklexPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+          "name": "Lex Prime",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::1::/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel",
+          "name": "Barrel",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::1::/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver",
+          "name": "Receiver",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+          "name": "Lex Prime",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::2::/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel",
+          "name": "Barrel",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::2::/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver",
+          "name": "Receiver",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex"
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AklexPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AklexPrimeLink",
+          "name": "Link",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/DualMagnus",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/DualMagnus",
+      "name": "Akmagnus",
+      "masteryReq": 12,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "akmagnus-98e45bbf74.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/DualMagnusBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum",
+          "name": "Magnus",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum",
+          "name": "Magnus",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/DualMagnusPrime",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/DualMagnusPrime",
+      "name": "Akmagnus Prime",
+      "masteryReq": 15,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "akmagnus-prime-641a54e112.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AkmagnusPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkmagnusPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkmagnusPrimeLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon",
+          "name": "Magnus Prime",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::1::/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeBarrel",
+          "name": "Barrel",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::1::/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeReceiver",
+          "name": "Receiver",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon",
+          "name": "Magnus Prime",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::2::/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeBarrel",
+          "name": "Barrel",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::2::/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeReceiver",
+          "name": "Receiver",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon"
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/SomaSidearm/AkimboSomaPistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/SomaSidearm/AkimboSomaPistols",
+      "name": "Aksomati",
+      "masteryReq": 9,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "aksomati-452d3d8d0e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AksomatiBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/TennoUzi/TennoUzi::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/TennoUzi/TennoUzi",
+          "name": "Akstiletto",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Cryotic",
+          "name": "Cryotic",
+          "count": 200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeAksomati/PrimeAksomati",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAksomati/PrimeAksomati",
+      "name": "Aksomati Prime",
+      "masteryReq": 12,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "aksomati-prime-8fc151cef1.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AksomatiPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeBarrel::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeReceiver::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TennoUzi/TennoUzi",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TennoUzi/TennoUzi",
+      "name": "Akstiletto",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akstiletto-5d5e77400c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TennoUziBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 800,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeAkstiletto/PrimeAkstiletto",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAkstiletto/PrimeAkstiletto",
+      "name": "Akstiletto Prime",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akstiletto-prime-a45f9d4e38.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AkstilettoPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeBarrel::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeReceiver::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/DualVastos",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/DualVastos",
+      "name": "Akvasto",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "akvasto-7e279725d8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/DualVastosBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol",
+          "name": "Vasto",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol",
+          "name": "Vasto",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/AkPrimeVasto/AkPrimeVastoPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/AkPrimeVasto/AkPrimeVastoPistol",
+      "name": "Akvasto Prime",
+      "masteryReq": 12,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akvasto-prime-9416a0a363.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AkvastoPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkvastoPrimeLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkvastoPrimeLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol",
+          "name": "Vasto Prime",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::1::/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeBarrel",
+          "name": "Barrel",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::1::/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver",
+          "name": "Receiver",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::2",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol",
+          "name": "Vasto Prime",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::2::/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeBarrel",
+          "name": "Barrel",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::2::/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver",
+          "name": "Receiver",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol::2",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol"
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/HarlequinGun/HarlequinPistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/HarlequinGun/HarlequinPistols",
+      "name": "Akzani",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "akzani-127d132ec5.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/HarlequinPistolsBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 1000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 1500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/CorpusHandRocketLauncher",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/CorpusHandRocketLauncher",
+      "name": "Angstrum",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "angstrum-296fd1e714.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/CorpusHandRocketLauncherBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 900,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/SniperPistol/CrpScopeGun",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/SniperPistol/CrpScopeGun",
+      "name": "Arca Scisco",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "arca-scisco-10a8f96db3.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Energy/CrpScopeGunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/EnergyComponent",
+          "name": "Fieldron",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+          "name": "Oxium",
+          "count": 250,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 12500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon",
+      "name": "Athodai",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "athodai-88e24e43f3.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AthodaiPistolBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPistolBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPistolBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPistolReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPistolReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/HeatGun/GrnHeatGun",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/HeatGun/GrnHeatGun",
+      "name": "Atomos",
+      "masteryReq": 5,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "atomos-97563b3008.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrnHeatGunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 1300,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 800,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 1500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/SundialGun/SundialPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/SundialGun/SundialPistol",
+      "name": "Azima",
+      "masteryReq": 6,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "azima-7045ece43c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/SundialPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 450,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 2750,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/AutomaticHandCrossbow/AutoCrossBow",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/AutomaticHandCrossbow/AutoCrossBow",
+      "name": "Ballistica",
+      "masteryReq": 2,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "ballistica-a88d0d1bea.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AutoCrossBowBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 3000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 3,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 1200,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeBallistica/PrimeBallistica",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeBallistica/PrimeBallistica",
+      "name": "Ballistica Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "ballistica-prime-81feb66ef9.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/PrimeBallisticaBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaLowerLimb::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaLowerLimb",
+          "name": "Lower Limb",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaString::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaString",
+          "name": "String",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaUpperLimb::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaUpperLimb",
+          "name": "Upper Limb",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
+      "name": "Bolto",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "bolto-39106d806a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/BoltoBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/Pistol::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/Pistol",
+          "name": "Lato",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 800,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrineerHandShotgun/GrineerHandCannon",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerHandShotgun/GrineerHandCannon",
+      "name": "Brakk",
+      "masteryReq": 6,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "brakk-251ecec36e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/BrakkBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/HandShotGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/HandShotGun",
+      "name": "Bronco",
+      "masteryReq": 0,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "bronco-65d3eb546d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/BroncoBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 1200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 700,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 800,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+      "name": "Bronco Prime",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "bronco-prime-22492b5f01.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/BroncoPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/TnChoirframeKunai/TnChoirframeKunai",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/TnChoirframeKunai/TnChoirframeKunai",
+      "name": "Cantare",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "cantare-480f4a6fc2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TnChoirKunaiBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 1400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 1600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 600,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/StickyBomb/StickyBombs",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/StickyBomb/StickyBombs",
+      "name": "Castanas",
+      "masteryReq": 3,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "castanas-2fd0ffe61a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TaserStarBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 800,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Pistols/InfBeamPistol/InfBeamPistol",
+      "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfBeamPistol/InfBeamPistol",
+      "name": "Catabolyst",
+      "masteryReq": 11,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "catabolyst-6a7047b949.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/InfBeamPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/BioComponent",
+          "name": "Mutagen Mass",
+          "count": 7,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem",
+          "name": "Ocular Stem-Root",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem",
+          "name": "Scintillant",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemACutItem",
+          "name": "Stellated Necrathene",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun",
+      "name": "Cestra",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "cestra-de053fcf83.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/CorpusMinigunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 3000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 1200,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaCatabolyst",
+      "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaCatabolyst",
+      "name": "Coda Catabolyst",
+      "masteryReq": 17,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "coda-catabolyst-fc6b5e3e63.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaPox",
+      "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaPox",
+      "name": "Coda Pox",
+      "masteryReq": 17,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "coda-pox-9603c6b1e9.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaTysis",
+      "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaTysis",
+      "name": "Coda Tysis",
+      "masteryReq": 17,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "coda-tysis-674ee70828.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpSentAmalgPistol/CrpSentAmalgPistol",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpSentAmalgPistol/CrpSentAmalgPistol",
+      "name": "Cyanex",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "cyanex-1c118ccf60.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/CrpSentAmalgPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/EnergyComponent",
+          "name": "Fieldron",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ConcentratedGas",
+          "name": "Hexenon",
+          "count": 250,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 8750,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpChargeGun/CrpChargeGun",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpChargeGun/CrpChargeGun",
+      "name": "Cycron",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "cycron-207a11874d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/CrpChargeGunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 1500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 9000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/EnergyComponent",
+          "name": "Fieldron",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/StalkerKunai",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/StalkerKunai",
+      "name": "Despair",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "despair-abc763c0f4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/StalkerKunaiBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 800,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 5000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 4500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CorpusHandShotgun/CorpusHandCannon",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusHandShotgun/CorpusHandCannon",
+      "name": "Detron",
+      "masteryReq": 6,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "detron-4fb4cc5584.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/DetronBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/DetronBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/DetronBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/DetronReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/DetronReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/DexFuris/DexFuris",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/DexFuris/DexFuris",
+      "name": "Dex Furis",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "dex-furis-7f661820c6.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/DualCorpusMinigun",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/DualCorpusMinigun",
+      "name": "Dual Cestra",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "dual-cestra-04d7cc079c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/DualCorpusMinigunBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun::1",
+          "itemKey": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun",
+          "name": "Cestra",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun::2",
+          "itemKey": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun",
+          "name": "Cestra",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/EnergyComponent",
+          "name": "Fieldron",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Pistols/1999InfSporePistol/1999InfSporePistolWeapon",
+      "uniqueName": "/Lotus/Weapons/Infested/InfestedLich/Pistols/1999InfSporePistol/1999InfSporePistolWeapon",
+      "name": "Dual Coda Torxica",
+      "masteryReq": 17,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "dual-coda-torxica-5efb171272.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Pistols/InfVomitGun/InfVomitGunWep",
+      "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfVomitGun/InfVomitGunWep",
+      "name": "Dual Toxocyst",
+      "masteryReq": 11,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "dual-toxocyst-e89c00d6b5.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Bio/InfVomitPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/BioComponent",
+          "name": "Mutagen Mass",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 6500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 1100,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Lasria/LasGooPistol/LasGooPistolPlayerWeapon",
+      "uniqueName": "/Lotus/Weapons/Lasria/LasGooPistol/LasGooPistolPlayerWeapon",
+      "name": "Efv-8 Mars",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "efv-8-mars-bda55bc38c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LasGooPistolPlayerWeaponBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasGooPistolPlayerWeaponBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasGooPistolPlayerWeaponBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasGooPistolPlayerWeaponReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasGooPistolPlayerWeaponReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasGooPistolPlayerWeaponStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasGooPistolPlayerWeaponStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Pistols/InfestedPistol",
+      "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfestedPistol",
+      "name": "Embolist",
+      "masteryReq": 9,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "embolist-2dcf599ad8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Bio/InfestedPistolBioWeaponBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 1200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/BioComponent",
+          "name": "Mutagen Mass",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 15000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TnWraitheSidearm/TnWraitheSidearmWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnWraitheSidearm/TnWraitheSidearmWeapon",
+      "name": "Epitaph",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "epitaph-b49e30b4ec.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/WraithSidearmBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/WraithSidearmBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/WraithSidearmBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/WraithSidearmReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/WraithSidearmReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 7,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeEpitaph/PrimeEpitaphSidearmWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeEpitaph/PrimeEpitaphSidearmWeapon",
+      "name": "Epitaph Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "epitaph-prime-dbe8d7bab0.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/EpitaphPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/EpitaphPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/EpitaphPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/EpitaphPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/EpitaphPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/AllNew1hSG/AllNew1hSG",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/AllNew1hSG/AllNew1hSG",
+      "name": "Euphona Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "euphona-prime-258bec05a5.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/Prime1HShotgunBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/Prime1HShotgunBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/Prime1HShotgunBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/Prime1HShotgunReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/Prime1HShotgunReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/AutoPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/AutoPistol",
+      "name": "Furis",
+      "masteryReq": 1,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "furis-5bb7021b86.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/FurisBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 300,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 750,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 400,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/GlassKunai/GlassKunaiWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/GlassKunai/GlassKunaiWeapon",
+      "name": "Fusilai",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "fusilai-83082d8f95.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GlassKunaiBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
+          "name": "Nitain Extract",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 1350,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 2950,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 10000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSDroidArray",
+      "uniqueName": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSDroidArray",
+      "name": "Gammacor",
+      "masteryReq": 2,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "gammacor-67eb299154.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ReconnasorBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 2500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 650,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Grimoire/TnDoppelgangerGrimoire",
+      "uniqueName": "/Lotus/Weapons/Tenno/Grimoire/TnDoppelgangerGrimoire",
+      "name": "Grimoire",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "grimoire-6267fa2ae0.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Grimoire/TnGrimoire",
+      "uniqueName": "/Lotus/Weapons/Tenno/Grimoire/TnGrimoire",
+      "name": "Grimoire",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "grimoire-32049e9432.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrimoireBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagRare",
+          "name": "Echo Voca",
+          "count": 15,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemB",
+          "name": "Entrati Lanthorn",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabMiscItemA",
+          "name": "Entrati Obols",
+          "count": 2000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabMiscItemB",
+          "name": "Necracoil",
+          "count": 50,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/TennoStars",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/TennoStars",
+      "name": "Hikou",
+      "masteryReq": 2,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "hikou-a08f2c85e2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TennoStarsBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 4000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou",
+      "name": "Hikou Prime",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "hikou-prime-784b21f94c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/PrimeHikouBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster",
+          "name": "Pouch",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster",
+          "name": "Pouch",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouStars::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouStars",
+          "name": "Stars",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouStars::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouStars",
+          "name": "Stars",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 8,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/QuillDartgun/QuillDartGunWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/QuillDartgun/QuillDartGunWeapon",
+      "name": "Hystrix",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "hystrix-9ceb9a9a5c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/QuillDartgunBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/CrossBow::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/CrossBow",
+          "name": "Bolto",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/CrossBow::1::/Lotus/Weapons/Tenno/Pistol/Pistol::1",
+          "itemKey": "/Lotus/Weapons/Tenno/Pistol/Pistol",
+          "name": "Lato",
+          "level": 1,
+          "parentId": "/Lotus/Weapons/Tenno/Pistol/CrossBow::1",
+          "parentItemKey": "/Lotus/Weapons/Tenno/Pistol/CrossBow"
+        },
+        {
+          "id": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol::1",
+          "itemKey": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol",
+          "name": "Viper",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 15,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 9750,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeHystrix/PrimeHystrixWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeHystrix/PrimeHystrixWeapon",
+      "name": "Hystrix Prime",
+      "masteryReq": 12,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "hystrix-prime-234976e66a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/HystrixPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/HystrixPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/HystrixPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/HystrixPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/HystrixPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TnPriestPistolScope/TnPriestPistolWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnPriestPistolScope/TnPriestPistolWeapon",
+      "name": "Knell",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "knell-c585400249.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TnPriestPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Cryotic",
+          "name": "Cryotic",
+          "count": 3800,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 5200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 20000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeKnell/PrimeKnellWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeKnell/PrimeKnellWeapon",
+      "name": "Knell Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "knell-prime-f5518c4cac.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KnellPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/KnellPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/KnellPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/KnellPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/KnellPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol",
+      "name": "Kohmak",
+      "masteryReq": 5,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kohmak-7d5125f399.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Chemical/GrnKohmPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/ChemComponent",
+          "name": "Detonite Injector",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 5000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 5000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TnYareliPistol/TnYareliPistolWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnYareliPistol/TnYareliPistolWeapon",
+      "name": "Kompressa",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kompressa-c2ab392144.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TnYareliPistolBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnYareliPistolBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnYareliPistolBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnYareliPistolReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/TnYareliPistolReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa",
+      "name": "Kompressa Prime",
+      "masteryReq": 13,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kompressa-prime-2facb539ea.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KompressaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol",
+      "name": "Kraken",
+      "masteryReq": 0,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kraken-0cda31a615.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrnHeavyPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 120,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 750,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrnTorpedoPistol/GrnTorpedoPistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnTorpedoPistol/GrnTorpedoPistol",
+      "name": "Kulstar",
+      "masteryReq": 5,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kulstar-d571661f73.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrnTorpedoPistolBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol::1",
+          "itemKey": "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol",
+          "name": "Kraken",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Cryotic",
+          "name": "Cryotic",
+          "count": 4800,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 3600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Tellurium",
+          "name": "Tellurium",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/Kunai",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/Kunai",
+      "name": "Kunai",
+      "masteryReq": 0,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "kunai-355eb5dcab.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KunaiBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 3000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 4000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 4000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Brakk/KuvaBrakk",
+      "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Brakk/KuvaBrakk",
+      "name": "Kuva Brakk",
+      "masteryReq": 13,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kuva-brakk-2e49f213ac.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KuvaWeapons/KuvaBrakkBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Kraken/KuvaKraken",
+      "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Kraken/KuvaKraken",
+      "name": "Kuva Kraken",
+      "masteryReq": 15,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kuva-kraken-9e37ee7e99.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KuvaWeapons/KuvaKrakenBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Nukor/KuvaNukor",
+      "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Nukor/KuvaNukor",
+      "name": "Kuva Nukor",
+      "masteryReq": 13,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kuva-nukor-59d60648d3.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KuvaWeapons/KuvaNukorBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Seer/KuvaSeer",
+      "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Seer/KuvaSeer",
+      "name": "Kuva Seer",
+      "masteryReq": 15,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "kuva-seer-a827acd957.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KuvaWeapons/KuvaSeerBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Stubba/KuvaStubba",
+      "uniqueName": "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Stubba/KuvaStubba",
+      "name": "Kuva Twin Stubbas",
+      "masteryReq": 13,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "kuva-twin-stubbas-d66662bcef.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/KuvaWeapons/KuvaStubbaBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Zariman/Pistols/HeavyPistol/ZarimanHeavyPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Zariman/Pistols/HeavyPistol/ZarimanHeavyPistol",
+      "name": "Laetum",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "laetum-d2ba8e800b.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/Evolving/ZarimanHeavyPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 4000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemA",
+          "name": "Voidgel Orb",
+          "count": 20,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/VoidAngelItem",
+          "name": "Voidplume Pinion",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTagBounty",
+          "name": "Voidplume Quill",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/Pistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/Pistol",
+      "name": "Lato",
+      "masteryReq": 0,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "lato-352acc2de0.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LatoBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/LatoPrime",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/LatoPrime",
+      "name": "Lato Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "lato-prime-184c228f25.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/LatoVandal",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/LatoVandal",
+      "name": "Lato Vandal",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "lato-vandal-7dcc9dde42.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LatoVandalBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LatoVandalBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LatoVandalBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LatoVandalReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LatoVandalReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol",
+      "name": "Lex",
+      "masteryReq": 3,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "lex-815d312d76.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+      "name": "Lex Prime",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "lex-prime-547afa0c65.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LexPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum",
+      "name": "Magnus",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "magnus-2726d45d02.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/MagnumBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 100,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 900,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon",
+      "name": "Magnus Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "magnus-prime-1700bfd0c2.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/MagnusPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/VoidTrader/VTDetron",
+      "uniqueName": "/Lotus/Weapons/VoidTrader/VTDetron",
+      "name": "Mara Detron",
+      "masteryReq": 9,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "mara-detron-2958414847.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrineerLeverActionPistol/GLAPistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerLeverActionPistol/GLAPistol",
+      "name": "Marelok",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "marelok-9bc76bd64a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Chemical/GLAPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/ChemComponent",
+          "name": "Detonite Injector",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 5000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 5000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/MK1Series/MK1Furis",
+      "uniqueName": "/Lotus/Weapons/MK1Series/MK1Furis",
+      "name": "Mk1-Furis",
+      "masteryReq": 0,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "mk1-furis-0ae7df5a0f.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/MK1Series/MK1Kunai",
+      "uniqueName": "/Lotus/Weapons/MK1Series/MK1Kunai",
+      "name": "Mk1-Kunai",
+      "masteryReq": 0,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "mk1-kunai-0607aa3953.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrineerMicrowavegun/GrnMicrowavePistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerMicrowavegun/GrnMicrowavePistol",
+      "name": "Nukor",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "nukor-b1882490d6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Chemical/GrnMicrowavePistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/ChemComponent",
+          "name": "Detonite Injector",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 5500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpSentExperimentPistol/CrpSentExperimentPistol",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpSentExperimentPistol/CrpSentExperimentPistol",
+      "name": "Ocucor",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "ocucor-92e124c6fb.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/CrpSentExperimentPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem",
+          "name": "Charamote Sagan Module",
+          "count": 20,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/EnergyComponent",
+          "name": "Fieldron",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem",
+          "name": "Thermal Sludge",
+          "count": 40,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem",
+          "name": "Venerdo Alloy",
+          "count": 55,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Thanotech/EntratiWristGun/EntratiWristGunWeapon",
+      "uniqueName": "/Lotus/Weapons/Thanotech/EntratiWristGun/EntratiWristGunWeapon",
+      "name": "Onos",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "onos-8f623016f7.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/EntratiWristGunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemB",
+          "name": "Entrati Lanthorn",
+          "count": 6,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabMiscItemB",
+          "name": "Necracoil",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 3000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TnBardPistol/TnBardPistolGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnBardPistol/TnBardPistolGun",
+      "name": "Pandero",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "pandero-7c0ad54feb.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TnBardPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 4500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Cryotic",
+          "name": "Cryotic",
+          "count": 5500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 25000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimePandero/PanderoPrimeWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimePandero/PanderoPrimeWeapon",
+      "name": "Pandero Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "pandero-prime-fad4842362.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/PanderoPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PanderoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PanderoPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PanderoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PanderoPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpSonificBlastor/CrpBlastorWeapon",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpSonificBlastor/CrpBlastorWeapon",
+      "name": "Plinx",
+      "masteryReq": 6,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "plinx-3134170f92.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/CrpBlastorWeaponBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 4375,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Cryotic",
+          "name": "Cryotic",
+          "count": 575,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem",
+          "name": "Gyromag Systems",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Pistols/InfProximityStars/InfProximityStars",
+      "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfProximityStars/InfProximityStars",
+      "name": "Pox",
+      "masteryReq": 9,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "pox-b061c04510.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Bio/InfProximityStarsBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Research/BioComponent",
+          "name": "Mutagen Mass",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 6500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
+          "name": "Nitain Extract",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 1200,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/PrismaAngstrum",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/PrismaAngstrum",
+      "name": "Prisma Angstrum",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "prisma-angstrum-57ba91885e.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrineerBulbousSMG/Prisma/PrismaTwinGremlinsWeapon",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerBulbousSMG/Prisma/PrismaTwinGremlinsWeapon",
+      "name": "Prisma Twin Gremlins",
+      "masteryReq": 11,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "prisma-twin-gremlins-ee94faf3ba.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/SawnOffShotgun/TennoHandShotgun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/SawnOffShotgun/TennoHandShotgun",
+      "name": "Pyrana",
+      "masteryReq": 12,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "pyrana-f2049c9ca6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TennoHandShotgunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 800,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimePyrana/PrimePyranaPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimePyrana/PrimePyranaPistol",
+      "name": "Pyrana Prime",
+      "masteryReq": 13,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "pyrana-prime-ecb8c95a9d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/PyranaPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PyranaPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PyranaPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PyranaPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PyranaPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrnAmphisPistol/GrnAmphisPistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnAmphisPistol/GrnAmphisPistol",
+      "name": "Quatz",
+      "masteryReq": 9,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "quatz-ef293ab5be.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrnAmphisPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 4200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 12750,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/RedVeil/Pistols/RVBallistica",
+      "uniqueName": "/Lotus/Weapons/Syndicates/RedVeil/Pistols/RVBallistica",
+      "name": "Rakta Ballistica",
+      "masteryReq": 6,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "rakta-ballistica-39303c333a.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/1999EntHybridPistolWeapon/1999EntHybridPistolWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/1999EntHybridPistolWeapon/1999EntHybridPistolWeapon",
+      "name": "Riot-848",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "riot-848-6f7d41c42c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/1999EntHybridPistolBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/1999EntHybridPistolBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/1999EntHybridPistolBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/1999EntHybridPistolReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/1999EntHybridPistolReceiver",
+          "name": "Receiver",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/1999EntHybridPistolStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/1999EntHybridPistolStock",
+          "name": "Stock",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrnOrokinPistol/GrnOrokinPistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnOrokinPistol/GrnOrokinPistol",
+      "name": "Sagek Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "sagek-prime-b32c6fddb7.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/SagekPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SagekPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SagekPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SagekPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SagekPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/NewLoka/Pistols/NLCastanas",
+      "uniqueName": "/Lotus/Weapons/Syndicates/NewLoka/Pistols/NLCastanas",
+      "name": "Sancti Castanas",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "sancti-castanas-3d6951c043.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/TnOraxiaFlechette/TnOraxiaFlechette",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/TnOraxiaFlechette/TnOraxiaFlechette",
+      "name": "Scyotid",
+      "masteryReq": 12,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "scyotid-367bd62ed6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ScyotidBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ScyotidBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ScyotidBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ScyotidBarrel::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ScyotidBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ScyotidGauntlet::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ScyotidGauntlet",
+          "name": "Gauntlet",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ScyotidGauntlet::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ScyotidGauntlet",
+          "name": "Gauntlet",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/PerrinSequence/Pistols/PSDualCestra",
+      "uniqueName": "/Lotus/Weapons/Syndicates/PerrinSequence/Pistols/PSDualCestra",
+      "name": "Secura Dual Cestra",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "secura-dual-cestra-810e479b60.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/GrineerPistol/GrnScopedPistolPlayer",
+      "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrnScopedPistolPlayer",
+      "name": "Seer",
+      "masteryReq": 0,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "seer-afdd75b43d.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/VorsPistolBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Thanotech/ThanoPistol/ThanotechPistol",
+      "uniqueName": "/Lotus/Weapons/Thanotech/ThanoPistol/ThanotechPistol",
+      "name": "Sepulcrum",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "sepulcrum-3b8f358552.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ThanotechPistolBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ThanotechPistolBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ThanotechPistolBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ThanotechPistolReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ThanotechPistolReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Deimos/SeriglassShard",
+          "name": "Seriglass Shard",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/BurstPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/BurstPistol",
+      "name": "Sicarus",
+      "masteryReq": 3,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "sicarus-fc588c27f8.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeSicarus/PrimeSicarusPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeSicarus/PrimeSicarusPistol",
+      "name": "Sicarus Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "sicarus-prime-1447e9c80e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/SicarusPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpAirPistol/CrpAirPistolArray",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpAirPistol/CrpAirPistolArray",
+      "name": "Sonicor",
+      "masteryReq": 2,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "sonicor-9245ce743a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/CrpAirPistolArrayBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 6500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+          "name": "Oxium",
+          "count": 600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 2600,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/ClanTech/Energy/CrpLaserPistol",
+      "uniqueName": "/Lotus/Weapons/ClanTech/Energy/CrpLaserPistol",
+      "name": "Spectra",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "spectra-d7a9a2ad92.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Energy/LaserPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 700,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 5000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/EnergyComponent",
+          "name": "Fieldron",
+          "count": 3,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CorpusModularPistol/Vandal/CrpLaserPistolVandal",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CorpusModularPistol/Vandal/CrpLaserPistolVandal",
+      "name": "Spectra Vandal",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "spectra-vandal-8e11a25192.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/SpectraVandalBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalChassis::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalChassis",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalHandle",
+          "name": "Handle",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/LiDagger/LiDagger",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/LiDagger/LiDagger",
+      "name": "Spira",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "spira-35f294fde6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LiDaggerBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 2500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 800,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 4000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeLiDagger/PrimeLiDagger",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeLiDagger/PrimeLiDagger",
+      "name": "Spira Prime",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "spira-prime-6c77a3d5b4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/PrimeLiDaggerBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerBlade::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerHolster::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerHolster",
+          "name": "Pouch",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerHolster::2",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerHolster",
+          "name": "Pouch",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 8,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpElectroMag/CrpElectroMag",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpElectroMag/CrpElectroMag",
+      "name": "Staticor",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "staticor-2a2222aa2e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Energy/CrpElectroMagBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 6000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 9000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/Research/EnergyComponent",
+          "name": "Fieldron",
+          "count": 10,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
+          "name": "Nitain Extract",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrnUzi/GrnUziWeapon",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnUzi/GrnUziWeapon",
+      "name": "Stubba",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "stubba-0d74e5294f.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Chemical/GrnUziBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem",
+          "name": "Coprite Alloy",
+          "count": 25,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 4485,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem",
+          "name": "Grokdrul",
+          "count": 45,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrineerCrossbow/GrineerGooGun",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrineerCrossbow/GrineerGooGun",
+      "name": "Stug",
+      "masteryReq": 2,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "stug-aae9c4cb46.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrineerGooGunBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 1200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+          "name": "Gallium",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 3,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 3000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSSynoidGammacor",
+      "uniqueName": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSSynoidGammacor",
+      "name": "Synoid Gammacor",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "synoid-gammacor-02823b6001.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/U18ThrowingKnives/U18throwingknives",
+      "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/U18ThrowingKnives/U18throwingknives",
+      "name": "Talons",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Throwing",
+      "productCategory": "Pistols",
+      "imageName": "talons-25982555f3.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/U18ThrowingKnivesBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 1500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+          "name": "Oxium",
+          "count": 1200,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Pistols/AHAkbolto",
+      "uniqueName": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Pistols/AHAkbolto",
+      "name": "Telos Akbolto",
+      "masteryReq": 11,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "telos-akbolto-ef8aa48303.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBECycron/CrpBECycron",
+      "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBECycron/CrpBECycron",
+      "name": "Tenet Cycron",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "tenet-cycron-2d3f1b3281.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpBECycronBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEDetron/CrpBEDetron",
+      "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEDetron/CrpBEDetron",
+      "name": "Tenet Detron",
+      "masteryReq": 16,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "tenet-detron-b4d3acd4e1.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpBEDetronBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpBriefcaseAkimbo/CrpBriefcaseAkimboPistol",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpBriefcaseAkimbo/CrpBriefcaseAkimboPistol",
+      "name": "Tenet Diplos",
+      "masteryReq": 16,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "tenet-diplos-48514b24c4.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpBriefcaseAkimboPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEPlinx/CrpBEPlinxWeapon",
+      "uniqueName": "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEPlinx/CrpBEPlinxWeapon",
+      "name": "Tenet Plinx",
+      "masteryReq": 6,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "tenet-plinx-6a1f29a3a6.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpBEPlinxBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Pistols/CrpIgniterPistol/CrpIgniterPistol",
+      "uniqueName": "/Lotus/Weapons/Corpus/Pistols/CrpIgniterPistol/CrpIgniterPistol",
+      "name": "Tenet Spirex",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "lich",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "tenet-spirex-ac682cb56e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LawyerWeapons/CrpIgniterPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/TwinGrakatas",
+      "uniqueName": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/TwinGrakatas",
+      "name": "Twin Grakatas",
+      "masteryReq": 9,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "twin-grakatas-a5e2f5596e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TwinGrakatasBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/GrnAssaultRifle::1",
+          "itemKey": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/GrnAssaultRifle",
+          "name": "Grakata",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/GrnAssaultRifle::2",
+          "itemKey": "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/GrnAssaultRifle",
+          "name": "Grakata",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerAkimboPistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerAkimboPistol",
+      "name": "Twin Gremlins",
+      "masteryReq": 5,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "twin-gremlins-5cc8818865.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GremlinBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 900,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 5,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+          "name": "Rubedo",
+          "count": 1200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 1500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrnDWUniques/GrnTwinKohmaks",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnDWUniques/GrnTwinKohmaks",
+      "name": "Twin Kohmak",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "twin-kohmak-f66cb319da.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TwinKohmakBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol::1",
+          "itemKey": "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol",
+          "name": "Kohmak",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol::2",
+          "itemKey": "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol",
+          "name": "Kohmak",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Forma",
+          "name": "Forma",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/GrnQueenGuardDualPistol/GrnQueenGuardDualPistols",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/GrnQueenGuardDualPistol/GrnQueenGuardDualPistols",
+      "name": "Twin Rogga",
+      "masteryReq": 9,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "twin-rogga-7847594c64.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrnQueenGuardDualPistolsBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 2600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ArgonCrystal",
+          "name": "Argon Crystal",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 15000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Kuva",
+          "name": "Kuva",
+          "count": 1600,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/AkimboViperPistols",
+      "uniqueName": "/Lotus/Weapons/Tenno/Akimbo/AkimboViperPistols",
+      "name": "Twin Vipers",
+      "masteryReq": 5,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Dual Pistols",
+      "productCategory": "Pistols",
+      "imageName": "twin-vipers-dfb6f5c5e8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TwinViperBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol::1",
+          "itemKey": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol",
+          "name": "Viper",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol::2",
+          "itemKey": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol",
+          "name": "Viper",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/WraithTwinVipers/WraithTwinVipers",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/WraithTwinVipers/WraithTwinVipers",
+      "name": "Twin Vipers Wraith",
+      "masteryReq": 7,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "twin-vipers-wraith-1e92e7cf25.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TwinVipersWraithBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithBarrel",
+          "name": "Barrels",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithLink::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithLink",
+          "name": "Link",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithReceiver",
+          "name": "Receivers",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Pistols/InfestedDartPistol/InfestedDartPistol",
+      "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfestedDartPistol/InfestedDartPistol",
+      "name": "Tysis",
+      "masteryReq": 9,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "tysis-43b9b7c74a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/InfestedDartPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 900,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 2,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 400,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 100,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol",
+      "name": "Vasto",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "vasto-a67536402c.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/RevolverPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 1200,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 700,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Neurode",
+          "name": "Neurodes",
+          "count": 4,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+          "name": "Polymer Bundle",
+          "count": 1000,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol",
+      "name": "Vasto Prime",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "vasto-prime-7befca7ba9.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/VastoPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/SteelMeridian/Pistols/SMMarelok",
+      "uniqueName": "/Lotus/Weapons/Syndicates/SteelMeridian/Pistols/SMMarelok",
+      "name": "Vaykor Marelok",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "vaykor-marelok-92ed1486f5.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TnOdaliskSmg/TnOdaliskSmgPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnOdaliskSmg/TnOdaliskSmgPistol",
+      "name": "Velox",
+      "masteryReq": 8,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "velox-160999bb4a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ProteaSMGWeaponBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ProteaSMGBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ProteaSMGBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ProteaSMGReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ProteaSMGReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeVelox/PrimeVeloxPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeVelox/PrimeVeloxPistol",
+      "name": "Velox Prime",
+      "masteryReq": 13,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "velox-prime-de13b8c526.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/VeloxPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/VeloxPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VeloxPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/VeloxPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/VeloxPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Lasria/LasSilencedPistol/LasSilencedPistolWeapon",
+      "uniqueName": "/Lotus/Weapons/Lasria/LasSilencedPistol/LasSilencedPistolWeapon",
+      "name": "Vesper 77",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "vesper-77-0136c923d7.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/LasSilencedPistolBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasSilencedPistolBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasSilencedPistolBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasSilencedPistolStock::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasSilencedPistolStock",
+          "name": "Handle",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasSilencedPistolReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/LasSilencedPistolReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol",
+      "uniqueName": "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol",
+      "name": "Viper",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "viper-246ef55b5a.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/GrineerLightPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+          "name": "Ferrite",
+          "count": 600,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+          "name": "Morphics",
+          "count": 1,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 900,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+          "name": "Salvage",
+          "count": 300,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Pistols/WraithSingleViper/WraithSingleViper",
+      "uniqueName": "/Lotus/Weapons/Grineer/Pistols/WraithSingleViper/WraithSingleViper",
+      "name": "Viper Wraith",
+      "masteryReq": 4,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "viper-wraith-b08e022cf2.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/TnGuandoPistol/TnGuandoPistolGun",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/TnGuandoPistol/TnGuandoPistolGun",
+      "name": "Zakti",
+      "masteryReq": 10,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "zakti-30d7d92ba9.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/TnGuandaoPistolBlueprint",
+      "componentRequirements": [],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+          "name": "Alloy Plate",
+          "count": 6500,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 8,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Nanospores",
+          "name": "Nano Spores",
+          "count": 5000,
+          "craftable": false
+        },
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Plastids",
+          "name": "Plastids",
+          "count": 350,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeZakti/PrimeZaktiPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeZakti/PrimeZaktiPistol",
+      "name": "Zakti Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "zakti-prime-c9e28219cd.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ZaktiPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ZaktiPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ZaktiPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ZaktiPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ZaktiPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol",
+      "name": "Zylok",
+      "masteryReq": 6,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "zylok-68fee5c4dd.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeZylok/ZylokPrimePistol",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeZylok/ZylokPrimePistol",
+      "name": "Zylok Prime",
+      "masteryReq": 13,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "zylok-prime-8922964ebe.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ZylokPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ZylokPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ZylokPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/ZylokPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/ZylokPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Pistols/InfUzi/InfUziWeapon",
+      "uniqueName": "/Lotus/Weapons/Infested/Pistols/InfUzi/InfUziWeapon",
+      "name": "Zymos",
+      "masteryReq": 11,
+      "tab": "secondary",
+      "variant": "normal",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "zymos-b070770a75.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/InfUziBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/InfUziWeaponBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/InfUziWeaponBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/InfUziWeaponReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/InfUziWeaponReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    }
+  ]
+}

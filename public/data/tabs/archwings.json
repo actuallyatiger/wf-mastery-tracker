@@ -1,0 +1,216 @@
+{
+  "tab": "archwings",
+  "itemCount": 5,
+  "items": [
+    {
+      "id": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
+      "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
+      "name": "Amesha",
+      "masteryReq": 0,
+      "tab": "archwings",
+      "variant": "normal",
+      "category": "Archwing",
+      "type": "Archwing",
+      "productCategory": "SpaceSuits",
+      "imageName": "amesha-5bef2b8e0e.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingChassisComponent",
+          "name": "Harness",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingWingsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingWingsComponent",
+          "name": "Wings",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
+          "name": "Nitain Extract",
+          "count": 4,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
+      "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
+      "name": "Elytron",
+      "masteryReq": 0,
+      "tab": "archwings",
+      "variant": "normal",
+      "category": "Archwing",
+      "type": "Archwing",
+      "productCategory": "SpaceSuits",
+      "imageName": "elytron-8f63d43729.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingChassisComponent",
+          "name": "Harness",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingWingsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingWingsComponent",
+          "name": "Wings",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
+      "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
+      "name": "Itzal",
+      "masteryReq": 0,
+      "tab": "archwings",
+      "variant": "normal",
+      "category": "Archwing",
+      "type": "Archwing",
+      "productCategory": "SpaceSuits",
+      "imageName": "itzal-a120d975d8.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingChassisComponent",
+          "name": "Harness",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingWingsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingWingsComponent",
+          "name": "Wings",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+          "name": "Control Module",
+          "count": 2,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack",
+      "uniqueName": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack",
+      "name": "Odonata",
+      "masteryReq": 0,
+      "tab": "archwings",
+      "variant": "normal",
+      "category": "Archwing",
+      "type": "Archwing",
+      "productCategory": "SpaceSuits",
+      "imageName": "odonata-0425304f27.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingChassisComponent",
+          "name": "Harness",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingWingsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingWingsComponent",
+          "name": "Wings",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+          "name": "Circuits",
+          "count": 300,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Archwing/PrimeJetPack/PrimeJetPack",
+      "uniqueName": "/Lotus/Powersuits/Archwing/PrimeJetPack/PrimeJetPack",
+      "name": "Odonata Prime",
+      "masteryReq": 0,
+      "tab": "archwings",
+      "variant": "prime",
+      "category": "Archwing",
+      "type": "Archwing",
+      "productCategory": "SpaceSuits",
+      "imageName": "odonata-prime-39baaa7427.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingChassisComponent",
+          "name": "Harness",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingWingsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingWingsComponent",
+          "name": "Wings",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 1,
+          "craftable": false
+        }
+      ]
+    }
+  ]
+}

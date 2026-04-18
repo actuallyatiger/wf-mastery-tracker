@@ -1,0 +1,47 @@
+{
+  "version": 3,
+  "generatedAt": "2026-04-18T02:29:11.067Z",
+  "source": {
+    "provider": "WFCD/warframe-items",
+    "baseUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json",
+    "categories": [
+      "Warframes",
+      "Archwing",
+      "Arch-Gun",
+      "Arch-Melee",
+      "Primary",
+      "Secondary",
+      "Melee",
+      "Pets",
+      "Sentinels",
+      "SentinelWeapons"
+    ]
+  },
+  "counts": {
+    "warframes": 117,
+    "primary": 193,
+    "secondary": 147,
+    "melee": 232,
+    "archwings": 5,
+    "arch-guns": 20,
+    "arch-melee": 8,
+    "sentinels": 17,
+    "sentinel-weapons": 24,
+    "pets": 22,
+    "total": 785
+  },
+  "tabs": {
+    "warframes": "tabs/warframes.json",
+    "archwings": "tabs/archwings.json",
+    "arch-guns": "tabs/arch-guns.json",
+    "arch-melee": "tabs/arch-melee.json",
+    "primary": "tabs/primary.json",
+    "secondary": "tabs/secondary.json",
+    "melee": "tabs/melee.json",
+    "pets": "tabs/pets.json",
+    "sentinels": "tabs/sentinels.json",
+    "sentinel-weapons": "tabs/sentinel-weapons.json"
+  },
+  "blueprintsFile": "blueprints.json",
+  "componentsFile": "components.json"
+}
