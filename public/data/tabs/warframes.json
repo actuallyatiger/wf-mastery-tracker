@@ -12,7 +12,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "ash-f2c6f3ab3f.png",
+      "imageName": "Ash.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/AshBlueprint",
       "componentRequirements": [
@@ -54,7 +54,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "ash-prime-bfcb09331e.png",
+      "imageName": "AshPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeBlueprint",
       "componentRequirements": [
@@ -96,7 +96,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "atlas-a39443cc8b.png",
+      "imageName": "Atlas.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerBlueprint",
       "componentRequirements": [
@@ -138,7 +138,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "atlas-prime-7312f6d838.png",
+      "imageName": "AtlasPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/AtlasPrimeBlueprint",
       "componentRequirements": [
@@ -180,7 +180,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "banshee-f3216d3957.png",
+      "imageName": "Banshee.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheeBlueprint",
       "componentRequirements": [
@@ -222,7 +222,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "banshee-prime-7bebac6654.png",
+      "imageName": "BansheePrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BansheePrimeBlueprint",
       "componentRequirements": [
@@ -264,7 +264,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "baruuk-e935d0749d.png",
+      "imageName": "Pacifist.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PacifistBlueprint",
       "componentRequirements": [
@@ -306,7 +306,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "baruuk-prime-7e1a50c877.png",
+      "imageName": "BaruukPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BaruukPrimeBlueprint",
       "componentRequirements": [
@@ -348,7 +348,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "MechSuits",
-      "imageName": "bonewidow-e6080b9313.png",
+      "imageName": "ThanoMech.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/ThanotechBlueprint",
       "componentRequirements": [],
@@ -389,7 +389,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "caliban-c2f7820be2.png",
+      "imageName": "Caliban.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SentientBlueprint",
       "componentRequirements": [
@@ -431,7 +431,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "caliban-prime-6e04a41118.png",
+      "imageName": "CalibanPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeBlueprint",
       "componentRequirements": [
@@ -473,7 +473,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "chroma-2fd0ea0ba6.png",
+      "imageName": "Chroma.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaBlueprint",
       "componentRequirements": [
@@ -514,7 +514,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "chroma-prime-2ac05d2866.png",
+      "imageName": "ChromaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ChromaPrimeBlueprint",
       "componentRequirements": [
@@ -556,7 +556,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "citrine-d7392c4d7d.png",
+      "imageName": "Citrine.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GeodeBlueprint",
       "componentRequirements": [
@@ -598,7 +598,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "cyte-09-62e778e37c.png",
+      "imageName": "Frumentarius.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/Cyte09Blueprint",
       "componentRequirements": [
@@ -640,7 +640,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "dagath-7589f2ce5b.png",
+      "imageName": "Dagath.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/DagathBlueprint",
       "componentRequirements": [
@@ -682,7 +682,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "dante-43d70fb91a.png",
+      "imageName": "Pagemaster.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PagemasterBlueprint",
       "componentRequirements": [
@@ -724,7 +724,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "ember-338265ce88.png",
+      "imageName": "Ember.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberBlueprint",
       "componentRequirements": [
@@ -766,7 +766,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "ember-prime-e978f28a35.png",
+      "imageName": "EmberPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeBlueprint",
       "componentRequirements": [
@@ -808,7 +808,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "equinox-ae1572be82.png",
+      "imageName": "Equinox.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/AnimaAnimusBlueprint",
       "componentRequirements": [
@@ -844,7 +844,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "equinox-prime-9fbe947b57.png",
+      "imageName": "EquinoxPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/EquinoxPrimeBlueprint",
       "componentRequirements": [
@@ -886,7 +886,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "excalibur-2621a69bfa.png",
+      "imageName": "Excalibur.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburBlueprint",
       "componentRequirements": [
@@ -928,7 +928,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "excalibur-prime-6d56b10bbf.png",
+      "imageName": "ExcaliburPrime.png",
       "hasRecipe": false,
       "mainBlueprintKey": null,
       "componentRequirements": [],
@@ -944,7 +944,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "excalibur-umbra-d421af56c1.png",
+      "imageName": "ExcaliburUmbra.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburUmbraBlueprint",
       "componentRequirements": [],
@@ -985,7 +985,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "follie-2c6d732813.png",
+      "imageName": "Inkblot.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/FollieBlueprint",
       "componentRequirements": [
@@ -1027,7 +1027,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "frost-620cddb4a6.png",
+      "imageName": "Frost.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostBlueprint",
       "componentRequirements": [
@@ -1069,7 +1069,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "frost-prime-f177de2e0c.png",
+      "imageName": "FrostPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeBlueprint",
       "componentRequirements": [
@@ -1111,7 +1111,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "gara-b2089c43f8.png",
+      "imageName": "Gara.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GlassBlueprint",
       "componentRequirements": [
@@ -1153,7 +1153,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "gara-prime-faf70dfd7c.png",
+      "imageName": "GaraPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GaraPrimeBlueprint",
       "componentRequirements": [
@@ -1195,7 +1195,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "garuda-5e3cc04493.png",
+      "imageName": "Garuda.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaBlueprint",
       "componentRequirements": [
@@ -1237,7 +1237,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "garuda-prime-2c4ce210a0.png",
+      "imageName": "GarudaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GarudaPrimeBlueprint",
       "componentRequirements": [
@@ -1279,7 +1279,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "gauss-8060019853.png",
+      "imageName": "Gauss.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussBlueprint",
       "componentRequirements": [
@@ -1321,7 +1321,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "gauss-prime-170a77a036.png",
+      "imageName": "GaussPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GaussPrimeBlueprint",
       "componentRequirements": [
@@ -1363,7 +1363,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "grendel-4d1c382605.png",
+      "imageName": "Grendel.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelBlueprint",
       "componentRequirements": [
@@ -1405,7 +1405,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "grendel-prime-e23d41072d.png",
+      "imageName": "GrendelPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GrendelPrimeBlueprint",
       "componentRequirements": [
@@ -1447,7 +1447,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "gyre-b17b2d4464.png",
+      "imageName": "Gyre.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GyreBlueprint",
       "componentRequirements": [
@@ -1489,7 +1489,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "gyre-prime-f8b507d90e.png",
+      "imageName": "GyrePrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeBlueprint",
       "componentRequirements": [
@@ -1531,7 +1531,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "harrow-7f74b91fce.png",
+      "imageName": "Harrow.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PriestBlueprint",
       "componentRequirements": [
@@ -1573,7 +1573,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "harrow-prime-8237c36a69.png",
+      "imageName": "HarrowPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HarrowPrimeBlueprint",
       "componentRequirements": [
@@ -1615,7 +1615,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "hildryn-ceaeb4320d.png",
+      "imageName": "IronFrame.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/IronframeBlueprint",
       "componentRequirements": [
@@ -1657,7 +1657,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "hildryn-prime-20937cebe2.png",
+      "imageName": "HildrynPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HildrynPrimeBlueprint",
       "componentRequirements": [
@@ -1699,7 +1699,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "hydroid-e97d6abb00.png",
+      "imageName": "Hydroid.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidBlueprint",
       "componentRequirements": [
@@ -1741,7 +1741,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "hydroid-prime-718aec2104.png",
+      "imageName": "HydroidPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HydroidPrimeBlueprint",
       "componentRequirements": [
@@ -1783,7 +1783,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "inaros-826f62196f.png",
+      "imageName": "Inaros.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MummyBlueprint",
       "componentRequirements": [
@@ -1825,7 +1825,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "inaros-prime-f6689c5568.png",
+      "imageName": "InarosPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/InarosPrimeBlueprint",
       "componentRequirements": [
@@ -1867,7 +1867,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "ivara-d0be78df04.png",
+      "imageName": "Ivara.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RangerBlueprint",
       "componentRequirements": [
@@ -1909,7 +1909,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "ivara-prime-1be20f1393.png",
+      "imageName": "IvaraPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/IvaraPrimeBlueprint",
       "componentRequirements": [
@@ -1951,7 +1951,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "jade-d88fcb42ca.png",
+      "imageName": "Jade.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ChoirBlueprint",
       "componentRequirements": [
@@ -1993,7 +1993,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "khora-2062e830c0.png",
+      "imageName": "Khora.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraBlueprint",
       "componentRequirements": [
@@ -2035,7 +2035,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "khora-prime-29d9f8a9d7.png",
+      "imageName": "KhoraPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/KhoraPrimeBlueprint",
       "componentRequirements": [
@@ -2077,7 +2077,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "koumei-6cf94f7516.png",
+      "imageName": "Koumei.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/KoumeiBlueprint",
       "componentRequirements": [
@@ -2119,7 +2119,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "kullervo-994239dee1.png",
+      "imageName": "PaxDuviricus.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PaxDuviricusBlueprint",
       "componentRequirements": [
@@ -2161,7 +2161,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "lavos-aea18ae52f.png",
+      "imageName": "Lavos.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosBlueprint",
       "componentRequirements": [
@@ -2203,7 +2203,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "lavos-prime-90a6c16d29.png",
+      "imageName": "LavosPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeBlueprint",
       "componentRequirements": [
@@ -2245,7 +2245,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "limbo-c107f3bcc2.png",
+      "imageName": "Limbo.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MagicianBlueprint",
       "componentRequirements": [
@@ -2287,7 +2287,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "limbo-prime-7449a6c1ce.png",
+      "imageName": "LimboPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LimboPrimeBlueprint",
       "componentRequirements": [
@@ -2329,7 +2329,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "loki-04905b317a.png",
+      "imageName": "Loki.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LOKIBlueprint",
       "componentRequirements": [
@@ -2371,7 +2371,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "loki-prime-5b192774c4.png",
+      "imageName": "LokiPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeBlueprint",
       "componentRequirements": [
@@ -2413,7 +2413,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "mag-1a461f5a07.png",
+      "imageName": "Mag.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MagBlueprint",
       "componentRequirements": [
@@ -2455,7 +2455,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "mag-prime-a3d6c2f9ba.png",
+      "imageName": "MagPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeBlueprint",
       "componentRequirements": [
@@ -2497,7 +2497,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "mesa-30651569ff.png",
+      "imageName": "Mesa.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerBlueprint",
       "componentRequirements": [
@@ -2539,7 +2539,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "mesa-prime-f912b57a14.png",
+      "imageName": "MesaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MesaPrimeBlueprint",
       "componentRequirements": [
@@ -2581,7 +2581,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "mirage-83f6195ffb.png",
+      "imageName": "Mirage.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinBlueprint",
       "componentRequirements": [
@@ -2623,7 +2623,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "mirage-prime-96a31c01da.png",
+      "imageName": "MiragePrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/MiragePrimeBlueprint",
       "componentRequirements": [
@@ -2665,7 +2665,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nekros-61cb2c9f69.png",
+      "imageName": "Nekros.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NecroBlueprint",
       "componentRequirements": [
@@ -2707,7 +2707,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nekros-prime-4f3e86be2a.png",
+      "imageName": "NekrosPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeBlueprint",
       "componentRequirements": [
@@ -2749,7 +2749,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nezha-39ab6803c6.png",
+      "imageName": "Nezha.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaBlueprint",
       "componentRequirements": [
@@ -2791,7 +2791,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nezha-prime-b5e9ddf42b.png",
+      "imageName": "NezhaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NezhaPrimeBlueprint",
       "componentRequirements": [
@@ -2833,7 +2833,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nidus-02067c4ce9.png",
+      "imageName": "Nidus.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusBlueprint",
       "componentRequirements": [
@@ -2875,7 +2875,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nidus-prime-c1781ebcc9.png",
+      "imageName": "NidusPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NidusPrimeBlueprint",
       "componentRequirements": [
@@ -2917,7 +2917,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nokko-519627ee77.png",
+      "imageName": "Nokko.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NokkoBlueprint",
       "componentRequirements": [
@@ -2959,7 +2959,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nova-1f908986f1.png",
+      "imageName": "Nova.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaBlueprint",
       "componentRequirements": [
@@ -3001,7 +3001,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nova-prime-2345192401.png",
+      "imageName": "NovaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeBlueprint",
       "componentRequirements": [
@@ -3043,7 +3043,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nyx-b6f1ec8736.png",
+      "imageName": "Nyx.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxBlueprint",
       "componentRequirements": [
@@ -3085,7 +3085,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "nyx-prime-b16b670098.png",
+      "imageName": "NyxPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeBlueprint",
       "componentRequirements": [
@@ -3127,7 +3127,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "oberon-61900220ad.png",
+      "imageName": "Oberon.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/PaladinBlueprint",
       "componentRequirements": [
@@ -3169,7 +3169,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "oberon-prime-71fc40c9ca.png",
+      "imageName": "OberonPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/OberonPrimeBlueprint",
       "componentRequirements": [
@@ -3211,7 +3211,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "octavia-d57837e36e.png",
+      "imageName": "Octavia.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaBlueprint",
       "componentRequirements": [
@@ -3253,7 +3253,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "octavia-prime-93e1ad02f0.png",
+      "imageName": "OctaviaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/OctaviaPrimeBlueprint",
       "componentRequirements": [
@@ -3295,7 +3295,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "oraxia-8a9e4aab09.png",
+      "imageName": "Oraxia.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/OraxiaBlueprint",
       "componentRequirements": [
@@ -3337,7 +3337,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "protea-69a74795e8.png",
+      "imageName": "Odalisk.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaBlueprint",
       "componentRequirements": [
@@ -3379,7 +3379,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "protea-prime-86cbc2b038.png",
+      "imageName": "ProteaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ProteaPrimeBlueprint",
       "componentRequirements": [
@@ -3421,7 +3421,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "qorvex-ec9d170e8b.png",
+      "imageName": "Qorvex.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ConcreteFrameBlueprint",
       "componentRequirements": [
@@ -3463,7 +3463,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "revenant-c9bd7cfbcc.png",
+      "imageName": "Revenant.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantBlueprint",
       "componentRequirements": [
@@ -3505,7 +3505,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "revenant-prime-a5be34cbf2.png",
+      "imageName": "RevenantPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RevenantPrimeBlueprint",
       "componentRequirements": [
@@ -3547,7 +3547,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "rhino-87af2466b6.png",
+      "imageName": "Rhino.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoBlueprint",
       "componentRequirements": [
@@ -3589,7 +3589,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "rhino-prime-7142165571.png",
+      "imageName": "RhinoPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeBlueprint",
       "componentRequirements": [
@@ -3631,7 +3631,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "saryn-88c1d4da08.png",
+      "imageName": "Saryn.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynBlueprint",
       "componentRequirements": [
@@ -3673,7 +3673,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "saryn-prime-8703933001.png",
+      "imageName": "SarynPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeBlueprint",
       "componentRequirements": [
@@ -3715,7 +3715,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "sevagoth-9264d64897.png",
+      "imageName": "Wraith.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WraithBlueprint",
       "componentRequirements": [
@@ -3757,7 +3757,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "sevagoth-prime-5f34bf2dba.png",
+      "imageName": "SevagothPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SevagothPrimeBlueprint",
       "componentRequirements": [
@@ -3799,7 +3799,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "styanax-09419fb39f.png",
+      "imageName": "Styanax.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxBlueprint",
       "componentRequirements": [
@@ -3841,7 +3841,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "temple-c3d2feb7ae.png",
+      "imageName": "Temple.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TempleBlueprint",
       "componentRequirements": [
@@ -3883,7 +3883,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "titania-dd20b18d5b.png",
+      "imageName": "Titania.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/FairyBlueprint",
       "componentRequirements": [
@@ -3925,7 +3925,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "titania-prime-7a328a3d8a.png",
+      "imageName": "TitaniaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TitaniaPrimeBlueprint",
       "componentRequirements": [
@@ -3967,7 +3967,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "trinity-b59556a37b.png",
+      "imageName": "Trinity.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityBlueprint",
       "componentRequirements": [
@@ -4009,7 +4009,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "trinity-prime-aa68b6373d.png",
+      "imageName": "TrinityPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeBlueprint",
       "componentRequirements": [
@@ -4051,7 +4051,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "uriel-f39d1dadc6.png",
+      "imageName": "Demonframe.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/UrielBlueprint",
       "componentRequirements": [
@@ -4093,7 +4093,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "valkyr-c1f7e5d2ab.png",
+      "imageName": "Valkyr.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerBlueprint",
       "componentRequirements": [
@@ -4135,7 +4135,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "valkyr-prime-354cd87f77.png",
+      "imageName": "ValkyrPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeBlueprint",
       "componentRequirements": [
@@ -4177,7 +4177,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "vauban-c95db9ee09.png",
+      "imageName": "Vauban.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TrapperBlueprint",
       "componentRequirements": [
@@ -4219,7 +4219,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "vauban-prime-f9c539bdde.png",
+      "imageName": "VaubanPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeBlueprint",
       "componentRequirements": [
@@ -4261,7 +4261,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "MechSuits",
-      "imageName": "voidrig-51bc3a4b3c.png",
+      "imageName": "NechroMech.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/DeimosRecipes/Mechs/NecromechBlueprint",
       "componentRequirements": [],
@@ -4302,7 +4302,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "volt-9ad956c441.png",
+      "imageName": "Volt.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/VOLTBlueprint",
       "componentRequirements": [
@@ -4344,7 +4344,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "volt-prime-dd65a6befd.png",
+      "imageName": "VoltPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeBlueprint",
       "componentRequirements": [
@@ -4386,7 +4386,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "voruna-83e8799edc.png",
+      "imageName": "Voruna.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WolfFrameBlueprint",
       "componentRequirements": [
@@ -4428,7 +4428,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "voruna-prime-ffc806f3a8.png",
+      "imageName": "VorunaPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeBlueprint",
       "componentRequirements": [
@@ -4470,7 +4470,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "wisp-a046bb62f4.png",
+      "imageName": "Wisp.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WispBlueprint",
       "componentRequirements": [
@@ -4512,7 +4512,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "wisp-prime-7a898e071d.png",
+      "imageName": "WispPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WispPrimeBlueprint",
       "componentRequirements": [
@@ -4554,7 +4554,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "wukong-bbc641319b.png",
+      "imageName": "Wukong.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongBlueprint",
       "componentRequirements": [
@@ -4596,7 +4596,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "wukong-prime-4e1c56fd43.png",
+      "imageName": "WukongPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/WukongPrimeBlueprint",
       "componentRequirements": [
@@ -4638,7 +4638,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "xaku-8fb3ad2779.png",
+      "imageName": "BrokenFrame.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/BrokenFrameBlueprint",
       "componentRequirements": [
@@ -4680,7 +4680,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "xaku-prime-f6213dd36f.png",
+      "imageName": "XakuPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/XakuPrimeBlueprint",
       "componentRequirements": [
@@ -4722,7 +4722,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "yareli-3b577c5064.png",
+      "imageName": "Yareli.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliBlueprint",
       "componentRequirements": [
@@ -4764,7 +4764,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "yareli-prime-c4dbed6caa.png",
+      "imageName": "YareliPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeBlueprint",
       "componentRequirements": [
@@ -4806,7 +4806,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "zephyr-02db9643ed.png",
+      "imageName": "Zephyr.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/TenguBlueprint",
       "componentRequirements": [
@@ -4848,7 +4848,7 @@
       "category": "Warframes",
       "type": "Warframe",
       "productCategory": "Suits",
-      "imageName": "zephyr-prime-c777d1497b.png",
+      "imageName": "ZephyrPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/ZephyrPrimeBlueprint",
       "componentRequirements": [

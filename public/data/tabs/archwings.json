@@ -12,7 +12,7 @@
       "category": "Archwing",
       "type": "Archwing",
       "productCategory": "SpaceSuits",
-      "imageName": "amesha-5bef2b8e0e.png",
+      "imageName": "Amesha.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/SupportArchwing/SupportArchwingBlueprint",
       "componentRequirements": [
@@ -54,7 +54,7 @@
       "category": "Archwing",
       "type": "Archwing",
       "productCategory": "SpaceSuits",
-      "imageName": "elytron-8f63d43729.png",
+      "imageName": "Elytron.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/DemolitionArchwing/DemolitionArchwingBlueprint",
       "componentRequirements": [
@@ -96,7 +96,7 @@
       "category": "Archwing",
       "type": "Archwing",
       "productCategory": "SpaceSuits",
-      "imageName": "itzal-a120d975d8.png",
+      "imageName": "Itzal.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/StealthArchwing/StealthArchwingBlueprint",
       "componentRequirements": [
@@ -138,7 +138,7 @@
       "category": "Archwing",
       "type": "Archwing",
       "productCategory": "SpaceSuits",
-      "imageName": "odonata-0425304f27.png",
+      "imageName": "Odonata.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/StandardArchwing/StandardArchwingBlueprint",
       "componentRequirements": [
@@ -180,7 +180,7 @@
       "category": "Archwing",
       "type": "Archwing",
       "productCategory": "SpaceSuits",
-      "imageName": "odonata-prime-39baaa7427.png",
+      "imageName": "OdonataPrime.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/ArchwingRecipes/PrimeArchwing/PrimeArchwingBlueprint",
       "componentRequirements": [

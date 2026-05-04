@@ -12,7 +12,7 @@
       "category": "Arch-Melee",
       "type": "Arch-Melee",
       "productCategory": "SpaceMelee",
-      "imageName": "agkuza-ad630f8d41.png",
+      "imageName": "Agkuza.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchHookSwordBlueprint",
       "componentRequirements": [
@@ -47,7 +47,7 @@
       "category": "Arch-Melee",
       "type": "Arch-Melee",
       "productCategory": "SpaceMelee",
-      "imageName": "centaur-a00c7e4fd8.png",
+      "imageName": "Centaur.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchSwordShieldBlueprint",
       "componentRequirements": [
@@ -82,7 +82,7 @@
       "category": "Arch-Melee",
       "type": "Arch-Melee",
       "productCategory": "SpaceMelee",
-      "imageName": "kaszas-fa004e9997.png",
+      "imageName": "Kaszas.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchScytheBlueprint",
       "componentRequirements": [
@@ -118,7 +118,7 @@
       "category": "Arch-Melee",
       "type": "Arch-Melee",
       "productCategory": "SpaceMelee",
-      "imageName": "knux-939cea4c86.png",
+      "imageName": "Knux.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Weapons/ClanTech/Chemical/GrnArchHandBlueprint",
       "componentRequirements": [
@@ -160,7 +160,7 @@
       "category": "Arch-Melee",
       "type": "Arch-Melee",
       "productCategory": "SpaceMelee",
-      "imageName": "onorix-cec1553bd5.png",
+      "imageName": "Onorix.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchAxeBlueprint",
       "componentRequirements": [
@@ -202,7 +202,7 @@
       "category": "Arch-Melee",
       "type": "Arch-Melee",
       "productCategory": "SpaceMelee",
-      "imageName": "prisma-veritux-b7348241ce.png",
+      "imageName": "PrismaVeritux.png",
       "hasRecipe": false,
       "mainBlueprintKey": null,
       "componentRequirements": [],
@@ -218,7 +218,7 @@
       "category": "Arch-Melee",
       "type": "Arch-Melee",
       "productCategory": "SpaceMelee",
-      "imageName": "rathbone-918424e099.png",
+      "imageName": "Rathbone.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/ArchHammerBlueprint",
       "componentRequirements": [
@@ -260,7 +260,7 @@
       "category": "Arch-Melee",
       "type": "Arch-Melee",
       "productCategory": "SpaceMelee",
-      "imageName": "veritux-a2d86d183e.png",
+      "imageName": "Veritux.png",
       "hasRecipe": true,
       "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/VerituxBlueprint",
       "componentRequirements": [],
