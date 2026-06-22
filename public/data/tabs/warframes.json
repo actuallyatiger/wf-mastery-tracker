@@ -1,6 +1,6 @@
 {
   "tab": "warframes",
-  "itemCount": 117,
+  "itemCount": 120,
   "items": [
     {
       "id": "/Lotus/Powersuits/Ninja/Ninja",
@@ -3328,6 +3328,22 @@
       ]
     },
     {
+      "id": "/Lotus/Powersuits/SiriusOrion/OrionSuit",
+      "uniqueName": "/Lotus/Powersuits/SiriusOrion/OrionSuit",
+      "name": "Orion & Sirius",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "SpecialItems",
+      "imageName": "OrionSirius.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
       "id": "/Lotus/Powersuits/Odalisk/Odalisk",
       "uniqueName": "/Lotus/Powersuits/Odalisk/Odalisk",
       "name": "Protea",
@@ -3790,6 +3806,48 @@
       ]
     },
     {
+      "id": "/Lotus/Powersuits/SiriusOrion/SiriusSuit",
+      "uniqueName": "/Lotus/Powersuits/SiriusOrion/SiriusSuit",
+      "name": "Sirius & Orion",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "normal",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "SiriusOrion.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 3,
+          "craftable": false
+        }
+      ]
+    },
+    {
       "id": "/Lotus/Powersuits/Hoplite/Hoplite",
       "uniqueName": "/Lotus/Powersuits/Hoplite/Hoplite",
       "name": "Styanax",
@@ -3827,6 +3885,48 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
           "name": "Orokin Cell",
           "count": 12,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Hoplite/StyanaxPrime",
+      "uniqueName": "/Lotus/Powersuits/Hoplite/StyanaxPrime",
+      "name": "Styanax Prime",
+      "masteryReq": 0,
+      "tab": "warframes",
+      "variant": "prime",
+      "category": "Warframes",
+      "type": "Warframe",
+      "productCategory": "Suits",
+      "imageName": "StyanaxPrime.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeChassisComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeChassisComponent",
+          "name": "Chassis",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeHelmetComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeHelmetComponent",
+          "name": "Neuroptics",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeSystemsComponent::1",
+          "itemKey": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeSystemsComponent",
+          "name": "Systems",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 5,
           "craftable": false
         }
       ]

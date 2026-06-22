@@ -7733,6 +7733,96 @@
       }
     ]
   },
+  "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionChassisComponent": {
+    "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionChassisComponent",
+    "name": "Chassis",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
+        "name": "Rubedo",
+        "count": 600,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "count": 400,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/CarbidesRailjackItem",
+        "name": "Carbides",
+        "count": 600,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/ScrapRailjackItem",
+        "name": "Ticor Plate",
+        "count": 500,
+        "craftable": false
+      }
+    ]
+  },
+  "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionHelmetComponent": {
+    "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionHelmetComponent",
+    "name": "Neuroptics",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "count": 250,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "count": 5,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/NullstonesRailjackItem",
+        "name": "Nullstones",
+        "count": 5,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/AsteriteRailjackItem",
+        "name": "Asterite",
+        "count": 75,
+        "craftable": false
+      }
+    ]
+  },
+  "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionSystemsComponent": {
+    "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SiriusOrionSystemsComponent",
+    "name": "Systems",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/PolymerBundle",
+        "name": "Polymer Bundle",
+        "count": 500,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "count": 30,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "count": 20,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/IsosRailjackItem",
+        "name": "Isos",
+        "count": 100,
+        "craftable": true
+      }
+    ]
+  },
   "/Lotus/Types/Recipes/WarframeRecipes/StyanaxChassisComponent": {
     "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxChassisComponent",
     "name": "Chassis",
@@ -7819,6 +7909,96 @@
         "itemKey": "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTagBounty",
         "name": "Voidplume Quill",
         "count": 15,
+        "craftable": false
+      }
+    ]
+  },
+  "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeChassisComponent": {
+    "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeChassisComponent",
+    "name": "Chassis",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Alertium",
+        "name": "Nitain Extract",
+        "count": 2,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "count": 4700,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "count": 1450,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Morphic",
+        "name": "Morphics",
+        "count": 8,
+        "craftable": true
+      }
+    ]
+  },
+  "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeHelmetComponent": {
+    "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeHelmetComponent",
+    "name": "Neuroptics",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Gallium",
+        "name": "Gallium",
+        "count": 8,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/NeuralSensor",
+        "name": "Neural Sensors",
+        "count": 10,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "count": 255,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Ferrite",
+        "name": "Ferrite",
+        "count": 3700,
+        "craftable": false
+      }
+    ]
+  },
+  "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeSystemsComponent": {
+    "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeSystemsComponent",
+    "name": "Systems",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Tellurium",
+        "name": "Tellurium",
+        "count": 3,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/ControlModule",
+        "name": "Control Module",
+        "count": 10,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Circuits",
+        "name": "Circuits",
+        "count": 1450,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "count": 4300,
         "craftable": false
       }
     ]
@@ -10708,6 +10888,21 @@
       }
     ]
   },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBarrel": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBarrel",
+    "name": "Barrel",
+    "requirements": []
+  },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBlade": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBlade",
+    "name": "Blade",
+    "requirements": []
+  },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeHandle": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeHandle",
+    "name": "Handle",
+    "requirements": []
+  },
   "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeBarrel": {
     "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeBarrel",
     "name": "Barrel",
@@ -12872,6 +13067,16 @@
     "name": "Receiver",
     "requirements": []
   },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeBarrel": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeBarrel",
+    "name": "Barrel",
+    "requirements": []
+  },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeReceiver": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeReceiver",
+    "name": "Receiver",
+    "requirements": []
+  },
   "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaLowerLimb": {
     "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaLowerLimb",
     "name": "Lower Limb",
@@ -14978,6 +15183,96 @@
     "name": "Subcortex",
     "requirements": []
   },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheBlade": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheBlade",
+    "name": "Blade",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "count": 400,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "count": 250,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/ScrapRailjackItem",
+        "name": "Ticor Plate",
+        "count": 250,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem",
+        "name": "Marquise Thyst",
+        "count": 5,
+        "craftable": true
+      }
+    ]
+  },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheHandle": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheHandle",
+    "name": "Handle",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "count": 1250,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/CarbidesRailjackItem",
+        "name": "Carbides",
+        "count": 300,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/GallosRailjackItem",
+        "name": "Gallos Rods",
+        "count": 50,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/TitaniumRailjackItem",
+        "name": "Titanium",
+        "count": 3000,
+        "craftable": false
+      }
+    ]
+  },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheBlade": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheBlade",
+    "name": "Wrath Blade",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/AlloyPlate",
+        "name": "Alloy Plate",
+        "count": 400,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/OxiumAlloy",
+        "name": "Oxium",
+        "count": 250,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/ScrapRailjackItem",
+        "name": "Ticor Plate",
+        "count": 250,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem",
+        "name": "Star Crimzian",
+        "count": 3,
+        "craftable": true
+      }
+    ]
+  },
   "/Lotus/Types/Recipes/Weapons/WeaponParts/QuassusPrimeBlade": {
     "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/QuassusPrimeBlade",
     "name": "Blade",
@@ -15595,6 +15890,36 @@
     "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ThrowingHammerMotor",
     "name": "Motor",
     "requirements": []
+  },
+  "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheHandle": {
+    "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheHandle",
+    "name": "Handle",
+    "requirements": [
+      {
+        "itemKey": "/Lotus/Types/Items/MiscItems/Salvage",
+        "name": "Salvage",
+        "count": 1250,
+        "craftable": false
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/CarbidesRailjackItem",
+        "name": "Carbides",
+        "count": 300,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/GallosRailjackItem",
+        "name": "Gallos Rods",
+        "count": 50,
+        "craftable": true
+      },
+      {
+        "itemKey": "/Lotus/Types/Items/RailjackMiscItems/TitaniumRailjackItem",
+        "name": "Titanium",
+        "count": 3000,
+        "craftable": false
+      }
+    ]
   },
   "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGhostCatcherGlaivePartBlade": {
     "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGhostCatcherGlaivePartBlade",

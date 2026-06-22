@@ -1,6 +1,6 @@
 {
   "tab": "primary",
-  "itemCount": 193,
+  "itemCount": 194,
   "items": [
     {
       "id": "/Lotus/Weapons/Tenno/LongGuns/SapientPrimary/SapientPrimaryWeapon",
@@ -164,6 +164,48 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/Rubedo",
           "name": "Rubedo",
           "count": 3500,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
+      "name": "Afentis Prime",
+      "masteryReq": 13,
+      "tab": "primary",
+      "variant": "prime",
+      "category": "Primary",
+      "type": "Rifle",
+      "productCategory": "LongGuns",
+      "imageName": "AfentisPrime.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AfentisPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeHandle",
+          "name": "Handle",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
           "craftable": false
         }
       ]

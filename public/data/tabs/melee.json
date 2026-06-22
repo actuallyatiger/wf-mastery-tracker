@@ -1,6 +1,6 @@
 {
   "tab": "melee",
-  "itemCount": 232,
+  "itemCount": 235,
   "items": [
     {
       "id": "/Lotus/Weapons/Grineer/Melee/GrineerTylAxeAndBoar/RegorAxeShield",
@@ -6009,6 +6009,41 @@
       ]
     },
     {
+      "id": "/Lotus/Weapons/Tenno/Melee/HeavyScythe/TnOrionSiriusScythe/TnSiriusScytheWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/HeavyScythe/TnOrionSiriusScythe/TnSiriusScytheWeapon",
+      "name": "Pride",
+      "masteryReq": 14,
+      "tab": "melee",
+      "variant": "normal",
+      "category": "Melee",
+      "type": "Melee",
+      "productCategory": "Melee",
+      "imageName": "TnSiriusScytheWeapon.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/SiriusScytheBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheHandle",
+          "name": "Handle",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheBlade",
+          "name": "Wrath Blade",
+          "level": 0
+        }
+      ],
+      "requirements": []
+    },
+    {
       "id": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaDualCleavers",
       "uniqueName": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaDualCleavers",
       "name": "Prisma Dual Cleavers",
@@ -8566,6 +8601,22 @@
       ]
     },
     {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeWar/PrimeWarWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeWar/PrimeWarWeapon",
+      "name": "War Prime",
+      "masteryReq": 15,
+      "tab": "melee",
+      "variant": "prime",
+      "category": "Melee",
+      "type": "Melee",
+      "productCategory": "Melee",
+      "imageName": "WarPrime.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
+    },
+    {
       "id": "/Lotus/Weapons/Tenno/Melee/Hammer/ThrowingHammer",
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Hammer/ThrowingHammer",
       "name": "Wolf Sledge",
@@ -8606,6 +8657,41 @@
           "craftable": false
         }
       ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/HeavyScythe/TnOrionSiriusScythe/TnOrionScytheWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/HeavyScythe/TnOrionSiriusScythe/TnOrionScytheWeapon",
+      "name": "Wrath",
+      "masteryReq": 14,
+      "tab": "melee",
+      "variant": "normal",
+      "category": "Melee",
+      "type": "Melee",
+      "productCategory": "Melee",
+      "imageName": "TnOrionScytheWeapon.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/OrionScytheBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheBlade",
+          "name": "Blade",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheHandle::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/OrionScytheHandle",
+          "name": "Handle",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheBlade::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/SiriusScytheBlade",
+          "name": "Pride Blade",
+          "level": 0
+        }
+      ],
+      "requirements": []
     },
     {
       "id": "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGhostCatcherGlaive/CrpGhostCatcherGlaive",

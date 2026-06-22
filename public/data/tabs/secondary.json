@@ -1,6 +1,6 @@
 {
   "tab": "secondary",
-  "itemCount": 147,
+  "itemCount": 148,
   "items": [
     {
       "id": "/Lotus/Weapons/ClanTech/Bio/AcidDartPistol",
@@ -1214,6 +1214,42 @@
           "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
           "name": "Orokin Cell",
           "count": 5,
+          "craftable": false
+        }
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon",
+      "uniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon",
+      "name": "Athodai Prime",
+      "masteryReq": 14,
+      "tab": "secondary",
+      "variant": "prime",
+      "category": "Secondary",
+      "type": "Pistol",
+      "productCategory": "Pistols",
+      "imageName": "AthodaiPrime.png",
+      "hasRecipe": true,
+      "mainBlueprintKey": "/Lotus/Types/Recipes/Weapons/AthodaiPrimeBlueprint",
+      "componentRequirements": [
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeBarrel::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeBarrel",
+          "name": "Barrel",
+          "level": 0
+        },
+        {
+          "id": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeReceiver::1",
+          "itemKey": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeReceiver",
+          "name": "Receiver",
+          "level": 0
+        }
+      ],
+      "requirements": [
+        {
+          "itemKey": "/Lotus/Types/Items/MiscItems/OrokinCell",
+          "name": "Orokin Cell",
+          "count": 10,
           "craftable": false
         }
       ]
