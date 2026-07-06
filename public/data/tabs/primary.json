@@ -1,6 +1,6 @@
 {
   "tab": "primary",
-  "itemCount": 194,
+  "itemCount": 195,
   "items": [
     {
       "id": "/Lotus/Weapons/Tenno/LongGuns/SapientPrimary/SapientPrimaryWeapon",
@@ -2495,6 +2495,22 @@
           "craftable": false
         }
       ]
+    },
+    {
+      "id": "/Lotus/Weapons/Sentients/SentOctaMiniGun/SentOctaMiniGun",
+      "uniqueName": "/Lotus/Weapons/Sentients/SentOctaMiniGun/SentOctaMiniGun",
+      "name": "Haalvu",
+      "masteryReq": 8,
+      "tab": "primary",
+      "variant": "normal",
+      "category": "Primary",
+      "type": "Rifle",
+      "productCategory": "LongGuns",
+      "imageName": "TnoOctaMiniGun.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
     },
     {
       "id": "/Lotus/Weapons/Grineer/LongGuns/GrnHarpoonGun/GrnHarpoonGun",

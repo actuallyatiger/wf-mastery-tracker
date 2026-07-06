@@ -1,6 +1,6 @@
 {
   "tab": "arch-guns",
-  "itemCount": 20,
+  "itemCount": 21,
   "items": [
     {
       "id": "/Lotus/Weapons/Tenno/Archwing/Primary/NokkoArchGun/NokkoArchGun",
@@ -376,6 +376,22 @@
           "craftable": false
         }
       ]
+    },
+    {
+      "id": "/Lotus/Types/JadeShadowsPart2Mission/Enemies/Ground/Elites/JS2MCorruptedBossMinigun",
+      "uniqueName": "/Lotus/Types/JadeShadowsPart2Mission/Enemies/Ground/Elites/JS2MCorruptedBossMinigun",
+      "name": "Imperator Vandal",
+      "masteryReq": 5,
+      "tab": "arch-guns",
+      "variant": "normal",
+      "category": "Arch-Gun",
+      "type": "Arch-Gun",
+      "productCategory": "SpaceGuns",
+      "imageName": "ImperatorVandal.png",
+      "hasRecipe": false,
+      "mainBlueprintKey": null,
+      "componentRequirements": [],
+      "requirements": []
     },
     {
       "id": "/Lotus/Weapons/Tenno/Archwing/Primary/FoldingMachineGun/ArchMachineGunVandal",
