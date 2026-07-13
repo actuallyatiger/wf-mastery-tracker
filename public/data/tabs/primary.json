@@ -2500,7 +2500,7 @@
       "id": "/Lotus/Weapons/Sentients/SentOctaMiniGun/SentOctaMiniGun",
       "uniqueName": "/Lotus/Weapons/Sentients/SentOctaMiniGun/SentOctaMiniGun",
       "name": "Haalvu",
-      "masteryReq": 8,
+      "masteryReq": 14,
       "tab": "primary",
       "variant": "normal",
       "category": "Primary",

@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-07-06T11:18:41.385Z",
+  "generatedAt": "2026-07-13T10:13:49.198Z",
   "source": {
     "provider": "WFCD/warframe-items",
     "baseUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/master/data/json",
@@ -23,12 +23,12 @@
     "secondary": 148,
     "melee": 235,
     "archwings": 5,
-    "arch-guns": 21,
+    "arch-guns": 20,
     "arch-melee": 8,
     "sentinels": 17,
     "sentinel-weapons": 24,
     "pets": 22,
-    "total": 795
+    "total": 794
   },
   "tabs": {
     "warframes": "tabs/warframes.json",
